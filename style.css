@@ -267,8 +267,7 @@ body {
 }
 
 #about .static-bg {
-  background-image: url(./img/about.jpg);
-  z-index: -1;
+  background-image: url(./img/about.png);
 }
 
 .btn-secondary {
