@@ -2,7 +2,7 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 html.sr .load-hidden {
@@ -314,6 +314,10 @@ body {
 
 /* PORTFOLIO START */
 
+.portfolio-set {
+  padding-bottom: 4rem;
+}
+
 .portfolio-item img {
   width: 100%;
   border-radius: 3rem;
@@ -386,7 +390,7 @@ body {
 }
 
 .fa-react {
-color: rgb(0, 238, 255, 0.8);
+  color: rgb(0, 238, 255, 0.8);
 }
 
 
@@ -416,9 +420,7 @@ color: rgb(0, 238, 255, 0.8);
 
 /* SKILLS START */
 
-.skills-set {
-  padding-bottom: 4rem;
-}
+
 .skills-lg {
   color: white;
   text-transform: uppercase;
@@ -504,7 +506,7 @@ form {
   border-style: none;
   border-bottom: 1px solid white;
   border-color: #1e77eb;
-  
+
 }
 
 input[type='number']::-webkit-inner-spin-button,
