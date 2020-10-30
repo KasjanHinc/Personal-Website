@@ -295,6 +295,7 @@ body {
   width: 55%;
   border-radius: 50%;
   opacity: 0.8;
+  
 }
 
 .about-info {
@@ -326,6 +327,7 @@ body {
 .portfolio-item {
   position: relative;
 }
+
 
 .portfolio-item:hover .portfolio-item-info {
   cursor: pointer;
@@ -359,7 +361,6 @@ body {
   top: 22%;
   font-weight: 100;
   margin: 1rem;
-
 }
 
 /* .fa-window-maximize,
@@ -399,7 +400,7 @@ body {
   color: #1e77eb;
 }
 
-.portfolio-item h4 {
+/* .portfolio-item h4 {
   position: relative;
   color: white;
   font-size: 1.7rem;
@@ -416,7 +417,7 @@ body {
   margin: 0;
   padding: 0;
   font-weight: 100;
-}
+} */
 
 /* SKILLS START */
 
@@ -580,8 +581,6 @@ footer svg.svg-inline--fa:hover {
   color: white !important;
 }
 
-
-
 #scroll-top {
   margin-top: 2rem;
 }
@@ -596,7 +595,6 @@ footer svg.svg-inline--fa:hover {
   font-style: italic;
   margin-top: 2rem;
 }
-
 
 .social-icons {
   display: flex;
@@ -615,9 +613,9 @@ footer svg.svg-inline--fa:hover {
 
 @media (max-width: 767px) {
 
-
+  /* HOME */
   .fixed-top {
-    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
 
   .caption h1 {
@@ -646,7 +644,18 @@ footer svg.svg-inline--fa:hover {
     margin: 0 auto;
   }
 
-  /* universal */
+  /* PORTFOLIO */
+
+  .portfolio-item-info p {
+    font-size: .7rem;
+    position: relative;
+    color: white;
+    top: 22%;
+    font-weight: 100;
+    margin: 1rem;
+  }
+
+  /* UNIVERSAL */
   .desc {
     font-size: 1.5rem;
   }
