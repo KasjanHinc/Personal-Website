@@ -346,11 +346,13 @@ body {
 }
 
 .portfolio-item-info p {
+  font-size: .9rem;
   position: relative;
   color: white;
   top: 22%;
   font-weight: 100;
   margin: 1rem;
+
 }
 
 .fa-window-maximize,
@@ -592,6 +594,12 @@ footer svg.svg-inline--fa:hover {
 /* MEDIA QUERIES */
 
 @media (max-width: 767px) {
+
+
+  .fixed-top {
+    -webkit-backface-visibility: hidden;
+  }
+
   .caption h1 {
     font-size: 2.3rem;
     letter-spacing: .15rem;
