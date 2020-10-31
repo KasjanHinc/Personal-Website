@@ -269,6 +269,8 @@ body {
 
 #about .static-bg {
   background-image: url(./img/about.png);
+
+
 }
 
 .btn-secondary {
@@ -288,6 +290,7 @@ body {
 }
 
 .about-content {
+  width: 80%;
   margin-top: 3rem;
 }
 
