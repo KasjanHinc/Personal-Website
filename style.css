@@ -295,7 +295,7 @@ body {
   width: 55%;
   border-radius: 50%;
   opacity: 0.8;
-  
+
 }
 
 .about-info {
@@ -691,10 +691,7 @@ footer svg.svg-inline--fa:hover {
   }
 
 
-
-
-
-  /* about */
+  /* ABOUT */
 
   .about-info {
     font-size: 1rem;
@@ -708,13 +705,41 @@ footer svg.svg-inline--fa:hover {
     font-size: .8rem;
   }
 
-  /* footer */
+  /* CONTACT */
+
+  form {
+    width: 90%;
+  }
+
+  #form-mobile {
+    display: initial;
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex-wrap: nowrap;
+  }
+
+  #company {
+    margin-bottom: 3rem;
+  }
+
+  /* FOOTER */
+
   #scroll-top {
     margin-top: 0rem;
   }
 
 }
 
+
+
+
+/* ANIMATIONS */
 
 @keyframes pulse {
   0% {
