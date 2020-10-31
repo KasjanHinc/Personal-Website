@@ -265,6 +265,7 @@ body {
 
 #about .static-bg {
   background-image: url(./img/about.png);
+  
 }
 
 .btn-secondary {
@@ -485,6 +486,7 @@ body {
   background-image: url(./img/portfolio.png);
 }
 
+
 #skills .static-bg {
   background-image: url(./img/skills.png);
 }
@@ -643,6 +645,7 @@ footer svg.svg-inline--fa:hover {
     position: relative;
     width: 100%;
   }
+
 
   .home-wrap {
     clip: rect(0, auto, auto, 0);
