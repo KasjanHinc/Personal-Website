@@ -216,7 +216,7 @@ body {
 
 
 
-.narrow{
+.narrow {
   width: 90%;
   margin: auto;
 }
@@ -277,7 +277,7 @@ body {
   margin: 1rem;
   color: white !important;
   background-color: transparent;
- 
+
 }
 
 .btn-secondary:hover {
@@ -547,11 +547,9 @@ input:hover {
   box-shadow: none;
 }
 
-
-
-
-
-
+input[type="text"], input[type="email"], input[type="number"], textarea {
+  font-weight: 100;
+}
 
 #submit {
   border: 1px solid white;
@@ -629,8 +627,8 @@ footer svg.svg-inline--fa:hover {
 
 @media (max-width: 767px) {
 
-   /* UNIVERSAL */
-   .desc {
+  /* UNIVERSAL */
+  .desc {
     font-size: 1.5rem;
   }
 
@@ -696,36 +694,36 @@ footer svg.svg-inline--fa:hover {
     margin: 0 auto;
   }
 
-    /* ABOUT */
+  /* ABOUT */
 
-    .about-info {
-      font-size: 1rem;
-    }
-  
-    #kasjan {
-      width: 75%;
-    }
-  
-    .intro-text {
-      font-size: .8rem;
-    }
-  
-    #about-mobile {
-      display: initial;
-      flex-basis: 0;
-      flex-grow: 1;
-      max-width: 100%;
-      position: relative;
-      width: 100%;
-      min-height: 1px;
-      padding-right: 15px;
-      padding-left: 15px;
-      flex-wrap: nowrap;
-    }
-  
-    #website-info-idea {
-      margin-top: 2rem;
-    }
+  .about-info {
+    font-size: 1rem;
+  }
+
+  #kasjan {
+    width: 75%;
+  }
+
+  .intro-text {
+    font-size: .8rem;
+  }
+
+  #about-mobile {
+    display: initial;
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex-wrap: nowrap;
+  }
+
+  #website-info-idea {
+    margin-top: 2rem;
+  }
 
   /* PORTFOLIO */
 
@@ -743,10 +741,10 @@ footer svg.svg-inline--fa:hover {
 
   .skills-lg h4 {
     margin-bottom: 5rem;
-    
+
   }
 
- 
+
   /* CONTACT */
 
   form {
