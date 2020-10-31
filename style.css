@@ -485,8 +485,12 @@ body {
 
 form {
   width: 60%;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+}
+
+#contact-email {
+  color: rgb(255, 255, 255, 0.5);
+  font-weight: 100;
+  margin: 1.5rem;
 }
 
 #name::placeholder,
