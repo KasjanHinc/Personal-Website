@@ -487,7 +487,7 @@ form {
   width: 60%;
 }
 
-#contact-email {
+#contact-small {
   color: rgb(255, 255, 255, 0.5);
   font-weight: 100;
   margin: 1.5rem;
@@ -755,6 +755,10 @@ footer svg.svg-inline--fa:hover {
     margin-bottom: 0;
   }
 
+  #contact-small {
+    margin: 1rem;
+  }
+
 
 
   #form-mobile {
@@ -770,9 +774,6 @@ footer svg.svg-inline--fa:hover {
     flex-wrap: nowrap;
   }
 
-  #company {
-    margin-bottom: 3rem;
-  }
 
   /* FOOTER */
 
