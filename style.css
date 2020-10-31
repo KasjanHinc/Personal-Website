@@ -212,9 +212,8 @@ body {
   font-style: italic;
   font-weight: 100;
   margin-bottom: 2rem;
+  text-shadow: .1rem .1rem .3rem black;
 }
-
-
 
 .narrow {
   width: 90%;
@@ -274,7 +273,7 @@ body {
   text-transform: uppercase;
   font-size: .8rem;
   padding: .6rem 1.2rem;
-  margin: 1rem;
+  margin: 1rem 1rem 4rem 1rem;
   color: white !important;
   background-color: transparent;
 
@@ -303,6 +302,7 @@ body {
   font-weight: 100;
   font-style: italic;
   text-shadow: .1rem .1rem .3rem black;
+  margin-bottom: 4rem;
 }
 
 .website-info {
@@ -312,6 +312,7 @@ body {
   font-style: italic;
   padding: 1rem;
   text-shadow: .1rem .1rem .3rem black;
+  margin-bottom: 4rem;
 }
 
 .website-info a {
@@ -320,6 +321,10 @@ body {
   text-decoration: none;
   color: #1e77eb;
 }
+
+/* .about-reveal {
+  margin-bottom: 4rem;
+} */
 
 /* PORTFOLIO START */
 
@@ -446,7 +451,7 @@ body {
 .skills-sm {
   color: white;
   word-wrap: break-word;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
 }
 
 .skills-lg h4 {
@@ -454,6 +459,7 @@ body {
   margin: 1rem;
   letter-spacing: .3rem;
   font-size: 1.2rem;
+  text-shadow: .1rem .1rem .3rem black;
 }
 
 .skills-sm h4 {
