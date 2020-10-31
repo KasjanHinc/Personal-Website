@@ -214,12 +214,9 @@ body {
   margin-bottom: 2rem;
 }
 
-.narrow {
-  width: 75%;
-  margin: auto;
-}
 
-.wide {
+
+.narrow{
   width: 90%;
   margin: auto;
 }
@@ -269,24 +266,23 @@ body {
 
 #about .static-bg {
   background-image: url(./img/about.png);
-
-
 }
 
 .btn-secondary {
-  border-width: medium;
+  border: 1px solid white;
   border-radius: 0;
   text-transform: uppercase;
   font-size: .8rem;
   padding: .6rem 1.2rem;
   margin: 1rem;
   color: white !important;
-  background-color: rgba(30, 119, 235, 0.8);
-  border-style: none;
+  background-color: transparent;
+ 
 }
 
 .btn-secondary:hover {
-  background-color: rgba(11, 92, 197, 0.8);
+  border: 1px solid rgba(11, 92, 197, 0);
+  background-color: rgba(11, 92, 197, 0.5);
 }
 
 .about-content {
@@ -295,17 +291,18 @@ body {
 }
 
 #kasjan {
-  width: 55%;
+  width: 60%;
   border-radius: 50%;
   opacity: 0.8;
 
 }
 
 .about-info {
-  font-size: 1.5rem;
-  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.3rem;
+  color: white;
   font-weight: 100;
   font-style: italic;
+  text-shadow: .1rem .1rem .3rem black;
 }
 
 .website-info {
@@ -314,6 +311,14 @@ body {
   font-weight: 100;
   font-style: italic;
   padding: 1rem;
+  text-shadow: .1rem .1rem .3rem black;
+}
+
+.website-info a {
+  font-size: 1.1rem;
+  text-shadow: .1rem .1rem .5rem black;
+  text-decoration: none;
+  color: #1e77eb;
 }
 
 /* PORTFOLIO START */
@@ -358,7 +363,7 @@ body {
 }
 
 .portfolio-item-info p {
-  font-size: .9rem;
+  font-size: .8rem;
   position: relative;
   color: white;
   top: 22%;
@@ -449,7 +454,6 @@ body {
   margin: 1rem;
   letter-spacing: .3rem;
   font-size: 1.2rem;
-  /* text-shadow: .1rem .1rem .1rem black; */
 }
 
 .skills-sm h4 {
@@ -546,18 +550,23 @@ input:hover {
 
 
 #submit {
-  border-style: none;
+  border: 1px solid white;
   border-radius: 0;
-  background-color: rgba(30, 119, 235, 0.8);
+  text-transform: uppercase;
+  font-size: .8rem;
+  padding: .6rem 1.2rem;
+  margin: 1rem;
+  color: white !important;
+  background-color: transparent;
 }
 
 #submit:hover {
-  background-color: rgba(11, 92, 197, 0.8);
-
+  border: 1px solid rgba(11, 92, 197, 0);
+  background-color: rgba(11, 92, 197, 0.5);
 }
 
-/* FOOTER START */
 
+/* FOOTER START */
 
 
 footer {
@@ -616,50 +625,8 @@ footer svg.svg-inline--fa:hover {
 
 @media (max-width: 767px) {
 
-  /* HOME */
-  .fixed-top {
-    backface-visibility: hidden;
-  }
-
-  .caption h1 {
-    font-size: 2.3rem;
-    letter-spacing: .15rem;
-    padding-bottom: .5rem;
-  }
-
-  .caption h3 {
-    font-size: 1.2rem;
-    padding-bottom: 1.2rem;
-  }
-
-  .btn-lg {
-    padding: .5rem 1rem;
-    font-size: 1rem;
-  }
-
-  .narrow h1 {
-    font-size: 1.5rem;
-  }
-
-  .contact img {
-    max-width: 50%;
-    display: block;
-    margin: 0 auto;
-  }
-
-  /* PORTFOLIO */
-
-  .portfolio-item-info p {
-    font-size: .7rem;
-    position: relative;
-    color: white;
-    top: 22%;
-    font-weight: 100;
-    margin: 1rem;
-  }
-
-  /* UNIVERSAL */
-  .desc {
+   /* UNIVERSAL */
+   .desc {
     font-size: 1.5rem;
   }
 
@@ -694,25 +661,97 @@ footer svg.svg-inline--fa:hover {
   }
 
 
-  /* ABOUT */
+  /* HOME */
+  .fixed-top {
+    backface-visibility: hidden;
+  }
 
-  .about-info {
+  .caption h1 {
+    font-size: 2.3rem;
+    letter-spacing: .15rem;
+    padding-bottom: .5rem;
+  }
+
+  .caption h3 {
+    font-size: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+
+  .btn-lg {
+    padding: .5rem 1rem;
     font-size: 1rem;
   }
 
-  #kasjan {
-    width: 75%;
+  .narrow h1 {
+    font-size: 1.5rem;
   }
 
-  .intro-text {
-    font-size: .8rem;
+  .contact img {
+    max-width: 50%;
+    display: block;
+    margin: 0 auto;
   }
 
+    /* ABOUT */
+
+    .about-info {
+      font-size: 1rem;
+    }
+  
+    #kasjan {
+      width: 75%;
+    }
+  
+    .intro-text {
+      font-size: .8rem;
+    }
+  
+    #about-mobile {
+      display: initial;
+      flex-basis: 0;
+      flex-grow: 1;
+      max-width: 100%;
+      position: relative;
+      width: 100%;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+      flex-wrap: nowrap;
+    }
+  
+    #website-info-idea {
+      margin-top: 2rem;
+    }
+
+  /* PORTFOLIO */
+
+  .portfolio-item-info p {
+    font-size: .5rem;
+    position: relative;
+    color: white;
+    top: 22%;
+    font-weight: 100;
+    margin: 1rem;
+  }
+
+
+  /* SKILLS */
+
+  .skills-lg h4 {
+    margin-bottom: 5rem;
+    
+  }
+
+ 
   /* CONTACT */
 
   form {
     width: 90%;
+    margin-top: 0;
+    margin-bottom: 0;
   }
+
+
 
   #form-mobile {
     display: initial;
