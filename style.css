@@ -705,6 +705,11 @@ footer svg.svg-inline--fa:hover {
 
 
   /* HOME */
+
+  .navbar {
+    background: rgb(30, 119, 235, 0.7) !important;
+  }
+
   .fixed-top {
     backface-visibility: hidden;
   }
