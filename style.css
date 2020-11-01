@@ -636,8 +636,11 @@ footer svg.svg-inline--fa:hover {
   color: white !important;
 }
 
-#scroll-top {
+
+
+#scroll-icon {
   margin-top: 2rem;
+  cursor: pointer;
 }
 
 .footer-brand {
@@ -715,6 +718,15 @@ footer svg.svg-inline--fa:hover {
     backface-visibility: hidden;
   }
 
+  .caption {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 35%;
+    z-index: 1;
+    color: white;
+  }
+
   .caption h1 {
     font-size: 2.3rem;
     letter-spacing: .15rem;
@@ -724,6 +736,11 @@ footer svg.svg-inline--fa:hover {
   .caption h3 {
     font-size: 1.2rem;
     padding-bottom: 1.2rem;
+  }
+
+  .intro-text {
+    font-size: 1.2rem;
+    margin: 0 1rem 35px 1rem;
   }
 
   .btn-lg {
@@ -760,9 +777,7 @@ footer svg.svg-inline--fa:hover {
     width: 75%;
   }
 
-  .intro-text {
-    font-size: .8rem;
-  }
+  
 
   #about-mobile {
     display: initial;
@@ -837,7 +852,7 @@ footer svg.svg-inline--fa:hover {
 
   /* FOOTER */
 
-  #scroll-top {
+  #scroll-icon {
     margin-top: 0rem;
   }
 

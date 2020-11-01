@@ -83,3 +83,19 @@ contact.addEventListener('click', function () {
   smoothScroll('#contact', 1000)
 })
 
+var herobutton = document.querySelector('.hero-button')
+herobutton.addEventListener('click', function () {
+  smoothScroll('#about', 1000)
+})
+
+var scrollhome = document.querySelector('#scrollhome')
+scrollhome.addEventListener('click', function () {
+  smoothScroll('#home', 1000)
+})
+
+
+
+// HIDE NAVBAR ON CLICK (MOBILE)
+$('.navbar-nav>li>a').on('click', function () {
+  $('.navbar-collapse').collapse('hide')
+})
