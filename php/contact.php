@@ -1,28 +1,33 @@
+
 <?php
-$name = $_POST['name'];
-$visitor_email = $_POST['email'];
-$message = $_POST['message'];
+
+$message_sent = false;
+if (isset($_POST['email']) && $_POST['email'] != '') {
+
+  if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+
+    $userName = $_POST['name'];
+    $userEmail = $_POST['email'];
+    $messageSubject = 'New email';
+    $message = $_POST['message'];
+
+    $to = "kasjan.hinc@gmail.com";
+    $body = "";
+
+    $body .= "From: " . $userName . "\r\n";
+    $body .= "Email: " . $userEmail . "\r\n";
+    $body .= "Message: " . $message . "\r\n";
 
 
-$email_from = 'kasjanhinc.com';
+    mail($to, $messageSubject, $body);
 
-$email_subject = "New email";
+    $message_sent = true;
+  } else {
+    $invalid = "form-invalid";
+  }
+}
 
-$email_body = "User Name: $name.\n".
-"User Email: $visitor_email.\n".
-"User Message: $message.\n";
-
-
-
-$to = "kasjan.hinc@gmail.com";
-
-$headers = "From: $email_from \r\n";
-
-$headers .= "Reply-To: $visitor_email \r\n";
-
-mail($to,$email_subject,$email_body,$headers);
-
-header("Location: index.html")
 
 
 ?>
+

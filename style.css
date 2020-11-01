@@ -398,6 +398,8 @@ body {
   margin: 1rem;
 }
 
+
+
 /* .fa-window-maximize,
 .fa-columns,
 .fa-window-restore {
@@ -729,8 +731,17 @@ footer svg.svg-inline--fa:hover {
 
   /* ABOUT */
 
+
+  .about-content {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
   .about-info {
     font-size: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
   }
 
   #kasjan {
@@ -760,9 +771,9 @@ footer svg.svg-inline--fa:hover {
   } */
 
   .website-info-idea-reveal,
-.website-info-technical-reveal {
-  height: 22rem;
-}
+  .website-info-technical-reveal {
+    height: 22rem;
+  }
 
   /* PORTFOLIO */
 
