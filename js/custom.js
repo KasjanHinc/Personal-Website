@@ -1,5 +1,5 @@
 
-// Typing animation
+// TYPING HERO ANIMATION
 $("#typed").typed({
   strings: ["Hello,", "नमस्ते,", "Cześć,", "Bonjour,", "Olá,", "<span dir='rtl'>مرحبا</span>"],
   typeSpeed: 200,
@@ -13,23 +13,18 @@ $("#typed").typed({
 })
 
 
-// View about website
+// VIEW WEBSITE INFO
 function seeMore() {
-  const text = document.querySelector('#website-info-idea')
-  const text2 = document.querySelector('#website-info-technical')
-  if (text.style.display && text2.style.display === 'block') {
-    text.style.display = 'none'
-    text2.style.display = 'none'
-  } else {
-    text.style.display = 'block'
-    text2.style.display = 'block'
-  }
+  const text = document.querySelector('.website-info-idea')
+  const text2 = document.querySelector('.website-info-technical')
+  text.classList.toggle('website-info-idea-reveal')
+  text2.classList.toggle('website-info-technical-reveal')
 }
 
 
 // SCROLL ANIMATIONS
 ScrollReveal().reveal('#kasjan', { duration: 2000 })
-ScrollReveal().reveal('.about-info', { duration: 2000, delay: 500  })
+ScrollReveal().reveal('.about-info', { duration: 2000, delay: 500 })
 ScrollReveal().reveal('.portfolio-item', { duration: 1500, rotate: { x: 20, z: 20 } })
 ScrollReveal().reveal('.skill-icon-first', { duration: 1500, scale: 2 })
 ScrollReveal().reveal('.skill-icon', { duration: 1500, scale: 2, delay: 500 })

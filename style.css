@@ -230,7 +230,7 @@ body {
 }
 
 .dark {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 0rem 2rem 3rem 2rem;
 }
 
@@ -253,11 +253,28 @@ body {
   margin-bottom: 3rem;
 } */
 
-#website-info-idea,
-#website-info-technical {
-  display: none;
+.website-info-idea,
+.website-info-technical {
   text-align: center;
+  transition: all 1s ease-in-out;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
 }
+
+.website-info-idea-reveal,
+.website-info-technical-reveal {
+  opacity: 1;
+  height: 15rem;
+  transition: all 1s ease-in-out;
+}
+
+
+/* #website-info-idea-revealed,
+#website-info-technical-revealed {
+  display: block;
+  text-align: center;
+} */
 
 #website-info-idea h3,
 #website-info-technical h3 {
@@ -266,7 +283,7 @@ body {
 
 #about .static-bg {
   background-image: url(./img/about.png);
-  
+
 }
 
 .btn-secondary {
@@ -343,21 +360,24 @@ body {
   position: relative;
 }
 
-
 .portfolio-item:hover .portfolio-item-info {
   cursor: pointer;
-  display: block;
+  opacity: 1;
   background-color: rgba(0, 0, 0, 0.75);
-  border-radius: 3rem;
   text-decoration: none;
+  transition: ease .5s;
 }
 
 .portfolio-item-info {
-  display: none;
+  opacity: 0;
   position: absolute;
+  color: transparent;
+  background-color: transparent;
+  border-radius: 3rem;
   width: 100%;
   height: 100%;
   top: 0;
+  left: 0;
   text-decoration: none;
   color: white;
 }
@@ -461,7 +481,7 @@ body {
   margin: 1rem;
   letter-spacing: .3rem;
   font-size: 1.2rem;
-  text-shadow: .1rem .1rem .3rem black;
+  /* text-shadow: .1rem .1rem .1rem black; */
 }
 
 .skills-sm h4 {
@@ -556,7 +576,10 @@ input:hover {
   box-shadow: none;
 }
 
-input[type="text"], input[type="email"], input[type="number"], textarea {
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
   font-weight: 100;
 }
 
@@ -731,9 +754,15 @@ footer svg.svg-inline--fa:hover {
     flex-wrap: nowrap;
   }
 
-  #website-info-idea {
-    margin-top: 2rem;
-  }
+  /* #website-info-idea,  */
+  /* #website-info-technical {
+    margin-top: 1rem;
+  } */
+
+  .website-info-idea-reveal,
+.website-info-technical-reveal {
+  height: 22rem;
+}
 
   /* PORTFOLIO */
 
