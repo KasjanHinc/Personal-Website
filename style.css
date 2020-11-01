@@ -729,6 +729,7 @@ footer svg.svg-inline--fa:hover {
   }
 
   .fixed-top {
+    position: sticky;
     backface-visibility: hidden;
   }
 
@@ -819,7 +820,7 @@ footer svg.svg-inline--fa:hover {
   /* PORTFOLIO */
 
   .portfolio-item-info p {
-    font-size: .5rem;
+    font-size: .7rem;
     position: relative;
     color: white;
     top: 22%;
