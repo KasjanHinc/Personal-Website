@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Raleway:wght@400;700&display=swap');
 
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
   overflow-x: hidden;
 }
 
@@ -51,6 +51,7 @@ body {
 
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover {
+  cursor: pointer;
   color: #1255ac;
 }
 

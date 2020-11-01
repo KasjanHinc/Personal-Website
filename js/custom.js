@@ -30,3 +30,56 @@ ScrollReveal().reveal('.portfolio-item', { duration: 1500, rotate: { x: 20, z: 2
 ScrollReveal().reveal('.skill-icon-first', { duration: 1500, scale: 2, delay: 500 })
 ScrollReveal().reveal('.skill-icon', { duration: 1500, scale: 2, delay: 700 })
 ScrollReveal().reveal('form', { duration: 2000, scale: 2, delay: 500 })
+
+
+// SMOOTH SCROLL
+function smoothScroll(target, duration) {
+  var target = document.querySelector(target)
+  var targetPosition = target.getBoundingClientRect().top
+  var startPosition = window.pageYOffset
+  var distance = targetPosition - startPosition
+  var startTime = null
+
+  function animation(currentTime) {
+    if (startTime === null) startTime = currentTime
+    var timeElapsed = currentTime - startTime
+    var run = ease(timeElapsed, startPosition, targetPosition, duration)
+    window.scrollTo(0, run)
+    if (timeElapsed < duration) requestAnimationFrame(animation)
+  }
+
+  function ease(t, b, c, d) {
+    t /= d / 2
+    if (t < 1) return c / 2 * t * t * t + b
+    t -= 2
+    return c / 2 * (t * t * t + 2) + b
+  }
+
+  requestAnimationFrame(animation)
+}
+
+var home = document.querySelector('.nav-home')
+home.addEventListener('click', function () {
+  smoothScroll('#home', 1000)
+})
+
+var about = document.querySelector('.nav-about')
+about.addEventListener('click', function () {
+  smoothScroll('#about', 1000)
+})
+
+var portfolio = document.querySelector('.nav-portfolio')
+portfolio.addEventListener('click', function () {
+  smoothScroll('#portfolio', 1000)
+})
+
+var skills = document.querySelector('.nav-skills')
+skills.addEventListener('click', function () {
+  smoothScroll('#skills', 1000)
+})
+
+var contact = document.querySelector('.nav-contact')
+contact.addEventListener('click', function () {
+  smoothScroll('#contact', 1000)
+})
+
