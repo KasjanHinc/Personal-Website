@@ -231,8 +231,14 @@ body {
 
 .dark {
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 0rem 2rem 3rem 2rem;
+  padding-bottom: 3rem;
 }
+
+/* .blue {
+ 
+  background-color: rgba(30, 119, 235, 0.6);
+  padding: 0rem 2rem 3rem 2rem;
+} */
 
 .section-title {
   font-weight: bold;
@@ -256,7 +262,7 @@ body {
 .website-info-idea,
 .website-info-technical {
   text-align: center;
-  transition: all 1s ease-in-out;
+  transition: all .5s ease-in-out;
   opacity: 0;
   height: 0;
   overflow: hidden;
@@ -266,7 +272,7 @@ body {
 .website-info-technical-reveal {
   opacity: 1;
   height: 15rem;
-  transition: all 1s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 
@@ -549,7 +555,6 @@ form {
   border-style: none;
   border-bottom: 1px solid white;
   border-color: #1e77eb;
-
 }
 
 input[type='number']::-webkit-inner-spin-button,
@@ -576,6 +581,7 @@ input:focus,
 input:hover {
   outline-style: none;
   box-shadow: none;
+  border-color: rgb(255, 255, 255, 0.5);
 }
 
 input[type="text"],
@@ -852,11 +858,6 @@ footer svg.svg-inline--fa:hover {
     transform: scale(1);
   }
 }
-
-
-
-
-
 
 
 
