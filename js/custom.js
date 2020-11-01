@@ -58,6 +58,11 @@ function smoothScroll(target, duration) {
   requestAnimationFrame(animation)
 }
 
+var brand = document.querySelector('.nav-brand')
+brand.addEventListener('click', function () {
+  smoothScroll('#home', 1000)
+})
+
 var home = document.querySelector('.nav-home')
 home.addEventListener('click', function () {
   smoothScroll('#home', 1000)

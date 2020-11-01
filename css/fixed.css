@@ -10,9 +10,9 @@ margin-right: 0px!important;
 }
 
 /*--- Fix for Fixed Navbar jumping on scroll --*/
-.fixed-top  {
+/* .fixed-top  {
  -webkit-backface-visibility: hidden;
-}
+} */
 
 /*--- Fixed Landing Page Section --*/
 .landing {
@@ -20,6 +20,7 @@ margin-right: 0px!important;
   width: 100%;
   height: 100vh;
   display: table;
+
   /* z-index: -1; */
 }
 .sectionBackground {

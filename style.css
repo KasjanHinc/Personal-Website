@@ -36,6 +36,10 @@ body {
   background: transparent !important;
 }
 
+.navbar-brand {
+  cursor: pointer;
+}
+
 .navbar-brand img {
   /* position: absolute; */
   height: 2.5rem;
