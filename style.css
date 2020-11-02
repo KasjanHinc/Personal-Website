@@ -708,7 +708,8 @@ footer svg.svg-inline--fa:hover {
   }
 
   .static-bg {
-    position: fixed;
+    /* changed */
+    position: sticky;
     display: block;
     top: 0;
     left: 0;
@@ -729,7 +730,6 @@ footer svg.svg-inline--fa:hover {
   }
 
   .fixed-top {
-    position: sticky;
     backface-visibility: hidden;
   }
 
