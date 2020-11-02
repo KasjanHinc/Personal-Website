@@ -228,7 +228,7 @@ body {
   font-style: italic;
   font-weight: 100;
   margin-bottom: 2rem;
-  text-shadow: .1rem .1rem .3rem black;
+  /* text-shadow: .1rem .1rem .3rem black; */
 }
 
 .narrow {
@@ -337,7 +337,7 @@ body {
 }
 
 .about-info {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: white;
   font-weight: 100;
   font-style: italic;
@@ -411,6 +411,7 @@ body {
 }
 
 .portfolio-item-info p {
+  overflow: scroll;
   font-size: .8rem;
   position: relative;
   color: white;
