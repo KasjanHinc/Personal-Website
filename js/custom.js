@@ -29,7 +29,7 @@ ScrollReveal().reveal('.about-info', { duration: 2000, delay: 700 })
 ScrollReveal().reveal('.portfolio-item', { duration: 1500, rotate: { x: 20, z: 20 }, delay: 500 })
 ScrollReveal().reveal('.skill-icon-first', { duration: 1500, scale: 2, delay: 500 })
 ScrollReveal().reveal('.skill-icon', { duration: 1500, scale: 2, delay: 700 })
-ScrollReveal().reveal('form', { duration: 2000, scale: 2, delay: 500 })
+ScrollReveal().reveal('form', { duration: 2000, scale: 1.5, delay: 500 })
 
 
 // SMOOTH SCROLL
