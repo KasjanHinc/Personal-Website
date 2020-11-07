@@ -226,7 +226,7 @@ body {
   color: white;
   font-size: 2rem;
   font-style: italic;
-  font-weight: 100;
+  font-weight: 200;
   margin-bottom: 2rem;
   /* text-shadow: .1rem .1rem .3rem black; */
 }
@@ -343,7 +343,7 @@ body {
   color: white;
   font-weight: 100;
   font-style: italic;
-  text-shadow: .1rem .1rem .3rem black;
+  text-shadow: .1rem .1rem .2rem black;
   margin-bottom: 4rem;
 }
 
@@ -898,6 +898,81 @@ footer svg.svg-inline--fa:hover {
   }
 }
 
+.loader {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  border: 4px solid #Fff;
+  top: 5rem;
+  animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(180deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+
+  25% {
+    height: 0%;
+  }
+
+  50% {
+    height: 100%;
+  }
+
+  75% {
+    height: 100%;
+  }
+
+  100% {
+    height: 0%;
+  }
+}
+
+
+.loader-wrapper {
+  position: absolute;
+  background-color: #1e77eb;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  z-index: 999;
+}
 
 
 /*============ BOOTSTRAP BREAK POINTS:

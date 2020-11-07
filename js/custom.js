@@ -12,6 +12,13 @@ $("#typed").typed({
   resetCallback: function () { newTyped() }
 })
 
+// LOADER ON START
+
+$(window).on('load', function() {
+  $('.loader-wrapper').fadeOut('slow')
+})
+
+
 
 // VIEW WEBSITE INFO
 function seeMore() {
