@@ -19,14 +19,12 @@
   <div class="loader-wrapper">
     <span class="loader"><span class="loader-inner"></span></span>
 
-
     <div class="sk-folding-cube">
       <div class="sk-cube1 sk-cube"></div>
       <div class="sk-cube2 sk-cube"></div>
       <div class="sk-cube4 sk-cube"></div>
       <div class="sk-cube3 sk-cube"></div>
     </div>
-
 
   </div>
 
@@ -105,11 +103,11 @@
             </div>
 
             <div class="col container about-content">
-              <div class="row">
-                <div class="col-lg">
+              <div class="row" id="row-mobile">
+                <div class="col">
                   <img id="kasjan" src="./img/kasjan.png">
                 </div>
-                <div class="col-lg">
+                <div class="col">
                   <p class="about-info"><span id="abouttyped"></span>
                   </p>
 
@@ -123,7 +121,7 @@
 
 
             <div class="row about-reveal">
-              <div class="row" id="about-mobile">
+              <div class="row" id="row-mobile">
                 <div class="col website-info-idea">
                   <h3>My inspiration</h3>
                   <p class="website-info">
@@ -168,205 +166,192 @@
   <!-- ABOUT END -->
 
   <!-- PORTFOLIO START -->
-  <div id="portfolio" class="offset">
+  <div id="portfolio" class="">
 
-    <div class="sectionBackground">
+    <div class="container">
 
-      <div class="container">
+      <div class="column text-center">
 
-        <div class="column text-center">
-
-          <div class="col">
-            <h2 class="section-title">Portfolio</h2>
-            <div class="heading-underline">
-            </div>
-            <p class="desc">Check out some of my selected works</p>
+        <div class="col">
+          <h2 class="section-title">Portfolio</h2>
+          <div class="heading-underline">
           </div>
+          <p class="desc">Check out some of my selected works</p>
+        </div>
 
-          <div class="col">
-            <div class="row portfolio-set">
+        <div class="col">
+          <div class="row portfolio-set">
 
-              <div class="col-md-4">
-                <div class="portfolio-item load-hidden">
+            <div class="col-md-4">
+              <div class="portfolio-item load-hidden">
 
-                  <img src="./img/snake.png" class="img-responsive" alt="Snake Game" title="Snake Game">
+                <img src="./img/snake.png" class="img-responsive" alt="Snake Game" title="Snake Game">
 
 
-                  <a href="https://github.com/KasjanHinc/Snake" target="_blank" class="portfolio-item-info">
+                <a href="https://github.com/KasjanHinc/Snake" target="_blank" class="portfolio-item-info">
 
-                    <h3>Snake</h3>
-                    <p>A grid based game created in under a week using HTML, CSS and JavaScript. Part of the General
-                      Assembly SEI course.</p>
+                  <h3>Snake</h3>
+                  <p>A grid based game created in under a week using HTML, CSS and JavaScript. Part of the General
+                    Assembly SEI course.</p>
 
-                  </a>
-                </div>
+                </a>
               </div>
+            </div>
 
-              <div class="col-md-4">
-                <div class="portfolio-item load-hidden">
+            <div class="col-md-4">
+              <div class="portfolio-item load-hidden">
 
-                  <img src="./img/trivia.png" class="img-responsive" alt="Snake Game" title="Snake Game">
+                <img src="./img/trivia.png" class="img-responsive" alt="Snake Game" title="Snake Game">
 
 
-                  <a href="https://github.com/KasjanHinc/Trivia-Quiz" target="_blank" class="portfolio-item-info">
+                <a href="https://github.com/KasjanHinc/Trivia-Quiz" target="_blank" class="portfolio-item-info">
 
-                    <h3>Trivia Quiz</h3>
-                    <p>Two day paired hackathon. Using React, we created a Trivia Quiz app based on the OpenTDB API and
-                      the
-                      Bootstrap framework. Part of the General Assembly SEI course.</p>
+                  <h3>Trivia Quiz</h3>
+                  <p>Two day paired hackathon. Using React, we created a Trivia Quiz app based on the OpenTDB API and
+                    the
+                    Bootstrap framework. Part of the General Assembly SEI course.</p>
 
-                  </a>
-                </div>
+                </a>
               </div>
-
             </div>
 
           </div>
 
         </div>
+
       </div>
+    </div>
 
 
-      <div class="home-wrap">
+    <!-- <div class="home-wrap">
         <div class="static-bg">
         </div>
-      </div>
+      </div> -->
 
 
-    </div>
+    <!-- </div> -->
   </div>
   <!-- PORTFOLIO END -->
 
   <!-- SKILLS START -->
 
-  <div id="skills" class="offset">
+  <div id="skills" class="">
 
-    <div class="sectionBackground">
+    <div class="container skills-scroll">
 
-      <div class="container">
+      <div class="row text-center">
 
         <div class="row text-center">
 
-          <div class="row text-center">
+          <div class="col">
+            <h2 class="section-title">Skills</h2>
+            <div class="heading-underline">
+            </div>
+            <p class="desc">I specialize in front-end development, focussing on simplicity and<br>
+              responsive design</p>
+          </div>
+
+
+          <div class="row skills-lg justify-content-center">
 
             <div class="col">
-              <h2 class="section-title">Skills</h2>
-              <div class="heading-underline">
+              <div class="skill-icon">
+                <i class="fas fa-window-maximize fa-7x"></i>
               </div>
-              <p class="desc">I specialize in front-end development, focussing on simplicity,<br>
-                responsive design and SEO-friendly code</p>
+              <h4>Front End Development</h4>
             </div>
 
-
-            <div class="row skills-lg justify-content-center">
-
-              <div class="col">
-                <div class="skill-icon">
-                  <i class="fas fa-window-maximize fa-7x"></i>
-                </div>
-                <h4>Front End Development</h4>
+            <div class="col">
+              <div class="skill-icon-first">
+                <i class="fas fa-columns fa-7x"></i>
               </div>
-
-              <div class="col">
-                <div class="skill-icon-first">
-                  <i class="fas fa-columns fa-7x"></i>
-                </div>
-                <h4>Responsive Web Design & Web Applications</h4>
-              </div>
-
-              <div class="col">
-                <div class="skill-icon">
-                  <i class="far fa-window-restore fa-7x"></i>
-                </div>
-                <h4>Back End Development</h4>
-              </div>
-
+              <h4>Responsive Web Design & Web Applications</h4>
             </div>
 
-
-            <div class="row skills-sm justify-content-center">
-
-              <div class="col">
-                <h4>HTML</h4>
-                <div class="skill-icon">
-                  <i class="fab fa-html5 fa-3x"></i>
-                </div>
-                <p>Bootstrap, Bulma</p>
+            <div class="col">
+              <div class="skill-icon">
+                <i class="far fa-window-restore fa-7x"></i>
               </div>
-
-              <div class="col">
-                <h4>CSS</h4>
-                <div class="skill-icon">
-                  <i class="fab fa-css3 fa-3x"></i>
-                </div>
-                <p>SCSS, SASS, Animations</p>
-              </div>
-
-              <div class="col">
-                <h4>JavaScript</h4>
-                <div class="skill-icon">
-                  <i class="fab fa-js-square fa-3x"></i>
-                </div>
-                <p>Vanilla, JSON,</p>
-              </div>
-
-              <div class="col">
-                <h4>Git</h4>
-                <div class="skill-icon">
-                  <i class="fab fa-git-square fa-3x"></i>
-                </div>
-                <p>Project flow</p>
-              </div>
-
-              <div class="col">
-                <h4>React</h4>
-                <div class="skill-icon">
-                  <i class="fab fa-react fa-3x"></i>
-                </div>
-                <p>Webpack, Router</p>
-              </div>
-
-              <div class="col">
-                <h4>GitHub</h4>
-                <div class="skill-icon">
-                  <i class="fab fa-github-square fa-3x"></i>
-                </div>
-                <p>Sharing work</p>
-              </div>
-
-              <div class="col">
-                <h4>Node.js</h4>
-                <div class="skill-icon">
-                  <i class="fab fa-node-js fa-3x"></i>
-                </div>
-                <p>Express, Mongoose, MongoDB</p>
-              </div>
-
-              <div class="col">
-                <h4>Python</h4>
-                <div class="skill-icon">
-                  <i class="fab fa-python fa-3x"></i>
-                </div>
-                <p>Flask</p>
-              </div>
-
-
+              <h4>Back End Development</h4>
             </div>
 
           </div>
+
+
+          <div class="row skills-sm justify-content-center">
+
+            <div class="col">
+              <h4>HTML</h4>
+              <div class="skill-icon">
+                <i class="fab fa-html5 fa-3x"></i>
+              </div>
+              <p>Bootstrap, Bulma</p>
+            </div>
+
+            <div class="col">
+              <h4>CSS</h4>
+              <div class="skill-icon">
+                <i class="fab fa-css3 fa-3x"></i>
+              </div>
+              <p>SCSS, SASS, Animations</p>
+            </div>
+
+            <div class="col">
+              <h4>JavaScript</h4>
+              <div class="skill-icon">
+                <i class="fab fa-js-square fa-3x"></i>
+              </div>
+              <p>Vanilla, JSON,</p>
+            </div>
+
+            <div class="col">
+              <h4>Git</h4>
+              <div class="skill-icon">
+                <i class="fab fa-git-square fa-3x"></i>
+              </div>
+              <p>Project flow</p>
+            </div>
+
+            <div class="col">
+              <h4>React</h4>
+              <div class="skill-icon">
+                <i class="fab fa-react fa-3x"></i>
+              </div>
+              <p>Webpack, Router</p>
+            </div>
+
+            <div class="col">
+              <h4>GitHub</h4>
+              <div class="skill-icon">
+                <i class="fab fa-github-square fa-3x"></i>
+              </div>
+              <p>Sharing work</p>
+            </div>
+
+            <div class="col">
+              <h4>Node.js</h4>
+              <div class="skill-icon">
+                <i class="fab fa-node-js fa-3x"></i>
+              </div>
+              <p>Express, Mongoose, MongoDB</p>
+            </div>
+
+            <div class="col">
+              <h4>Python</h4>
+              <div class="skill-icon">
+                <i class="fab fa-python fa-3x"></i>
+              </div>
+              <p>Flask</p>
+            </div>
+
+
+          </div>
+
         </div>
       </div>
-
-
-
-      <div class="home-wrap">
-        <div class="static-bg">
-        </div>
-      </div>
-
-
-
     </div>
+
+
 
   </div>
 
@@ -488,8 +473,8 @@
 
     </div>
 
-    
- 
+
+
   </footer>
 
 
