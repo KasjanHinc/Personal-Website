@@ -14,9 +14,9 @@ $("#typed").typed({
 
 // LOADER ON START
 
-// $(window).on('load', function() {
-//   $('.loader-wrapper').fadeOut('slow')
-// })
+$(window).on('load', function() {
+  $('.loader-wrapper').fadeOut('slow')
+})
 
 
 
