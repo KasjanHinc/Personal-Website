@@ -896,83 +896,8 @@ footer svg.svg-inline--fa:hover {
   }
 }
 
-/* .loader {
-  display: inline-block;
-  width: 2rem;
-  height: 2rem;
-  position: relative;
-  border: 4px solid #Fff;
-  top: 50vh;
-  animation: loader 2s infinite ease;
-}
-
-.loader-inner {
-  vertical-align: top;
-  display: inline-block;
-  width: 100%;
-  background-color: #fff;
-  animation: loader-inner 2s infinite ease-in;
-} */
-
-@keyframes loader {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  25% {
-    transform: rotate(180deg);
-  }
-
-  50% {
-    transform: rotate(180deg);
-  }
-
-  75% {
-    transform: rotate(360deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes loader-inner {
-  0% {
-    height: 0%;
-  }
-
-  25% {
-    height: 0%;
-  }
-
-  50% {
-    height: 100%;
-  }
-
-  75% {
-    height: 100%;
-  }
-
-  100% {
-    height: 0%;
-  }
-}
 
 
-.loader-wrapper {
-  position: fixed;
-  background-image: url(./img/hero-loading.png);
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
-  z-index: 999;
-}
 
 
 /*============ BOOTSTRAP BREAK POINTS:
@@ -997,6 +922,21 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 
 
+/* LOADER ANIMATION */
+
+.loader-wrapper {
+  position: fixed;
+  background-image: url(./img/hero-loading.png);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 999;
+}
 
 .sk-folding-cube {
   top: 40vh;
@@ -1085,3 +1025,4 @@ Extra (xl) large devices (large desktops, 1200px and up)
     opacity: 0; 
   }
 }
+/* END LOADER ANIMATION */
