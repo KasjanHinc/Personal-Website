@@ -18,16 +18,16 @@ $("#typed").typed({
 var typed = new Typed('#abouttyped', {
   strings: ['<i class="fas fa-quote-left"></i> I am an upcoming Web Software Developer.<br> For me learning new technologies and integrating them into UI systems is what made me go into this industry. Orderliness and creativity are some of my traits. For my future I want to be recognised highly for my skills in the industry. <i class="fas fa-quote-right"></i>'],
   smartBackspace: true,
-  typeSpeed: 40,
+  typeSpeed: 50,
   startDelay: 2500
 })
+
 
 // LOADER ON START
 
 $(window).on('load', function () {
   $('.loader-wrapper').fadeOut('slow')
 })
-
 
 
 // VIEW WEBSITE INFO
@@ -40,13 +40,13 @@ function seeMore() {
 
 
 // SCROLL ANIMATIONS
-ScrollReveal().reveal('.desc', { duration: 1700 })
+ScrollReveal().reveal('.desc', { duration: 1000 })
 ScrollReveal().reveal('#kasjan', { duration: 1000, delay: 200 })
-ScrollReveal().reveal('.about-info', { duration: 1000, delay: 500 })
-ScrollReveal().reveal('.portfolio-item', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 500 })
-ScrollReveal().reveal('.skill-icon-first', { duration: 1000, scale: 2, delay: 500 })
-ScrollReveal().reveal('.skill-icon', { duration: 1000, scale: 2, delay: 700 })
-ScrollReveal().reveal('form', { duration: 1000, scale: 1.5, delay: 500 })
+ScrollReveal().reveal('.about-info', { duration: 3000 })
+ScrollReveal().reveal('.portfolio-item', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 200 })
+ScrollReveal().reveal('.skill-icon-first', { duration: 1000, scale: 2, delay: 200 })
+ScrollReveal().reveal('.skill-icon', { duration: 1000, scale: 2, delay: 500 })
+ScrollReveal().reveal('form', { duration: 1000, scale: 1.5, delay: 200 })
 
 
 // SMOOTH SCROLL
