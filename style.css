@@ -267,6 +267,15 @@ body {
   color: white;
 }
 
+.section-title-portfolio {
+  font-weight: bold;
+  text-transform: uppercase;
+
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  color: white;
+}
+
 /* UNIVERSAL ITEMS */
 
 
@@ -290,6 +299,7 @@ body {
 .website-info-technical-reveal {
   opacity: 1;
   height: 14rem;
+  margin-bottom: 3rem;
   transition: all .5s ease-in-out;
 }
 
@@ -313,7 +323,7 @@ body {
   text-transform: uppercase;
   font-size: .8rem;
   padding: .6rem 1.2rem;
-  margin: 1rem 1rem 3rem 1rem;
+  margin: 2rem 1rem 5rem 1rem;
   color: white !important;
   background-color: transparent;
 
@@ -372,6 +382,32 @@ body {
 #portfolio {
   background-color: #FFB166;
 }
+
+#portfolio::before {
+  content: '';
+  position: relative;
+
+  display: block;
+  top: -1.9rem;
+left: 0;
+  height: 3rem;
+  background: #FFB166;
+  /* border: 1px solid black; */
+  -webkit-transform: skewY(1.5deg);
+  -moz-transform: skewY(1.5deg);
+  -ms-transform: skewY(1.5deg);
+  -o-transform: skewY(1.5deg);
+  transform: skewY(1.5deg);
+
+
+}
+
+/* #skills::before {
+  display: block;
+  content: "";
+  border-bottom: 5vw solid #172C5B;
+  border-left: 100vw solid #FFB166;
+} */
 
 .portfolio-set {
   padding-bottom: 4rem;
@@ -807,7 +843,7 @@ footer svg.svg-inline--fa:hover {
   }
 
   .website-info-technical-reveal {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
 
   .website-info {
