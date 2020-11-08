@@ -43,9 +43,9 @@ function seeMore() {
 ScrollReveal().reveal('.desc', { duration: 1700 })
 ScrollReveal().reveal('#kasjan', { duration: 1000, delay: 200 })
 ScrollReveal().reveal('.about-info', { duration: 1000, delay: 500 })
-ScrollReveal().reveal('.portfolio-item', { duration: 1500, rotate: { x: 20, z: 20 }, delay: 500 })
-ScrollReveal().reveal('.skill-icon-first', { duration: 1500, scale: 2, delay: 500 })
-ScrollReveal().reveal('.skill-icon', { duration: 1500, scale: 2, delay: 700 })
+ScrollReveal().reveal('.portfolio-item', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 500 })
+ScrollReveal().reveal('.skill-icon-first', { duration: 1000, scale: 2, delay: 500 })
+ScrollReveal().reveal('.skill-icon', { duration: 1000, scale: 2, delay: 700 })
 ScrollReveal().reveal('form', { duration: 1000, scale: 1.5, delay: 500 })
 
 
