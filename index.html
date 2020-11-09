@@ -73,7 +73,8 @@
     <div class="caption text-center">
       <p class="intro-welcome"><span id="typed">Hello,</span>my name is</p>
       <h1 class="intro-title">Kasjan Hinc</h1>
-      <p class="intro-text">Junior Software Developer • Front & Back End • UI Designer<br>Based in <strong>London</strong></p>
+      <p class="intro-text">Junior Software Developer • Front & Back End • UI Designer<br>Based in
+        <strong>London</strong></p>
 
 
       <a class="btn btn-outline-light btn-lg hero-button">
@@ -349,76 +350,79 @@
   </div>
 
   <!-- CONTACT START -->
-  <div id="contact" class="offset">
+  <div id="contact" class="">
     <div class="sectionBackground">
 
-      <div class="col dark text-center">
+      <div class="container contact-extra-height">
 
-        <div class="col">
-          <h2 class="section-title">Contact</h2>
-          <div class="heading-underline"></div>
-          <p class="desc">If you have enquiries regarding employment or something else,<br> I'm waiting for your
-            message</p>
+        <div class="col text-center">
 
-        </div>
+          <div class="col">
+            <h2 class="section-title-contact contact-scroll">Contact</h2>
+            <div class="heading-underline "></div>
+            <p class="desc">If you have enquiries regarding employment or something else,<br> I'm waiting for your
+              message</p>
+
+          </div>
 
 
-        <div class="row justify-content-center">
+          <div class="row justify-content-center">
 
 
-          <form method="POST" action="./php/contact.php">
-            <p><a href="mailto:kasjan.hinc@gmail.com" id="contact-small"><i class="far fa-envelope"></i>
-                kasjan.hinc@gmail.com</a></p>
-            <div class="row" id="form-mobile">
+            <form method="POST" action="./php/contact.php">
+              <p><a href="mailto:kasjan.hinc@gmail.com" id="contact-small"><i class="far fa-envelope"></i>
+                  kasjan.hinc@gmail.com</a></p>
+              <div class="row" id="form-mobile">
 
-              <div class="col">
-                <div class="form-group">
+                <div class="col">
+                  <div class="form-group">
 
-                  <input type="text" name="name" placeholder="Your name (*):" class="form-control" id="name">
+                    <input type="text" name="name" placeholder="Your name (*):" class="form-control" id="name">
+                  </div>
+                  <div class="form-group">
+
+                    <input type="email" name="email" placeholder="Email (*):" class="form-control" id="email">
+                  </div>
+                  <div class="form-group">
+
+                    <input type="number" name="phone" placeholder="Phone:" class="form-control" id="phone">
+                  </div>
+                  <div class="form-group">
+
+                    <input type="text" name="company" placeholder="Company:" class="form-control" id="company">
+                  </div>
+
+                  <p id="contact-small">* required field
+                  </p>
+
                 </div>
-                <div class="form-group">
 
-                  <input type="email" name="email" placeholder="Email (*):" class="form-control" id="email">
+
+                <div class="col">
+                  <div class="form-group">
+
+                    <textarea class="form-control" name="message" placeholder="Message (*):" id="message"
+                      rows="7"></textarea>
+                  </div>
+                  <button type="submit" name="submit" class="btn btn-primary" id="submit"><i
+                      class="fa fa-paper-plane fa-fw"></i>
+                    Send</button>
                 </div>
-                <div class="form-group">
-
-                  <input type="number" name="phone" placeholder="Phone:" class="form-control" id="phone">
-                </div>
-                <div class="form-group">
-
-                  <input type="text" name="company" placeholder="Company:" class="form-control" id="company">
-                </div>
-
-                <p id="contact-small">* required field
-                </p>
 
               </div>
 
+            </form>
 
-              <div class="col">
-                <div class="form-group">
-
-                  <textarea class="form-control" name="message" placeholder="Message (*):" id="message"
-                    rows="7"></textarea>
-                </div>
-                <button type="submit" name="submit" class="btn btn-primary" id="submit"><i
-                    class="fa fa-paper-plane fa-fw"></i>
-                  Send</button>
-              </div>
-
-            </div>
-
-          </form>
+          </div>
 
         </div>
 
-      </div>
-
-      <div class="home-wrap">
-        <div class="static-bg">
+        <div class="home-wrap">
+          <div class="static-bg">
+          </div>
         </div>
-      </div>
 
+      </div>
     </div>
 
   </div>

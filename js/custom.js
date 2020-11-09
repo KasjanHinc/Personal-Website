@@ -102,7 +102,7 @@ skills.addEventListener('click', function () {
 
 var contact = document.querySelector('.nav-contact')
 contact.addEventListener('click', function () {
-  smoothScroll('#contact', 1000)
+  smoothScroll('.contact-scroll', 1000)
 })
 
 var herobutton = document.querySelector('.hero-button')

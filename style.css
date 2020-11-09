@@ -30,12 +30,12 @@ body {
   z-index: 2;
 }
 
-.offset:before {
+/* .offset:before {
   display: block;
   content: "";
   height: 4rem;
   margin-top: -4rem;
-}
+} */
 
 
 
@@ -244,13 +244,14 @@ body {
   height: .2rem;
   background-color: #1e77eb;
   margin: 0 auto;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
-.dark {
+/* .dark {
   background-color: rgba(0, 0, 0, 0.7);
   padding-bottom: 3rem;
-}
+  
+} */
 
 /* .blue {
  
@@ -261,7 +262,7 @@ body {
 .section-title {
   font-weight: bold;
   text-transform: uppercase;
-  padding-top: 3rem;
+  padding-top: 4rem;
   margin-bottom: 2rem;
   font-size: 3rem;
   color: white;
@@ -271,6 +272,15 @@ body {
   font-weight: bold;
   text-transform: uppercase;
 
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  color: white;
+}
+
+.section-title-contact {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 4rem;
   margin-bottom: 2rem;
   font-size: 3rem;
   color: white;
@@ -389,8 +399,8 @@ body {
 
   display: block;
   top: -1.9rem;
-left: 0;
-  height: 3rem;
+  left: 0;
+  height: 4rem;
   background: #FFB166;
   /* border: 1px solid black; */
   -webkit-transform: skewY(1.5deg);
@@ -416,6 +426,7 @@ left: 0;
 .portfolio-item img {
   width: 100%;
   border-radius: 3rem;
+  opacity: 0.8;
 }
 
 .portfolio-item {
@@ -518,8 +529,31 @@ left: 0;
 #skills::before {
   display: block;
   content: "";
+  height: 4rem;
   border-bottom: 5vw solid #172C5B;
   border-left: 100vw solid #FFB166;
+}
+
+#skills::after {
+  content: '';
+  position: relative;
+  display: block;
+  top: 1rem;
+  left: 0;
+  height: 4rem;
+  width:100%;
+  background: #172C5B;
+  /* border: 1px solid black; */
+  -webkit-transform: skewY(1.5deg);
+  -moz-transform: skewY(1.5deg);
+  -ms-transform: skewY(1.5deg);
+  -o-transform: skewY(1.5deg);
+  transform: skewY(1.5deg);
+  
+}
+
+.contact-extra-height {
+  margin-top: 2rem;
 }
 
 
@@ -539,7 +573,7 @@ left: 0;
 .skills-sm {
   color: white;
   word-wrap: break-word;
-  margin-bottom: 4rem;
+  /* margin-bottom: 4rem; */
 }
 
 .skills-lg h4 {
@@ -567,6 +601,7 @@ left: 0;
 /* CONTACT START */
 
 
+
 #contact .static-bg {
   background-image: url(./img/contact.png);
 }
@@ -582,12 +617,14 @@ left: 0;
 
 form {
   width: 60%;
+  margin-bottom: 3rem;
 }
 
 #contact-small {
   color: rgb(255, 255, 255, 0.5);
   font-weight: 100;
   margin: 1.5rem;
+  
 }
 
 #name::placeholder,
