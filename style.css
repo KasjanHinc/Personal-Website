@@ -594,7 +594,7 @@ textarea {
   font-weight: 100;
 }
 
-#submit {
+#btn-submit {
   border: 1px solid white;
   border-radius: 0;
   text-transform: uppercase;
@@ -605,9 +605,22 @@ textarea {
   background-color: transparent;
 }
 
-#submit:hover {
+#btn-submit:hover {
   border: 1px solid rgba(11, 92, 197, 0);
   background-color: rgba(11, 92, 197, 0.5);
+}
+
+#btn-submit-active {
+  border: none;
+  font-size: .8rem;
+  padding: .6rem 1.2rem;
+  margin: 1rem;
+  background-color: transparent;
+}
+
+#btn-submit-active:hover {
+  border: none;
+  background-color: transparent;
 }
 
 
