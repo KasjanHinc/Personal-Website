@@ -343,7 +343,13 @@ body {
   font-size: 1.2rem;
   text-shadow: .1rem .1rem .3rem black;
   text-decoration: none;
-  /* color: #1e77eb; */
+  color: #619dec;
+}
+.website-info a:hover {
+  font-size: 1.2rem;
+  text-shadow: .1rem .1rem .3rem black;
+  text-decoration: none;
+  color: #4d8ee4;
 }
 
 
