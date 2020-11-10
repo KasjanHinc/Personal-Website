@@ -47,6 +47,9 @@ ScrollReveal().reveal('.portfolio-item', { duration: 1000, rotate: { x: 20, z: 2
 ScrollReveal().reveal('.skill-icon-first', { duration: 1000, scale: 2, delay: 200 })
 ScrollReveal().reveal('.skill-icon', { duration: 1000, scale: 2, delay: 500 })
 ScrollReveal().reveal('form', { duration: 1000, scale: 1.5, delay: 200 })
+ScrollReveal().reveal('#socials-linkedin', { duration: 1000, scale: 1.5, delay: 200 })
+ScrollReveal().reveal('#socials-instagram', { duration: 1000, scale: 1.5, delay: 400 })
+ScrollReveal().reveal('#socials-github', { duration: 1000, scale: 1.5, delay: 600 })
 
 
 // SMOOTH SCROLL

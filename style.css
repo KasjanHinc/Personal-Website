@@ -253,11 +253,7 @@ body {
   
 } */
 
-/* .blue {
- 
-  background-color: rgba(30, 119, 235, 0.6);
-  padding: 0rem 2rem 3rem 2rem;
-} */
+
 
 .section-title {
   font-weight: bold;
@@ -606,14 +602,7 @@ body {
   background-image: url(./img/contact.png);
 }
 
-#portfolio .static-bg {
-  /* background-image: url(./img/portfolio.png); */
-}
 
-
-#skills .static-bg {
-  /* background-image: url(./img/skills.png); */
-}
 
 form {
   width: 60%;
@@ -711,7 +700,7 @@ textarea {
 footer {
   background-color: black;
   color: white;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 footer h3 {
@@ -732,8 +721,6 @@ footer svg.svg-inline--fa:hover {
   color: white !important;
 }
 
-
-
 #scroll-icon {
   margin-top: 2rem;
   cursor: pointer;
@@ -747,7 +734,8 @@ footer svg.svg-inline--fa:hover {
 #copyright {
   width: 100%;
   font-style: italic;
-  margin-top: 2rem;
+  margin: 0;
+
 }
 
 .social-icons {
@@ -760,6 +748,8 @@ footer svg.svg-inline--fa:hover {
 .social-icons li {
   margin: 0;
 }
+
+
 
 
 
@@ -854,6 +844,11 @@ footer svg.svg-inline--fa:hover {
 
   /* ABOUT */
 
+  #about .static-bg {
+    background-image: none;
+    background-color: #172C5B;
+  }
+
   .about-content {
     width: 100%;
     margin-top: 0;
@@ -861,6 +856,7 @@ footer svg.svg-inline--fa:hover {
   }
 
   #kasjan {
+    opacity: 0.9;
     width: 80%;
   }
 
@@ -922,6 +918,8 @@ footer svg.svg-inline--fa:hover {
 
 
   /* CONTACT */
+
+  
 
   form {
     width: 90%;
