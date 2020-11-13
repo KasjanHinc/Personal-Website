@@ -314,8 +314,7 @@ body {
 
 #kasjan {
   width: 80%;
-  /* border-radius: 50%; */
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .about-info {
