@@ -533,11 +533,20 @@ form {
   margin-bottom: 3rem;
 }
 
-#contact-small {
+.form-main {
+
+margin-top: 2rem;
+
+}
+
+#contact-small, #contact-cv {
   color: rgb(255, 255, 255, 0.5);
   font-weight: 100;
   margin: 1.5rem;
+  display: inline;
 }
+
+
 
 #name::placeholder,
 #email::placeholder,
@@ -857,16 +866,18 @@ footer svg.svg-inline--fa:hover {
 
   /* CONTACT */
 
-
-
   form {
     width: 90%;
     margin-top: 0;
     margin-bottom: 0;
   }
 
-  #contact-small {
-    margin: 1rem;
+  
+  #contact-small, #contact-cv {
+    color: rgb(255, 255, 255, 0.5);
+    font-weight: 100;
+    margin: .7rem;
+    display: block;
   }
 
   #form-mobile {
