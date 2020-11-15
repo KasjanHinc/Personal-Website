@@ -344,6 +344,7 @@ body {
   text-decoration: none;
   color: #619dec;
 }
+
 .website-info a:hover {
   font-size: 1.2rem;
   text-shadow: .1rem .1rem .3rem black;
@@ -366,7 +367,6 @@ body {
   left: 0;
   height: 4rem;
   background: #FFB166;
-  /* border: 1px solid black; */
   -webkit-transform: skewY(1.5deg);
   -moz-transform: skewY(1.5deg);
   -ms-transform: skewY(1.5deg);
@@ -380,7 +380,7 @@ body {
 
 .portfolio-item img {
   width: 100%;
-  /* border-radius: 3rem; */
+  height: 100%;
   opacity: 0.8;
 }
 
@@ -391,7 +391,7 @@ body {
 .portfolio-item:hover .portfolio-item-info {
   cursor: pointer;
   opacity: 1;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgb(66, 92, 137, 0.9);
   text-decoration: none;
   transition: ease .5s;
 }
@@ -401,7 +401,10 @@ body {
   position: absolute;
   color: transparent;
   background-color: transparent;
-  /* border-radius: 3rem; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
   width: 100%;
   height: 100%;
   top: 0;
@@ -424,7 +427,8 @@ body {
   color: white;
   top: 22%;
   font-weight: 100;
-  margin: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .fa-html5,
@@ -435,7 +439,7 @@ body {
 .fa-react,
 .fa-node-js,
 .fa-python {
-  color: rgb(255, 255, 255, 0.8);
+  color: rgb(255, 177, 102, 0.8);
 }
 
 .fa-quote-left,
@@ -535,11 +539,12 @@ form {
 
 .form-main {
 
-margin-top: 2rem;
+  margin-top: 2rem;
 
 }
 
-#contact-small, #contact-cv {
+#contact-small,
+#contact-cv {
   color: rgb(255, 255, 255, 0.5);
   font-weight: 100;
   margin: 1.5rem;
@@ -641,16 +646,16 @@ textarea {
 
 /* FOOTER START */
 
-
-footer {
-  background-color: #FFB166;
+#172C5B footer {
+  background-color: #172C5B;
   color: white;
   padding: 1rem 0;
 }
 
 footer h3 {
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
   text-shadow: .5px .5px .5px black;
+
 }
 
 footer p {
@@ -658,7 +663,7 @@ footer p {
 }
 
 footer svg.svg-inline--fa {
-  color: #172C5B;
+  color: rgb(255, 177, 102, 0.9);
   /* background-color: #172C5B; */
   margin: 1.2rem 1.2rem 1.2rem 1.2rem;
 }
@@ -676,10 +681,11 @@ footer svg.svg-inline--fa:hover {
 .footer-brand {
   width: 25%;
   border-radius: 50%;
+  opacity: 0.9;
 }
 
 #copyright {
-  color: black;
+  color: white;
   width: 100%;
   font-style: italic;
   margin: 0;
@@ -847,11 +853,6 @@ footer svg.svg-inline--fa:hover {
 
   .portfolio-item-info p {
     font-size: .7rem;
-    position: relative;
-    color: white;
-    top: 22%;
-    font-weight: 100;
-    margin: 1rem;
   }
 
 
@@ -872,8 +873,9 @@ footer svg.svg-inline--fa:hover {
     margin-bottom: 0;
   }
 
-  
-  #contact-small, #contact-cv {
+
+  #contact-small,
+  #contact-cv {
     color: rgb(255, 255, 255, 0.5);
     font-weight: 100;
     margin: .7rem;
@@ -948,8 +950,6 @@ Extra (xl) large devices (large desktops, 1200px and up)
 =============*/
 
 
-
-
 /* LOADER ANIMATION */
 
 .loader-wrapper {
@@ -993,7 +993,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: 	#d0966d;
+  background-color: #d0966d;
   -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
   animation: sk-foldCubeAngle 2.4s infinite linear both;
   -webkit-transform-origin: 100% 100%;
