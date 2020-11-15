@@ -16,7 +16,7 @@ $("#typed").typed({
 // TYPING ABOUT INFO
 
 var typed = new Typed('#abouttyped', {
-  strings: ['<i class="fas fa-quote-left"></i> I am an upcoming Software Developer.<br> For me learning new technologies and a passion for front end development is what made me go into this industry. Orderliness and creativity are some of my traits. For my future I want to be recognised highly for my skills in the industry. <i class="fas fa-quote-right"></i>'],
+  strings: ['<i class="fas fa-quote-left fa-2x"></i>  I am an upcoming Software Developer.<br> For me learning new technologies and a passion for front end development is what made me go into this industry. Orderliness and creativity are some of my traits. For my future I want to be recognised highly for my skills in the industry. <i class="fas fa-quote-right"></i>'],
   smartBackspace: true,
   typeSpeed: 50,
   startDelay: 2500
