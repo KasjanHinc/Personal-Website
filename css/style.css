@@ -418,7 +418,8 @@ body {
   font-size: 2.5rem;
   position: relative;
   color: white;
-  top: 20%;
+  margin: 0;
+  top: 15%;
 }
 
 .portfolio-item-info p {
@@ -426,10 +427,19 @@ body {
   font-size: .8rem;
   position: relative;
   color: white;
-  top: 22%;
+  top: 20%;
   font-weight: 100;
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.portfolio-item-info svg {
+  font-size: 2.5rem;
+  position: relative;
+  color: white;
+  font-size: 1.5rem;
+  top: 16%;
+  color: rgba(255, 177, 102, 0.8);
 }
 
 .fa-html5,
@@ -861,8 +871,10 @@ footer p {
 
 
   .portfolio-item-info p {
-    font-size: .7rem;
+    font-size: .6rem;
   }
+
+  
 
 
   /* SKILLS */
