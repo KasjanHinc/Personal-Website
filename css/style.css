@@ -448,13 +448,18 @@ body {
 .fa-github-square,
 .fa-react,
 .fa-node-js,
-.fa-python {
+.fa-python,
+.fa-database {
   color: rgb(255, 177, 102, 0.8);
 }
 
 .fa-quote-left,
 .fa-quote-right {
   color: rgb(30, 119, 235, 0.5);
+}
+
+.breakword {
+  word-wrap: break-word;
 }
 
 
