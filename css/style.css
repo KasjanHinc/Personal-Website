@@ -942,12 +942,12 @@ footer p {
     margin-bottom: 0;
   }
 
-
-  #contact-small,
-  #contact-cv {
-    color: rgb(255, 255, 255, 0.5);
-    font-weight: 100;
+  #contact-small {
     margin: .7rem;
+    display: block;
+  }
+
+  #btn-contact {
     display: block;
   }
 
@@ -967,6 +967,8 @@ footer p {
 
   /* FOOTER */
 
+
+  
   #scroll-icon {
     margin-top: 0rem;
   }
