@@ -559,11 +559,39 @@ form {
 }
 
 .form-main {
-  margin-top: 2.5rem;
+  margin-top: 3.5rem;
 }
 
-a {
+#btn-contact {
+  border: 1px solid rgb(255, 255, 255, 0.5);
+  border-radius: 0;
+  font-size: .8rem;
+  font-weight: 100;
+  padding: .6rem 1.2rem;
+  margin: 1rem;
+  color: white !important;
+  background-color: transparent;
+  transition: .3s;
+}
+
+#btn-contact:hover {
+  border: 1px solid rgba(11, 92, 197, 0);
+  background-color: rgba(11, 92, 197, 0.5);
   text-decoration: none;
+}
+
+#btn-contact-active {
+  border: none;
+  font-size: .8rem;
+  padding: .6rem 1.2rem;
+  margin: 1rem;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#btn-contact-active:hover {
+  border: none;
+  background-color: transparent;
 }
 
 #contact-small {
@@ -640,7 +668,7 @@ textarea {
   border-radius: 0;
   text-transform: uppercase;
   font-size: .8rem;
-  padding: .6rem 1.2rem;
+  padding: .6rem 1rem;
   margin: 1rem;
   color: white !important;
   background-color: transparent;
@@ -665,6 +693,10 @@ textarea {
 #btn-submit-active:hover {
   border: none;
   background-color: transparent;
+}
+
+#btn-submit svg.svg-inline--fa {
+  font-size: 1.2rem;
 }
 
 
