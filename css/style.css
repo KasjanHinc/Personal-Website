@@ -314,7 +314,7 @@ body {
 }
 
 #kasjan {
-  width: 70%;
+  width: 65%;
   opacity: 0.9;
 }
 
@@ -438,7 +438,7 @@ body {
   color: white;
   font-size: 1.5rem;
   top: 16%;
-  color: rgba(255, 177, 102, 0.8);
+  color: rgba(255, 177, 102, 0.6);
 }
 
 .fa-html5,
@@ -559,19 +559,19 @@ form {
 }
 
 .form-main {
-
-  margin-top: 2rem;
-
+  margin-top: 2.5rem;
 }
 
-#contact-small,
-#contact-cv {
+a {
+  text-decoration: none;
+}
+
+#contact-small {
   color: rgb(255, 255, 255, 0.5);
   font-weight: 100;
   margin: 1.5rem;
   display: inline;
 }
-
 
 
 #name::placeholder,
@@ -650,6 +650,7 @@ textarea {
 #btn-submit:hover {
   border: 1px solid rgba(11, 92, 197, 0);
   background-color: rgba(11, 92, 197, 0.5);
+  text-decoration: none;
 }
 
 #btn-submit-active {
@@ -658,6 +659,7 @@ textarea {
   padding: .6rem 1.2rem;
   margin: 1rem;
   background-color: transparent;
+  text-decoration: none;
 }
 
 #btn-submit-active:hover {

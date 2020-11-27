@@ -26,7 +26,7 @@ var typed = new Typed('#abouttyped', {
 // LOADER ON START
 
 $(window).on('load', function () {
-  $('.loader-wrapper').fadeOut('slow')
+  $('.loader-wrapper').slideUp()
 })
 
 
