@@ -43,13 +43,24 @@ function seeMore() {
 ScrollReveal().reveal('.desc', { duration: 1000 })
 ScrollReveal().reveal('#kasjan', { duration: 1000, delay: 200 })
 ScrollReveal().reveal('.about-info', { duration: 3000 })
-ScrollReveal().reveal('.portfolio-item', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 200 })
-ScrollReveal().reveal('.skill-icon-first', { duration: 1000, scale: 2, delay: 200 })
+ScrollReveal().reveal('.port1', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 200 })
+ScrollReveal().reveal('.port2', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 400 })
+ScrollReveal().reveal('.port3', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 600 })
+ScrollReveal().reveal('.skill-icon-middle', { duration: 1000, scale: 2, delay: 200 })
 ScrollReveal().reveal('.skill-icon', { duration: 1000, scale: 2, delay: 500 })
-ScrollReveal().reveal('form', { duration: 1000, scale: 1.5, delay: 200 })
+
+ScrollReveal().reveal('#btn-contact', { duration: 1000, scale: 1.5, delay: 200 })
+ScrollReveal().reveal('.form-left', { origin: 'left', distance: '300px', duration: 1000, scale: 1.5, delay: 400 })
+ScrollReveal().reveal('.form-right', { origin: 'right', distance: '300px', duration: 1000, scale: 1.5, delay: 600 })
+
+
+
 ScrollReveal().reveal('#socials-linkedin', { duration: 1000, scale: 1.5, delay: 200 })
 ScrollReveal().reveal('#socials-instagram', { duration: 1000, scale: 1.5, delay: 400 })
 ScrollReveal().reveal('#socials-github', { duration: 1000, scale: 1.5, delay: 600 })
+
+
+
 
 
 // SMOOTH SCROLL
