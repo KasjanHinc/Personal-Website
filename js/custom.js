@@ -47,7 +47,8 @@ ScrollReveal().reveal('.port1', { duration: 1000, rotate: { x: 20, z: 20 }, dela
 ScrollReveal().reveal('.port2', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 400 })
 ScrollReveal().reveal('.port3', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 600 })
 ScrollReveal().reveal('.skill-icon-middle', { duration: 1000, scale: 2, delay: 200 })
-ScrollReveal().reveal('.skill-icon', { duration: 1000, scale: 2, delay: 500 })
+ScrollReveal().reveal('.skill-icon-lg', { duration: 1000, scale: 2, delay: 400 })
+ScrollReveal().reveal('.col-flex', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 800 })
 
 ScrollReveal().reveal('#btn-contact', { duration: 1000, scale: 1.5, delay: 200 })
 ScrollReveal().reveal('.form-left', { origin: 'left', distance: '300px', duration: 1000, scale: 1.5, delay: 400 })
