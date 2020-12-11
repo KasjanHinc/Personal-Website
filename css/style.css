@@ -15,8 +15,21 @@ body {
   background-color: #172C5B;
 }
 
+
+
 * {
   box-sizing: border-box;
+}
+
+::selection {
+  background: rgb(0, 0, 0, 0.5);
+  /* WebKit/Blink Browsers */
+  color: #FFB166;
+}
+
+::-moz-selection {
+  background: rgb(0, 0, 0, 0.5);
+  /* Gecko Browsers */
 }
 
 
@@ -451,8 +464,8 @@ body {
 .fa-node-js,
 .fa-python,
 .fa-database,
-.fa-server {
-  /* color: rgb(255, 177, 102, 0.8); */
+.fa-server,
+.fa-satellite-dish {
   color: #172C5B;
 }
 
@@ -579,6 +592,10 @@ body {
   margin-top: .5rem;
   padding: .5rem;
   background-color: #172C5B;
+}
+
+.skill2, .skill4, .skill6, .skill8, .skill10 {
+  margin-top: 2rem;
 }
 
 
@@ -974,7 +991,10 @@ footer p {
 
   .skills-sm p {
     font-size: 10px;
+  }
 
+  .skill2, .skill4, .skill6, .skill8, .skill10 {
+    margin-top: 0rem;
   }
 
   /* CONTACT */
