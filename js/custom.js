@@ -15,12 +15,17 @@ $("#typed").typed({
 
 // TYPING ABOUT INFO
 
-var typed = new Typed('#abouttyped', {
-  strings: ['<i class="fas fa-quote-left fa-2x"></i>  I am a Junior Software Developer.<br> For me learning new technologies and a passion for front end development is what made me go into this industry. Orderliness and creativity are some of my traits. For my future I want to be recognised highly for my skills in the industry. <i class="fas fa-quote-right"></i>'],
-  smartBackspace: true,
-  typeSpeed: 50,
-  startDelay: 2500
-})
+function aboutTyped(el) {
+
+  var typed = new Typed('#abouttyped', {
+    strings: ['<i class="fas fa-quote-left fa-2x"></i>  I am a Junior Software Developer.<br> ^500 For me learning new technologies and a passion for front end development is what made me go into this industry. ^300 Orderliness and creativity are some of my traits. ^500 For my future I want to be recognised highly for my skills in the industry. <i class="fas fa-quote-right"></i>'],
+    smartBackspace: true,
+    typeSpeed: 30
+  })
+
+
+}
+
 
 
 // LOADER ON START
@@ -42,7 +47,7 @@ function seeMore() {
 // SCROLL ANIMATIONS
 ScrollReveal().reveal('.desc', { duration: 1000 })
 ScrollReveal().reveal('#kasjan', { duration: 1000, delay: 200 })
-ScrollReveal().reveal('.about-info', { duration: 3000 })
+ScrollReveal().reveal('.about-info', { duration: 1000, afterReveal: aboutTyped })
 ScrollReveal().reveal('.port1', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 200 })
 ScrollReveal().reveal('.port2', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 400 })
 ScrollReveal().reveal('.port3', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 600 })
