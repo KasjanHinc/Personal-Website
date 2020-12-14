@@ -529,7 +529,6 @@ body {
 
 .skills-sm {
   color: white;
-  /* word-wrap: break-word; */
 }
 
 .skills-lg h4 {
@@ -555,17 +554,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 0!important; */
 }
 
 .skills-sm-tile {
   width: 10rem;
   height: 10rem;
-  /* border: 1px solid rgb(255, 255, 255, 0.5); */
-  /* margin: .7rem; */
   background-color: rgb(255, 177, 102, 0.9);
   box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.5);
-  /* overflow-y: scroll; */
 }
 
 .skills-sm h4 {
@@ -579,14 +574,10 @@ body {
 
 .skills-sm p {
   color: white;
-  /* border: 1.5px solid rgb(255, 255, 255, 0.8); */
-  /* border-top: 2px solid  #172C5B; */
   height: 37.5%;
   overflow-y: hidden;
-  /* text-shadow: .3px .3px .3px black; */
   font-weight: 200;
-  font-size: 12px;
-  /* margin: 1rem; */
+  font-size: 11px;
   width: 100%;
   margin-top: .5rem;
   padding: .5rem;
@@ -764,10 +755,11 @@ textarea {
 /* FOOTER START */
 
 footer {
-  background-color: #172C5B;
   color: white;
   padding: 1rem 0;
+  backdrop-filter: blur(5px);
 }
+
 
 footer h3 {
   margin-top: .5rem;
