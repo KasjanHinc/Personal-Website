@@ -1,3 +1,7 @@
+// HIDE NAVBAR ON CLICK (MOBILE)
+$('.navbar-nav>li>a').on('click', function () {
+  $('.navbar-collapse').collapse('hide')
+})
 
 // TYPING HERO ANIMATION
 $("#typed").typed({
@@ -146,7 +150,4 @@ scrollhome.addEventListener('click', function () {
 
 
 
-// HIDE NAVBAR ON CLICK (MOBILE)
-$('.navbar-nav>li>a').on('click', function () {
-  $('.navbar-collapse').collapse('hide')
-})
+
