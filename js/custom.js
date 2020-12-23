@@ -48,13 +48,16 @@ function seeMore() {
 }
 
 
-// SCROLL ANIMATIONS
+
+// SCROLL ANIMATIONS 
 ScrollReveal().reveal('.desc', { duration: 1000 })
 ScrollReveal().reveal('#kasjan', { duration: 1000, delay: 200 })
 ScrollReveal().reveal('.about-info', { duration: 1000, afterReveal: aboutTyped })
 ScrollReveal().reveal('.port1', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 200 })
 ScrollReveal().reveal('.port2', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 400 })
 ScrollReveal().reveal('.port3', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 600 })
+ScrollReveal().reveal('.port4', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 800 })
+ScrollReveal().reveal('.port5', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 1000 })
 ScrollReveal().reveal('.skill-icon-middle', { duration: 1000, scale: 2, delay: 200 })
 ScrollReveal().reveal('.skill-icon-lg', { duration: 1000, scale: 2, delay: 400 })
 ScrollReveal().reveal('.skill1', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 400 })
@@ -151,3 +154,29 @@ scrollhome.addEventListener('click', function () {
 
 
 
+// SCROLL REVEAL FOR MOBILE
+
+const mobile = window.matchMedia('(max-width: 767px)')
+
+if (mobile.matches) {
+
+  ScrollReveal().reveal('.port1', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 200 })
+  ScrollReveal().reveal('.port2', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 200 })
+  ScrollReveal().reveal('.port3', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 200 })
+  ScrollReveal().reveal('.port4', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 200 })
+  ScrollReveal().reveal('.port5', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 200 })
+
+  ScrollReveal().reveal('.skill-icon-middle', { duration: 1000, scale: 2, delay: 200 })
+  ScrollReveal().reveal('.skill-icon-lg', { duration: 1000, scale: 2, delay: 200 })
+
+  ScrollReveal().reveal('.skill1', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 400 })
+  ScrollReveal().reveal('.skill2', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 400 })
+  ScrollReveal().reveal('.skill3', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 400 })
+  ScrollReveal().reveal('.skill4', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 400 })
+  ScrollReveal().reveal('.skill5', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 400 })
+  ScrollReveal().reveal('.skill6', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 400 })
+  ScrollReveal().reveal('.skill7', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 400 })
+  ScrollReveal().reveal('.skill8', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 400 })
+  ScrollReveal().reveal('.skill9', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 400 })
+  ScrollReveal().reveal('.skill10', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 400 })
+}
