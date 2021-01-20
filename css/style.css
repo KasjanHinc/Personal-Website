@@ -407,11 +407,7 @@ body {
 .portfolio-item:hover .portfolio-item-info {
   opacity: 1;
   text-decoration: none;
-  /* backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px); */
 }
-
-
 
 .portfolio-item-info {
   opacity: 0;
@@ -701,7 +697,7 @@ input[type='number']::-webkit-outer-spin-button {
 #message {
   color: white;
   background-color: rgba(0, 0, 0, 0.3);
-  border-color: #1e77eb;
+  border-color: hsl(214, 84%, 52%);
   resize: none;
 }
 
