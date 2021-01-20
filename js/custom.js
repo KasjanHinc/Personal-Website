@@ -58,6 +58,7 @@ ScrollReveal().reveal('.port2', { duration: 1000, rotate: { x: 20, z: 20 }, dela
 ScrollReveal().reveal('.port3', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 600 })
 ScrollReveal().reveal('.port4', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 800 })
 ScrollReveal().reveal('.port5', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 1000 })
+ScrollReveal().reveal('.port6', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 1200 })
 ScrollReveal().reveal('.skill-icon-middle', { duration: 1000, scale: 2, delay: 200 })
 ScrollReveal().reveal('.skill-icon-lg', { duration: 1000, scale: 2, delay: 400 })
 ScrollReveal().reveal('.skill1', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 400 })
