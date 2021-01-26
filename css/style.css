@@ -390,7 +390,7 @@ body {
 }
 
 .portfolio-set {
-  padding-bottom: 4rem;
+  /* padding-bottom: 4rem; */
 }
 
 .portfolio-item img {
@@ -454,9 +454,9 @@ body {
 }
 
 .btn-portfolio {
-  display: inline!important;
-  margin: 0!important;
-  margin: 0 .5rem 0 .5rem!important;
+  display: inline !important;
+  margin: 0 !important;
+  margin: 0 .5rem 0 .5rem !important;
 }
 
 .fa-html5,
@@ -480,6 +480,31 @@ body {
 .breakword {
   word-wrap: break-word;
 }
+
+
+.portfolio-more {
+  text-align: center;
+  transition: all .5s ease-in-out;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+
+}
+
+.portfolio-more-reveal {
+  text-align: center;
+  transition: all .5s ease-in-out;
+  opacity: 1;
+  height: 17rem;
+  overflow: hidden;
+}
+
+.btn-port {
+  margin: 0;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
 
 
 /* SKILLS START */
@@ -528,7 +553,7 @@ body {
 }
 
 .skills-lg i {
-  color: rgb(255, 177, 102, 0.9)!important;
+  color: rgb(255, 177, 102, 0.9) !important;
 }
 
 .skills-sm {
@@ -589,7 +614,11 @@ body {
   background-color: #172C5B;
 }
 
-.skill2, .skill4, .skill6, .skill8, .skill10 {
+.skill2,
+.skill4,
+.skill6,
+.skill8,
+.skill10 {
   margin-top: 2rem;
 }
 
@@ -870,7 +899,7 @@ footer p {
 
 
   .navbar {
-    background:rgb(23, 44, 91, 0.7)!important;
+    background: rgb(23, 44, 91, 0.7) !important;
   }
 
 
@@ -987,7 +1016,11 @@ footer p {
     font-size: 14px;
   }
 
-  .skill2, .skill4, .skill6, .skill8, .skill10 {
+  .skill2,
+  .skill4,
+  .skill6,
+  .skill8,
+  .skill10 {
     margin-top: 0rem;
   }
 
@@ -1083,9 +1116,6 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 .loader-wrapper {
   position: fixed;
-  /* background-image: url(./img/hero-loading.png);
-  background-size: cover;
-  background-position: center center; */
   background-color: #172C5B;
   width: 100%;
   height: 100%;

@@ -39,6 +39,8 @@ $(window).on('load', function () {
 })
 
 
+
+
 // VIEW WEBSITE INFO
 function seeMore() {
   const text = document.querySelector('.website-info-idea')
@@ -47,18 +49,25 @@ function seeMore() {
   text2.classList.toggle('website-info-technical-reveal')
 }
 
+// VIEW MORE PROJECTS
+function seeMoreProjects() {
+  const more = document.querySelector('.portfolio-more')
+  more.classList.toggle('portfolio-more-reveal')
+  
+}
+
 
 
 // SCROLL ANIMATIONS 
 ScrollReveal().reveal('.desc', { duration: 1000 })
 ScrollReveal().reveal('#kasjan', { duration: 1000, delay: 200 })
 ScrollReveal().reveal('.about-info', { duration: 1000, afterReveal: aboutTyped })
-ScrollReveal().reveal('.port1', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 200 })
-ScrollReveal().reveal('.port2', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 400 })
-ScrollReveal().reveal('.port3', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 600 })
-ScrollReveal().reveal('.port4', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 800 })
-ScrollReveal().reveal('.port5', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 1000 })
-ScrollReveal().reveal('.port6', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 1200 })
+ScrollReveal().reveal('.port1', { duration: 800, rotate: { x: 20, z: 20 }, delay: 200 })
+ScrollReveal().reveal('.port2', { duration: 800, rotate: { x: 20, z: 20 }, delay: 400 })
+ScrollReveal().reveal('.port3', { duration: 800, rotate: { x: 20, z: 20 }, delay: 600 })
+ScrollReveal().reveal('.port4', { duration: 800, rotate: { x: 20, z: 20 }, delay: 800 })
+ScrollReveal().reveal('.port5', { duration: 800, rotate: { x: 20, z: 20 }, delay: 1000 })
+ScrollReveal().reveal('.port6', { duration: 800, rotate: { x: 20, z: 20 }, delay: 1200 })
 ScrollReveal().reveal('.skill-icon-middle', { duration: 1000, scale: 2, delay: 200 })
 ScrollReveal().reveal('.skill-icon-lg', { duration: 1000, scale: 2, delay: 400 })
 ScrollReveal().reveal('.skill1', { duration: 1000, rotate: { x: 20, z: 20 }, delay: 400 })
