@@ -495,7 +495,7 @@ body {
   text-align: center;
   transition: all .5s ease-in-out;
   opacity: 1;
-  height: 17rem;
+  height: 32rem;
   overflow: hidden;
 }
 
@@ -1001,7 +1001,7 @@ footer p {
   }
 
   .portfolio-more-reveal {
-    height: 43rem;
+    height: 58rem;
   }
 
 
