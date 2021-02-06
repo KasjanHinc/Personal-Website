@@ -161,7 +161,9 @@ scrollhome.addEventListener('click', function () {
   smoothScroll('#home', 1000)
 })
 
-
+particlesJS.load('particles-js', 'particles.json', function(){
+  console.log('particles.json loaded...')
+})
 
 
 // SCROLL REVEAL FOR MOBILE

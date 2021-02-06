@@ -511,12 +511,22 @@ body {
 
 
 #skills {
+  position: relative;
   background-color: #172C5B;
+}
+
+#particles-js {
+  position: absolute;
+  background: transparent;
+  width: 100%;
+  height: 90%;
+  overflow-y: hidden;
+  z-index: 999;
 }
 
 #skills::before {
   display: block;
-  content: "";
+  content: '';
   height: 4rem;
   border-bottom: 5vw solid #172C5B;
   border-left: 100vw solid #FFB166;
@@ -536,7 +546,7 @@ body {
   -ms-transform: skewY(1.5deg);
   -o-transform: skewY(1.5deg);
   transform: skewY(1.5deg);
-  z-index: 1;
+  z-index: 999;
 
 }
 
@@ -625,6 +635,9 @@ body {
 
 /* CONTACT START */
 
+#contact {
+  z-index: 999;
+}
 
 #contact .static-bg {
   background-image: url(../img/contact.png);
