@@ -550,6 +550,8 @@ body {
 
 }
 
+
+
 .contact-extra-height {
   margin-top: 2rem;
 }
@@ -564,6 +566,7 @@ body {
   text-transform: uppercase;
   word-wrap: break-word;
   margin: 1rem .5rem 1rem .5rem;
+  z-index: 999;
 }
 
 .skills-lg i {
