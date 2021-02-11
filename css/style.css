@@ -556,7 +556,16 @@ body {
   margin-top: 2rem;
 }
 
-.skill1, .skill2, .skill3, .skill4, .skill5, .skill6, .skill7, .skill8, .skill9, .skill10 {
+.skill1,
+.skill2,
+.skill3,
+.skill4,
+.skill5,
+.skill6,
+.skill7,
+.skill8,
+.skill9,
+.skill10 {
   z-index: 999;
 }
 
@@ -607,7 +616,7 @@ body {
   height: 10rem;
   background-color: rgb(255, 177, 102, 0.9);
   box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.5);
-  
+
 }
 
 .skills-sm h4 {
@@ -833,8 +842,17 @@ footer p {
   transition: .3s;
 }
 
+.fa-hand-pointer {
+  font-size: 3em !important;
+  color: rgb(30, 119, 235, 0.8) !important;
+  animation: arrow 7s infinite linear;
+  transform: rotate(90deg);
 
-.social-icons i:hover {
+}
+
+
+.fa-linkedin:hover,
+.fa-github-square:hover {
   color: white !important;
 }
 
@@ -1264,3 +1282,27 @@ Extra (xl) large devices (large desktops, 1200px and up)
 }
 
 /* END LOADER ANIMATION */
+
+
+/* SOCIALS ARROW ANIMATION */
+
+@keyframes arrow {
+
+  30% {
+    transform: rotate(90deg)
+  }
+
+  40% {
+    transform: rotate(-450deg)
+  }
+
+  90% {
+    transform: rotate(-450deg)
+  }
+
+  100% {
+    transform: rotate(90deg)
+  }
+
+
+}

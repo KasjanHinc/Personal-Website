@@ -53,7 +53,7 @@ function seeMore() {
 function seeMoreProjects() {
   const more = document.querySelector('.portfolio-more')
   more.classList.toggle('portfolio-more-reveal')
-  
+
 }
 
 
@@ -88,8 +88,8 @@ ScrollReveal().reveal('.form-right', { origin: 'right', distance: '300px', durat
 
 
 ScrollReveal().reveal('#socials-linkedin', { duration: 1000, scale: 1.5, delay: 200 })
-ScrollReveal().reveal('#socials-instagram', { duration: 1000, scale: 1.5, delay: 400 })
-ScrollReveal().reveal('#socials-github', { duration: 1000, scale: 1.5, delay: 600 })
+ScrollReveal().reveal('#socials-arrow', { duration: 1000, scale: 1.5, delay: 600 })
+ScrollReveal().reveal('#socials-github', { duration: 1000, scale: 1.5, delay: 400 })
 
 
 
@@ -161,7 +161,7 @@ scrollhome.addEventListener('click', function () {
   smoothScroll('#home', 1000)
 })
 
-particlesJS.load('particles-js', 'particles.json', function(){
+particlesJS.load('particles-js', 'particles.json', function () {
   console.log('particles.json loaded...')
 })
 
