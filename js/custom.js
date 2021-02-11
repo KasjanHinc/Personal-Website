@@ -39,8 +39,6 @@ $(window).on('load', function () {
 })
 
 
-
-
 // VIEW WEBSITE INFO
 function seeMore() {
   const text = document.querySelector('.website-info-idea')
@@ -55,8 +53,6 @@ function seeMoreProjects() {
   more.classList.toggle('portfolio-more-reveal')
 
 }
-
-
 
 // SCROLL ANIMATIONS 
 ScrollReveal().reveal('.desc', { duration: 1000 })
