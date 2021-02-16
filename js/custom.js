@@ -22,7 +22,7 @@ $("#typed").typed({
 function aboutTyped(el) {
 
   var typed = new Typed('#abouttyped', {
-    strings: ['<i class="fas fa-quote-left fa-2x"></i>  I am a Junior Software Developer.<br> ^500 For me learning new technologies and a passion for front end development is what made me go into this industry. ^300 Orderliness and creativity are some of my traits. ^500 For my future I want to be recognised highly for my skills in the industry. <i class="fas fa-quote-right"></i>'],
+    strings: ['<i class="fas fa-quote-left fa-2x"></i>  I am a creative developer and team player with great communication. I have been exposed to a wide variety of modern technologies and believe to have an understanding of full stack development and consider myself to be very adaptable. I’m looking for a role where I can expand my knowledge and work on modern technologies and languages. <i class="fas fa-quote-right"></i>'],
     smartBackspace: true,
     typeSpeed: 30
   })
