@@ -1,10 +1,14 @@
 import React from 'react'
 import { Link, withRouter } from 'react-router-dom'
 import Fade from 'react-reveal/Fade'
+import $ from 'jquery'
 
 
 const Navbar = () => {
 
+  function closeNav() {
+    $('.navbar-collapse').collapse('hide')
+  }
 
   return <nav className="navbar navbar-expand-md navbar-dark nav-background fixed-top">
 
@@ -13,7 +17,7 @@ const Navbar = () => {
     </Fade>
 
 
-    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+    <button className="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive">
       <span className="navbar-toggler-icon"></span>
     </button>
 
@@ -22,23 +26,23 @@ const Navbar = () => {
 
 
         <li className="nav-item">
-          <Link to="/" className="nav-link">HOME</Link>
+          <Link to="/" onClick={closeNav} className="nav-link">HOME</Link>
         </li>
 
         <li className="nav-item">
-          <Link to="/about" className="nav-link">ABOUT</Link>
+          <Link to="/about" onClick={closeNav} className="nav-link">ABOUT</Link>
         </li>
 
         <li className="nav-item">
-          <Link to="/portfolio" className="nav-link">PORTFOLIO</Link>
+          <Link to="/portfolio" onClick={closeNav} className="nav-link">PORTFOLIO</Link>
         </li>
 
         <li className="nav-item">
-          <Link to="/skills" className="nav-link">SKILLS</Link>
+          <Link to="/skills" onClick={closeNav} className="nav-link">SKILLS</Link>
         </li>
 
         <li className="nav-item">
-          <Link to="/contact" className="nav-link">CONTACT</Link>
+          <Link to="/contact" onClick={closeNav} className="nav-link">CONTACT</Link>
         </li>
 
 

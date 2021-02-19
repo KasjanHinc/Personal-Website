@@ -10,7 +10,7 @@ const Home = () => {
   return <div id="landing" >
 
 
-    <div className="landing">
+    <div id="landing-container">
 
 
       <Fade delay={200}>

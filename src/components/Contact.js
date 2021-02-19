@@ -48,7 +48,7 @@ const Contact = () => {
           <a href="mailto:kasjan.hinc@gmail.com" className="btn btn-outline-light btn-lg btn-contact"><p className="animated">kasjan.hinc@gmail.com</p></a>
         </Fade>
 
-        <div className="row form-main" id="form-mobile">
+        <div className="row form-main" >
 
           <Fade left>
             <div className="col form-left">

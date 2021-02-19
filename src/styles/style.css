@@ -4,6 +4,7 @@
   color: white;
   box-sizing: border-box;
   font-family: 'Lato', sans-serif !important;
+  /* overflow-x: hidden; */
 }
 
 html {
@@ -70,7 +71,7 @@ canvas {
   height: 100vh;
 }
 
-.landing {
+#landing-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -485,6 +486,191 @@ textarea {
 }
 
 
+
+
+@media (max-width: 767px) {
+
+  /* UNIVERSAL */
+
+  #logo {
+    width: 10vw;
+  }
+
+  /* HOME */
+
+  #intro-welcome {
+    font-size: 8vw;
+  }
+
+  #intro {
+    font-size: 20vw;
+    text-align: center;
+  }
+
+  #intro-lower {
+    font-size: 6vw;
+    margin-right: 1vw;
+    margin-left: 1vw;
+  }
+
+  /* ABOUT */
+
+  #about {
+    justify-content: start;
+  }
+
+  #about-me {
+    flex-direction: column-reverse;
+    justify-content: center;
+    height: 85vh;
+    margin-top: 15vh;
+  }
+
+  .about-left {
+    width: 70vw;
+    text-align: center;
+  }
+
+  #about-right {
+    width: 70vw;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  #kasjan {
+    width: 50vw;
+  }
+
+  #about-typed {
+    font-size: 4.5vw;
+    height: inherit;
+  }
+
+  .btn-about {
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+
+
+  .about-left-wide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    height: 100vh;
+  }
+
+  .about-website-container {
+    flex-direction: column;
+    height: 70vh;
+  }
+
+  #website-info-title {
+    font-size: 8vw;
+  }
+
+  #website-info {
+    margin-bottom: 0;
+  }
+
+  .website-info-idea {
+    margin-bottom: 5rem;
+  }
+
+
+
+  /* PORTFOLIO */
+
+
+  #portfolio-container {
+    flex-direction: column;
+    width: 90vw;
+    height: 90vh;
+  }
+
+  .carousel-wrapper {
+    width: 100%;
+  }
+
+  #project-desc,
+  #project-text {
+    width: 100%;
+  }
+
+  #project-title {
+    font-size: 7vw;
+  }
+
+  #project-text {
+    font-size: vw;
+  }
+
+  #project-btns {
+    width: 90vw;
+  }
+
+  /* SKILLS */
+
+  #skills {
+    overflow-y: scroll;
+  }
+
+
+  #skills-container {
+    height: 80vh;
+    width: 90vw;
+  }
+
+  #skill {
+    width: 90vw;
+    height: 90vw;
+    justify-content: center;
+  }
+
+  #skill-svg {
+    font-size: 20vw;
+    margin-bottom: 1rem;
+  }
+
+  #skill-info {
+    font-size: 8vw;
+  }
+
+
+  /* CONTACT */
+
+  #contact {
+    overflow-y: scroll;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+  }
+
+  #form {
+    margin-top: 20vh;
+  }
+
+  #form-container {
+    width: 90vw;
+    height: 100vh;
+  }
+
+  .form-main {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 90vw;
+    height: 100vh;
+  }
+
+  .btn-submit {
+    margin-bottom: 2rem;
+  }
+}
 
 
 

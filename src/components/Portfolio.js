@@ -238,7 +238,7 @@ const Portfolio = () => {
         <Fade appear spy={project.desc}>
           <h2 id="project-text" >{project.desc}</h2>
           <div id="project-btns">
-            <a href={project.github} target="_blank" rel="noreferrer" className="btn btn-outline-light btn-lg" ><p className="animated" >GitHub</p></a>
+            <a href={project.github} target="_blank" rel="noreferrer" className="btn btn-outline-light btn-lg btn-mob" ><p className="animated" >GitHub</p></a>
             <a href={project.live} target="_blank" rel="noreferrer" className="btn btn-outline-light btn-lg" ><p className="animated" >LIVE</p></a>
           </div>
         </Fade>
