@@ -21,6 +21,7 @@ const Home = () => {
             backSpeed={100}
             loop >
           </Typed>
+           my name is
         </p>
       </Fade>
 
