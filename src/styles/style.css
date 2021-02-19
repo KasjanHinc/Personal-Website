@@ -4,12 +4,10 @@
   color: white;
   box-sizing: border-box;
   font-family: 'Lato', sans-serif !important;
-  /* overflow-x: hidden; */
 }
 
 html {
   scroll-behavior: smooth;
-  background-color: rgb(255, 255, 255);
 }
 
 #root {
@@ -301,7 +299,6 @@ canvas {
   width: 12vw;
   height: 12vw;
   margin: 1rem;
-  /* backdrop-filter: blur(3px); */
   border-radius: 50%;
 }
 
@@ -329,7 +326,6 @@ canvas {
 
 #form-container {
   width: 60vw;
-  /* backdrop-filter: blur(3px); */
 }
 
 form {
