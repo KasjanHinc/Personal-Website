@@ -507,7 +507,7 @@ textarea {
     font-size: 2rem !important;
   }
 
-  #navbarResponsive {
+  .navbar-nav {
     margin-top: 3rem;
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
@@ -704,8 +704,12 @@ textarea {
   #email,
   #phone,
   #company {
-    font-size: initial;
+    font-size: 1.5rem;
   }
+
+
+
+
 }
 
 
