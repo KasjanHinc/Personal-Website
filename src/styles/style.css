@@ -365,9 +365,14 @@ form {
 #email::placeholder,
 #phone::placeholder,
 #company::placeholder {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: rgb(255, 255, 255, 0.5);
   font-weight: 100;
+}
+
+input {
+  line-height: 20 !important;
+
 }
 
 
