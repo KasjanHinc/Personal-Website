@@ -50,7 +50,9 @@ canvas {
 
 /* NAV */
 
-
+.navbar-nav {
+  z-index: 999 !important;
+}
 
 .nav-link {
   font-size: 1rem !important;
@@ -498,9 +500,12 @@ textarea {
 
   /* NAV */
 
+
+
   .nav-link {
     font-size: 2rem !important;
-    transition: ease .3s;
+    padding-right: 1rem !important;
+
   }
 
   .nav-link:hover {
@@ -509,8 +514,8 @@ textarea {
 
   .navbar-nav {
     margin-top: 3rem;
-    backdrop-filter: blur(7px);
-    -webkit-backdrop-filter: blur(7px);
+    background: linear-gradient(71deg, rgba(0, 10, 162, 1) 0%, rgba(22, 82, 240, 1) 100%);
+    border-bottom: 1px solid white;
   }
 
   /* HOME */
@@ -704,7 +709,15 @@ textarea {
   #email,
   #phone,
   #company {
-    font-size: 1.5rem;
+    font-size: 2rem;
+  }
+
+  #name::placeholder,
+  #email::placeholder,
+  #phone::placeholder,
+  #company::placeholder {
+    font-size: 2rem;
+
   }
 
 
