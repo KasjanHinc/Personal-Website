@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { HashRouter, Switch, Route } from 'react-router-dom'
 
 
 import './bootstrap/dist/css/bootstrap.min.css'
@@ -14,7 +14,7 @@ import Skills from './components/Skills'
 import Contact from './components/Contact'
 
 const App = () => (
-  <BrowserRouter>
+  <HashRouter>
     <ParticlesBG />
     <Navbar />
     <Switch>
@@ -24,7 +24,7 @@ const App = () => (
       <Route exact path="/skills" component={Skills} />
       <Route exact path="/contact" component={Contact} />
     </Switch>
-  </BrowserRouter>
+  </HashRouter>
 )
 
 export default App
