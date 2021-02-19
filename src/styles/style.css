@@ -712,19 +712,17 @@ textarea {
   #email,
   #phone,
   #company {
-    font-size: 9vw;
+    font-size: initial;
   }
 
   #name::placeholder,
   #email::placeholder,
   #phone::placeholder,
   #company::placeholder {
-    font-size: 10vw;
+    font-size: initial;
   }
 
-  .form-control {
-    /* height: 10vh !important; */
-  }
+
 
 
 
