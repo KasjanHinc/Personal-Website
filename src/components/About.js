@@ -83,7 +83,7 @@ const About = () => {
       {about === 'me' && <div id="about-right">
 
         <Fade delay={500}>
-          <img id="kasjan" src="./img/kasjan.png" />
+          <img id="kasjan" src="./src/img/kasjan.png" />
         </Fade>
 
       </div>}

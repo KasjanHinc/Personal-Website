@@ -134,7 +134,7 @@ const Portfolio = () => {
         <Carousel >
 
           <div id="project-container" onClick={() => handleProject(0)} >
-            <img id="project-image" src="./img/cryptox.png" onLoad={() => setLoaded(true)} />
+            <img id="project-image" src="./src/img/cryptox.png" onLoad={() => setLoaded(true)} />
             <div className="legend">
               <h5 id="project-title" >CryptoX</h5>
             </div>
@@ -142,7 +142,7 @@ const Portfolio = () => {
 
 
           <div id="project-container" onClick={() => handleProject(1)} >
-            <img id="project-image" src="./img/horizon.png" />
+            <img id="project-image" src="./src/img/horizon.png" />
             <div className="legend">
               <h5 id="project-title" >Horizon</h5>
             </div>
@@ -150,7 +150,7 @@ const Portfolio = () => {
 
 
           <div id="project-container" onClick={() => handleProject(2)} >
-            <img id="project-image" src="./img/442.png" />
+            <img id="project-image" src="./src/img/442.png" />
             <div className="legend">
               <h5 id="project-title" >442</h5>
             </div>
@@ -158,7 +158,7 @@ const Portfolio = () => {
 
 
           <div id="project-container" onClick={() => handleProject(3)} >
-            <img id="project-image" src="./img/snake.png" />
+            <img id="project-image" src="./src/img/snake.png" />
             <div className="legend">
               <h5 id="project-title" >Snake</h5>
             </div>
@@ -166,7 +166,7 @@ const Portfolio = () => {
 
 
           <div id="project-container" onClick={() => handleProject(4)} >
-            <img id="project-image" src="./img/shutter.png" />
+            <img id="project-image" src="./src/img/shutter.png" />
             <div className="legend">
               <h5 id="project-title" >Shutter</h5>
             </div>
@@ -174,7 +174,7 @@ const Portfolio = () => {
 
 
           <div id="project-container" onClick={() => handleProject(5)} >
-            <img id="project-image" src="./img/watch.png" />
+            <img id="project-image" src="./src/img/watch.png" />
             <div className="legend">
               <h5 id="project-title" >Apple Watch</h5>
             </div>
@@ -182,7 +182,7 @@ const Portfolio = () => {
 
 
           <div id="project-container" onClick={() => handleProject(6)} >
-            <img id="project-image" src="./img/skii.png" />
+            <img id="project-image" src="./src/img/skii.png" />
             <div className="legend">
               <h5 id="project-title" >Skii</h5>
             </div>
@@ -190,7 +190,7 @@ const Portfolio = () => {
 
 
           <div id="project-container" onClick={() => handleProject(7)} >
-            <img id="project-image" src="./img/invest.png" />
+            <img id="project-image" src="./src/img/invest.png" />
             <div className="legend">
               <h5 id="project-title" >Investment Calculator</h5>
             </div>
@@ -198,7 +198,7 @@ const Portfolio = () => {
 
 
           <div id="project-container" onClick={() => handleProject(8)} >
-            <img id="project-image" src="./img/pacman.png" />
+            <img id="project-image" src="./src/img/pacman.png" />
             <div className="legend">
               <h5 id="project-title" >Pac-Man</h5>
             </div>
@@ -206,7 +206,7 @@ const Portfolio = () => {
 
 
           <div id="project-container" onClick={() => handleProject(9)} >
-            <img id="project-image" src="./img/trivia.png" />
+            <img id="project-image" src="./src/img/trivia.png" />
             <div className="legend">
               <h5 id="project-title" >Trivia</h5>
             </div>
@@ -214,7 +214,7 @@ const Portfolio = () => {
 
 
           <div id="project-container" onClick={() => handleProject(10)} >
-            <img id="project-image" src="./img/liarsdice.png" />
+            <img id="project-image" src="./src/img/liarsdice.png" />
             <div className="legend">
               <h5 id="project-title" >Liars Dice</h5>
             </div>
@@ -222,7 +222,7 @@ const Portfolio = () => {
 
 
           <div id="project-container" onClick={() => handleProject(11)} >
-            <img id="project-image" src="./img/calc.png" />
+            <img id="project-image" src="./src/img/calc.png" />
             <div className="legend">
               <h5 id="project-title" >iOS Calculator</h5>
             </div>

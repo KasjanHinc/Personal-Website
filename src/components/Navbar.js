@@ -13,7 +13,7 @@ const Navbar = () => {
   return <nav className="navbar navbar-expand-md navbar-dark nav-background fixed-top">
 
     <Fade>
-      <Link to="/" ><img id="logo" src='./img/logo.png' /></Link>
+      <Link to="/" ><img id="logo" src='./src/img/logo.png' /></Link>
     </Fade>
 
 
