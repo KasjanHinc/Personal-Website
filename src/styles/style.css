@@ -699,6 +699,13 @@ textarea {
   .form-left {
     margin-bottom: 2rem;
   }
+
+  #name,
+  #email,
+  #phone,
+  #company {
+    font-size: initial;
+  }
 }
 
 
