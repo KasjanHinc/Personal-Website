@@ -50,9 +50,7 @@ canvas {
 
 /* NAV */
 
-#navbarResponsive {
-  backdrop-filter: blur(10px);
-}
+
 
 .nav-link {
   font-size: 1rem !important;
@@ -511,7 +509,8 @@ textarea {
 
   #navbarResponsive {
     margin-top: 3rem;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
   }
 
   /* HOME */
@@ -576,8 +575,8 @@ textarea {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 70vw;
-    height: 100vh;
+    width: 90vw;
+    height: inherit;
   }
 
   .about-website-container {
@@ -590,6 +589,7 @@ textarea {
   }
 
   #website-info {
+    font-size: 4.2vw;
     margin-bottom: 0;
   }
 
@@ -670,7 +670,7 @@ textarea {
   }
 
   #form {
-    margin-top: 20vh;
+    margin-top: 15vh;
   }
 
   #form-container {
