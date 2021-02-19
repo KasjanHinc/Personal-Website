@@ -370,10 +370,6 @@ form {
   font-weight: 100;
 }
 
-input {
-  line-height: 20 !important;
-
-}
 
 
 #message::placeholder {
@@ -695,7 +691,6 @@ textarea {
     display: flex !important;
     flex-direction: column !important;
     width: 90vw;
-    min-height: 100%;
   }
 
   .btn-submit {
@@ -717,15 +712,18 @@ textarea {
   #email,
   #phone,
   #company {
-    font-size: 2rem;
+    font-size: 9vw;
   }
 
   #name::placeholder,
   #email::placeholder,
   #phone::placeholder,
   #company::placeholder {
-    font-size: 2.5rem;
+    font-size: 10vw;
+  }
 
+  .form-control {
+    /* height: 10vh !important; */
   }
 
 
