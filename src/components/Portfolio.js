@@ -183,7 +183,7 @@ const Portfolio = () => {
 
 
 
-      <div id="project-desc">
+      {loaded && <div id="project-desc">
 
         <Fade appear spy={project}>
 
@@ -195,8 +195,7 @@ const Portfolio = () => {
           </div>
         </Fade>
 
-
-      </div>
+      </div>}
 
     </div>
 
