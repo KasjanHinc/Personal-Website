@@ -7,8 +7,6 @@ import apiKeys from '../js/apikeys'
 
 
 
-
-
 const Contact = () => {
 
   const plane = <FontAwesomeIcon icon={faPaperPlane} size="2x" />

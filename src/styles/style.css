@@ -484,14 +484,7 @@ textarea {
   background: transparent !important;
 }
 
-.carousel .thumb {
-  border: 0 !important;
-}
 
-.carousel .thumb.selected {
-  border: 1px solid white !important;
-  border-radius: 1rem;
-}
 
 
 #project-btns {
@@ -530,6 +523,7 @@ textarea {
   }
 
   /* NAV */
+
 
   #social-linkedin {
     margin-left: 10vw;
