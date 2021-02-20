@@ -121,7 +121,7 @@ const Portfolio = () => {
 
 
             <div id="project-container" >
-              <img id="project-image" src="./src/img/horizon.png" />
+              <img id="project-image" src="./img/horizon.png" />
             </div>
 
 
