@@ -81,17 +81,31 @@ button:focus {
   color: rgb(255, 255, 255, 0.8) !important;
 }
 
+.navbar {
+  height: 10vh;
+}
+
 .navbar-nav {
   z-index: 999 !important;
 }
 
+.fixed-top {
+  backface-visibility: hidden !important;
+}
+
 .nav-link {
   font-size: 1rem !important;
-  transition: ease .3s;
+  backface-visibility: hidden !important;
+
 }
 
 .nav-link:hover {
-  font-size: 1.1rem !important;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+
+  transition-duration: .5s;
 }
 
 /* HOME */
@@ -141,7 +155,10 @@ button:focus {
   border-radius: 0rem !important;
   padding: 0;
   font-size: 1.5rem;
-  transition: .5s;
+  -webkit-transition: .5s ease;
+  -moz-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
 }
 
 .animated {
@@ -536,12 +553,16 @@ textarea {
   .nav-link {
     font-size: 2rem !important;
     padding-right: 1rem !important;
-
   }
 
   .nav-link:hover {
-    font-size: 2rem !important;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+    transform: none;
+    transition-duration: none;
   }
+
 
   .navbar-nav {
     margin-top: 3rem;
