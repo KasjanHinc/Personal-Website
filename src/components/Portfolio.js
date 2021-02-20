@@ -18,43 +18,43 @@ const Portfolio = () => {
   const descriptions = [
     {
       title: 'CryptoX',
-      desc: 'A crypto tracker built with React, Node, Express, MongoDB. Track your favourite crypto by making an account. Mobile responsive.',
+      desc: 'A crypto tracker built with React, Node, Express and MongoDB. Track your favourite crypto by making an account. Mobile responsive.',
       github: 'https://github.com/KasjanHinc/CryptoX',
       live: 'https://cryptox-project.herokuapp.com/'
     },
     {
       title: 'Horizon',
-      desc: 'A travel web application built with React, Flask, PostgreSQL, JavaScript and Python. Completed within a week by a team of two. Part of the General Assembly Software Engineering Immersive bootcamp.',
+      desc: 'A travel web application built with MongoDB, Express, React and Node. Working with a REST Countries API and Skyscanner widgets.',
       github: 'https://github.com/KasjanHinc/Horizon',
       live: 'https://horizon-project.herokuapp.com'
     },
     {
       title: '442',
-      desc: 'A web application built with React, Flask, PostgreSQL, JavaScript and Python. Completed within a week by a team of two. Part of the General Assembly Software Engineering Immersive bootcamp.',
+      desc: 'A football themed web application built with React, Flask, PostgreSQL, JavaScript and Python. Completed within a week by a team of two. Part of the General Assembly Software Engineering Immersive bootcamp.',
       github: 'https://github.com/KasjanHinc/442',
       live: 'https://football-map.herokuapp.com'
     },
     {
       title: 'Snake',
-      desc: 'A grid based game created in under a week using HTML, CSS and JavaScript. Part of the General Assembly Software Engineering Immersive bootcamp.',
+      desc: 'A grid based snake game created in under a week using HTML, CSS and JavaScript. Part of the General Assembly Software Engineering Immersive bootcamp.',
       github: 'https://github.com/KasjanHinc/Snake',
       live: 'https://kasjanhinc.github.io/Snake'
     },
     {
       title: 'Shutter',
-      desc: 'A web application made in React Hooks which consumes the Pixabay API to showcase photos and videos.',
+      desc: 'A web application made with React Hooks that consumes the Pixabay API to showcase photos and videos.',
       github: 'https://github.com/KasjanHinc/shutter',
       live: 'https://kasjanhinc.github.io/shutter/'
     },
     {
       title: 'Apple Watch',
-      desc: 'Made with React Hooks and pure CSS. Time, date, location and weather included. Mobile responsive.',
+      desc: 'Custom watch screen made with React Hooks and pure CSS. Time, date, location and weather included. Mobile responsive.',
       github: 'https://github.com/KasjanHinc/Apple-Watch',
       live: 'https://kasjanhinc.github.io/Apple-Watch/'
     },
     {
       title: 'Skii',
-      desc: 'A web application built with MongoDB, Express, React and Node, completed within a week by a team of four. Part of the General Assembly Software Engineering Immersive bootcamp.',
+      desc: 'A skiing web application built with MongoDB, Express, React and Node. Completed within a week by a team of four. Part of the General Assembly Software Engineering Immersive bootcamp.',
       github: 'https://github.com/KasjanHinc/Skii',
       live: 'https://skiresorts.herokuapp.com'
     },
@@ -66,7 +66,7 @@ const Portfolio = () => {
     },
     {
       title: 'Pac-Man',
-      desc: 'The classic recreated in pure HTML, CSS and JavaScript, without using canvas.The classic recreated in pure HTML, CSS and JavaScript, without using canvas.',
+      desc: 'The classic recreated in pure HTML, CSS and JavaScript, without using canvas.',
       github: 'https://github.com/KasjanHinc/Pac-Man',
       live: 'https://kasjanhinc.github.io/Pac-Man/'
     },
@@ -78,13 +78,13 @@ const Portfolio = () => {
     },
     {
       title: 'iOS Calculator',
-      desc: 'A clone of the iOS calculator. Made with React Hooks and pure JavaScript logic. I tried to replicate the original design as close as possible. Mobile responsive.',
+      desc: 'A clone of the iOS calculator, made with React Hooks and vanilla JavaScript ES6 logic and CSS. Mobile responsive.',
       github: 'https://github.com/KasjanHinc/iOS-Calculator',
       live: 'https://kasjanhinc.github.io/iOS-Calculator/'
     },
     {
       title: 'Liars Dice',
-      desc: 'A dice game based on deception re-created in HTML, CSS and pure JavaScript.',
+      desc: 'A dice game based on deception re-created in HTML, CSS and vanilla JavaScript ES6.',
       github: 'https://github.com/KasjanHinc/Liars-Dice',
       live: 'https://kasjanhinc.github.io/Liars-Dice/'
     }
