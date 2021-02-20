@@ -3,8 +3,14 @@ import { Link, withRouter } from 'react-router-dom'
 import Fade from 'react-reveal/Fade'
 import $ from 'jquery'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 
 const Navbar = () => {
+
+  const linkedin = <FontAwesomeIcon icon={faLinkedin} size="2x" />
+  const github = <FontAwesomeIcon icon={faGithubSquare} size="2x" />
+
 
   function closeNav() {
     $('.navbar-collapse').collapse('hide')
@@ -13,7 +19,15 @@ const Navbar = () => {
   return <nav className="navbar navbar-expand-md navbar-dark nav-background fixed-top">
 
     <Fade>
-      <Link to="/" ><img id="logo" src='./src/img/logo.png' /></Link>
+      <Link to="/" ><img id="logo" src='./img/logo.png' /></Link>
+    </Fade>
+
+    <Fade>
+      <a id="social-linkedin" href="https://www.linkedin.com/in/kasjan-hinc/" rel="noreferrer" target="_blank">{linkedin}</a>
+    </Fade>
+
+    <Fade>
+      <a id="social-github" href="https://github.com/KasjanHinc" rel="noreferrer" target="_blank">{github}</a>
     </Fade>
 
 

@@ -50,6 +50,14 @@ canvas {
 
 /* NAV */
 
+#social-linkedin {
+  margin-left: 5vw;
+}
+
+#social-github {
+  margin-left: 1vw;
+}
+
 .navbar-nav {
   z-index: 999 !important;
 }
@@ -196,6 +204,13 @@ canvas {
   font-weight: 300;
 }
 
+#website-info a {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 500;
+  text-shadow: .5px .5px .5px black;
+}
+
 #website-info-title {
   text-align: center;
   font-size: 3vw;
@@ -208,6 +223,7 @@ canvas {
 
 
 /* PORTFOLIO */
+
 
 #portfolio {
   display: flex;
@@ -231,14 +247,9 @@ canvas {
   cursor: pointer;
 }
 
-.slide.selected:hover .legend {
-  opacity: 1 !important;
-}
-
 .carousel-wrapper {
   opacity: 1;
   width: 50%;
-  transition: .5s ease;
 }
 
 .carousel-wrapper-loading {
@@ -268,9 +279,9 @@ canvas {
   border-right: 30px solid white !important;
 }
 
-.carousel-status {
+/* .carousel-status {
   display: none !important;
-}
+} */
 
 /* SKILLS */
 
@@ -439,11 +450,6 @@ textarea {
   background: transparent !important;
 }
 
-.carousel .slide .legend {
-  color: white !important;
-  background-color: rgb(22, 82, 240, 0.9) !important;
-}
-
 .carousel .thumb {
   border: 0 !important;
 }
@@ -453,17 +459,6 @@ textarea {
   border-radius: 1rem;
 }
 
-.legend {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0 !important;
-}
-
-.legend:hover {
-  opacity: 1 !important;
-}
 
 #project-btns {
   display: flex;
@@ -476,7 +471,6 @@ textarea {
 
 #project-image {
   border-radius: 1rem;
-
 }
 
 #project-info {
@@ -484,12 +478,11 @@ textarea {
 }
 
 #project-title {
+  margin-bottom: 1.5rem;
   font-size: 3vw;
+  text-align: center;
 }
 
-.thumbs-wrapper {
-  display: none !important;
-}
 
 
 
@@ -504,7 +497,13 @@ textarea {
 
   /* NAV */
 
+  #social-linkedin {
+    margin-left: 10vw;
+  }
 
+  #social-github {
+    margin-left: 8vw;
+  }
 
   .nav-link {
     font-size: 2rem !important;
@@ -603,7 +602,7 @@ textarea {
   }
 
   .website-info-idea {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
   }
 
 
@@ -614,7 +613,7 @@ textarea {
   #portfolio-container {
     flex-direction: column;
     width: 90vw;
-    height: 90vh;
+    height: 80vh;
   }
 
   .carousel-wrapper {
@@ -627,7 +626,8 @@ textarea {
   }
 
   #project-title {
-    font-size: 7vw;
+    margin-top: 1rem;
+    font-size: 10vw;
   }
 
   #project-text {
@@ -635,6 +635,7 @@ textarea {
   }
 
   #project-btns {
+    margin-top: 1rem;
     width: 90vw;
   }
 

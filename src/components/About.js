@@ -44,9 +44,9 @@ const About = () => {
             <div className="col website-info-idea">
               <h3 id="website-info-title" >My inspiration</h3>
               <p id="website-info">
-                As I was browsing developer portfolios from around the world, some made me think &quot;this person wants
+                As I was browsing developer portfolios from around the world, some made me think &apos;this person wants
                 to
-                be remembered&quot;. A personal website should showcase your skills and be crafted with precision, just
+                be remembered. A personal website should showcase your skills and be crafted with precision, just
                 like
                 any other project. This website is a physical copy of my creativity, with borrowed inspiration from
                 great developers.
@@ -59,10 +59,11 @@ const About = () => {
               <h3 id="website-info-title">The technical stuff</h3>
               <p id="website-info">
                 This website is fully <a href="http://en.wikipedia.org/wiki/Responsive_web_design"
-                  rel="noreferrer" target="_blank">responsive</a>, and built from scratch with React and the <a
-                    href="http://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)" rel="noreferrer" target="_blank">Boostrap
+                  rel="noreferrer" target="_blank">responsive</a>, and built from scratch with <a
+                    href="https://en.wikipedia.org/wiki/React_(JavaScript_library)" rel="noreferrer" target="_blank">React</a> and the <a
+                      href="http://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)" rel="noreferrer" target="_blank">Boostrap
                       framework</a>. Other additions are; Google Fonts, <a href="https://fontawesome.com/"
-                  rel="noreferrer" target="_blank">Font Awesome</a>, Google Scripts, <a
+                  rel="noreferrer" target="_blank">Font Awesome</a>, React Reveal, React Typed and <a
                     href="https://www.npmjs.com/package/react-particles-js" rel="noreferrer" target="_blank">Particles.js</a>.
               </p>
             </div>
