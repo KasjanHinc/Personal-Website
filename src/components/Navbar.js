@@ -11,8 +11,12 @@ const Navbar = () => {
   const linkedin = <FontAwesomeIcon icon={faLinkedin} size="2x" />
   const github = <FontAwesomeIcon icon={faGithubSquare} size="2x" />
 
+  function scrollToTop() {
+    window.scrollTo(0, 0)
+  }
 
   function closeNav() {
+    scrollToTop()
     $('.navbar-collapse').collapse('hide')
   }
 

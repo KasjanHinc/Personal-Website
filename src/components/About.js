@@ -14,6 +14,7 @@ const About = () => {
   const [buttonHTML, setButtonHTML] = useState('ABOUT THIS WEBSITE')
 
   const handleAbout = () => {
+    scrollToTop()
 
     if (about === 'me') {
       setButtonHTML('ABOUT ME')
@@ -22,7 +23,10 @@ const About = () => {
       setButtonHTML('ABOUT WEBSITE')
       setAbout('me')
     }
+  }
 
+  function scrollToTop() {
+    window.scrollTo(0, 0)
   }
 
 

@@ -22,14 +22,13 @@ body {
   width: 100vw;
 }
 
-
-
 a:hover {
   color: white !important;
 }
 
 
 /* UNIVERSAL */
+
 
 #tsparticles {
   position: absolute !important;
@@ -47,15 +46,39 @@ canvas {
   width: 4vw;
 }
 
+::selection {
+  background: rgb(255, 255, 255);
+  color: #1652f0;
+}
+
+::-moz-selection {
+  background: rgb(255, 255, 255);
+  color: #1652f0;
+}
+
+button:focus {
+
+  box-shadow: none !important;
+}
+
 
 /* NAV */
 
 #social-linkedin {
+  font-size: 1rem;
   margin-left: 5vw;
+}
+
+#social-linkedin svg:hover path {
+  color: rgb(255, 255, 255, 0.8) !important;
 }
 
 #social-github {
   margin-left: 1vw;
+}
+
+#social-github svg:hover path {
+  color: rgb(255, 255, 255, 0.8) !important;
 }
 
 .navbar-nav {
@@ -133,6 +156,9 @@ canvas {
 .btn-lg:focus {
   color: white;
   background-color: rgba(230, 230, 230, 0.1) !important;
+  outline: none !important;
+
+
 }
 
 .btn-lg .animated {
@@ -269,6 +295,14 @@ canvas {
   text-align: center;
   font-weight: 300;
   width: 60%;
+}
+
+.control-next {
+  border-radius: 0 1rem 1rem 0 !important;
+}
+
+.control-prev {
+  border-radius: 1rem 0 0 1rem !important;
 }
 
 .carousel .control-next.control-arrow:before {
@@ -635,7 +669,7 @@ textarea {
   }
 
   #project-btns {
-    margin-top: 1rem;
+    margin-top: 2rem;
     width: 90vw;
   }
 
