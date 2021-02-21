@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;700&family=Raleway:wght@400;700&display=swap');
 
 * {
   color: white;
@@ -70,6 +70,7 @@ button:focus,
   bottom: 0;
   right: 2rem;
 }
+
 
 /* NAV */
 
@@ -881,15 +882,13 @@ textarea {
   }
 
   #message {
-    color: white;
     font-size: 1.5rem;
-    background-color: rgba(0, 0, 0, 0.3);
-    border-color: hsl(214, 84%, 52%);
-    resize: none;
+    font-weight: 300;
   }
 
+
   #message::placeholder {
-    font-weight: 300;
+    font-weight: 200;
   }
 
 
