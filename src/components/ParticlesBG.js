@@ -33,9 +33,11 @@ const ParticlesBG = () => {
             'opacity_min': 0.05
           }
         }
+
       },
 
       'retina_detect': true
+
     }}
     style={{
       position: 'fixed',

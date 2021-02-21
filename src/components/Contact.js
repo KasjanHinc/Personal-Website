@@ -84,7 +84,7 @@ const Contact = () => {
             </Fade>
 
             <Fade up>
-              <button type="submit" name="submit" className="btn btn-outline-light btn-lg btn-submit" id="btn-submit"><p className="animated">{submitStatus ? <Fragment>{check} SENT</Fragment> : <Fragment>{plane} SEND</Fragment>}</p></button>
+              <button type="submit" name="submit" className="btn btn-outline-light btn-lg btn-submit" id="btn-submit"><p className={submitStatus ? 'sent' : 'animated'} > {submitStatus ? <Fragment>{check} SENT</Fragment> : <Fragment>{plane} SEND</Fragment>}</p></button>
             </Fade>
 
           </div>
@@ -98,7 +98,7 @@ const Contact = () => {
     </div>
 
 
-  </div>
+  </div >
 
 
 

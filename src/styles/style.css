@@ -204,12 +204,14 @@ button:focus,
   transition: .5s ease;
 }
 
-.animated {
+.animated,
+.sent {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   padding: 1rem 2rem;
   margin: 0;
 }
+
 
 .btn-lg:hover,
 .btn-lg:focus {
