@@ -45,23 +45,23 @@ const Navbar = () => {
         <ul className="navbar-nav ml-auto">
 
 
-          <li className="nav-item">
+          <li className="nav-item slide">
             <Link to="/" className="nav-link">HOME</Link>
           </li>
 
-          <li className="nav-item">
+          <li className="nav-item slide">
             <Link to="/about" className="nav-link">ABOUT</Link>
           </li>
 
-          <li className="nav-item">
+          <li className="nav-item slide">
             <Link to="/portfolio" className="nav-link">PORTFOLIO</Link>
           </li>
 
-          <li className="nav-item">
+          <li className="nav-item slide">
             <Link to="/skills" className="nav-link">SKILLS</Link>
           </li>
 
-          <li className="nav-item">
+          <li className="nav-item slide">
             <Link to="/contact" className="nav-link">CONTACT</Link>
           </li>
 
