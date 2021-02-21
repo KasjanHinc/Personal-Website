@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link, withRouter } from 'react-router-dom'
 import Fade from 'react-reveal/Fade'
 import $ from 'jquery'
@@ -15,59 +15,65 @@ const Navbar = () => {
     window.scrollTo(0, 0)
   }
 
-  function closeNav() {
-    scrollToTop()
-    $('.navbar-collapse').collapse('hide')
-  }
 
-  return <nav className="navbar navbar-expand-md navbar-dark nav-background fixed-top">
+  useEffect(() => {
+
+    $(document).click(function (event) {
+      $('.navbar-collapse').collapse('hide')
+    })
+
+  })
+
+
+
+  return <nav className="navbar navbar-dark nav-background fixed-top">
 
     <Fade>
       <Link to="/" ><img id="logo" src='./src/img/logo.png' /></Link>
-    </Fade>
 
-    <Fade>
+
+
       <a id="social-linkedin" href="https://www.linkedin.com/in/kasjan-hinc/" rel="noreferrer" target="_blank">{linkedin}</a>
-    </Fade>
 
-    <Fade>
+
+
       <a id="social-github" href="https://github.com/KasjanHinc" rel="noreferrer" target="_blank">{github}</a>
+
+
+
+      <button className="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span className="navbar-toggler-icon"></span>
+      </button>
+
+      <div className="collapse navbar-collapse text-right" id="navbarResponsive">
+        <ul className="navbar-nav ml-auto">
+
+
+          <li className="nav-item">
+            <Link to="/" className="nav-link">HOME</Link>
+          </li>
+
+          <li className="nav-item">
+            <Link to="/about" className="nav-link">ABOUT</Link>
+          </li>
+
+          <li className="nav-item">
+            <Link to="/portfolio" className="nav-link">PORTFOLIO</Link>
+          </li>
+
+          <li className="nav-item">
+            <Link to="/skills" className="nav-link">SKILLS</Link>
+          </li>
+
+          <li className="nav-item">
+            <Link to="/contact" className="nav-link">CONTACT</Link>
+          </li>
+
+
+        </ul>
+      </div>
+
     </Fade>
-
-
-    <button className="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-
-    <div className="collapse navbar-collapse text-right" id="navbarResponsive">
-      <ul className="navbar-nav ml-auto">
-
-
-        <li className="nav-item">
-          <Link to="/" onClick={closeNav} className="nav-link">HOME</Link>
-        </li>
-
-        <li className="nav-item">
-          <Link to="/about" onClick={closeNav} className="nav-link">ABOUT</Link>
-        </li>
-
-        <li className="nav-item">
-          <Link to="/portfolio" onClick={closeNav} className="nav-link">PORTFOLIO</Link>
-        </li>
-
-        <li className="nav-item">
-          <Link to="/skills" onClick={closeNav} className="nav-link">SKILLS</Link>
-        </li>
-
-        <li className="nav-item">
-          <Link to="/contact" onClick={closeNav} className="nav-link">CONTACT</Link>
-        </li>
-
-
-      </ul>
-    </div>
-
-
   </nav >
 
 }
