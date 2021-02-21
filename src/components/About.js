@@ -3,12 +3,13 @@ import Fade from 'react-reveal/Fade'
 import Zoom from 'react-reveal/Zoom'
 import Flip from 'react-reveal/Flip'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons'
+import { faQuoteLeft, faQuoteRight, faCog } from '@fortawesome/free-solid-svg-icons'
 
 
 
 const About = () => {
 
+  const cog = <FontAwesomeIcon icon={faCog} size="3x" />
   const ql = <FontAwesomeIcon icon={faQuoteLeft} size="2x" />
   const qr = <FontAwesomeIcon icon={faQuoteRight} size="1x" />
   const [about, setAbout] = useState('me')
@@ -71,6 +72,14 @@ const About = () => {
                   rel="noreferrer" target="_blank">Font Awesome</a>, React Reveal, React Typed and <a
                     href="https://www.npmjs.com/package/react-particles-js" rel="noreferrer" target="_blank">Particles.js</a>.
               </p>
+
+              <div id="cogs">
+                <div id="cog-l">{cog}</div>
+                <div id="cogs-s">
+                  <div id="cog-s">{cog}</div>
+                  <div id="cog-s">{cog}</div>
+                </div>
+              </div>
             </div>
           </Fade>
 

@@ -131,7 +131,7 @@ button:focus,
 .navbar-toggler:hover,
 .navbar-toggler:focus,
 .navbar-toggler:active {
-  background-color: rgb(255, 255, 255, 0.9);
+  background-color: rgb(255, 255, 255, 0.9) !important;
   border: 1px solid rgb(255, 255, 255, 0.9) !important;
 }
 
@@ -303,6 +303,39 @@ button:focus,
   font-size: 3vw;
 }
 
+
+#cogs {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+}
+
+#cogs-s {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#cog-l {
+  opacity: 0.8;
+  height: 100%;
+  font-size: 3vw;
+  animation-name: spin;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#cog-s {
+  font-size: 1.2vw;
+  opacity: 0.7;
+  animation-name: spinReverse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
 
 .btn-about {
   margin-top: 3rem;
@@ -707,7 +740,23 @@ textarea {
     margin-bottom: 3rem;
   }
 
+  #cogs {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 80%;
+    left: initial;
+    right: 0;
+    width: min-content;
+  }
 
+  #cog-l {
+    font-size: 5vw;
+  }
+
+  #cog-s {
+    font-size: 2.5vw;
+  }
 
   /* PORTFOLIO */
 
@@ -876,5 +925,15 @@ textarea {
 
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes spinReverse {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-360deg);
   }
 }
