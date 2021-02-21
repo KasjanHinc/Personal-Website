@@ -43,6 +43,7 @@ const ParticlesBG = () => {
       height: '100vh'
 
     }}
+
   />
 
 

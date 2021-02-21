@@ -38,6 +38,9 @@ const Home = () => {
 
     </div>
 
+    <Fade>
+      <p id="copyright" >Copyright &#169; 2021 Kasjan Hinc</p>
+    </Fade>
 
   </div>
 

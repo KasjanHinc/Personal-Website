@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Fade from 'react-reveal/Fade'
 import Zoom from 'react-reveal/Zoom'
+import Flip from 'react-reveal/Flip'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons'
 
@@ -36,7 +37,7 @@ const About = () => {
 
       <div className={about === 'me' ? 'about-left' : 'about-left-wide'}>
 
-        <Zoom duration={1500} left>
+        <Zoom left duration={1500} appear spy={about}>
           {about === 'me' && <div id="about-typed" >
             {ql} I am a creative developer and team player with great communication. I have been exposed to a wide variety of modern technologies and believe to have an understanding of full stack development and consider myself to be very adaptable. I’m looking for a role where I can expand my knowledge and work on modern technologies and languages. {qr}
           </div>}
@@ -87,16 +88,15 @@ const About = () => {
 
       {about === 'me' && <div id="about-right">
 
-        <Fade delay={500}>
+        <Flip top duration={1000} delay={500}>
           <img id="kasjan" src="./src/img/kasjan.png" />
-        </Fade>
+        </Flip>
 
       </div>}
 
 
 
     </div>
-
 
 
   </div >
