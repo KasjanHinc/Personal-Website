@@ -209,7 +209,6 @@ button:focus,
   font-weight: 300;
   padding: 1rem 2rem;
   margin: 0;
-
 }
 
 .btn-lg:hover,
@@ -235,6 +234,7 @@ button:focus,
 
 
 /* ABOUT */
+
 
 #about {
   display: flex;
@@ -408,8 +408,8 @@ button:focus,
 }
 
 
-
 /* SKILLS */
+
 
 #skills {
   display: flex;
@@ -458,6 +458,7 @@ div.skill:nth-of-type(4) svg {
 
 
 /* CONTACT */
+
 
 #contact {
   display: flex;
@@ -899,7 +900,6 @@ textarea {
 
 
 /* ANIMATIONS */
-
 
 
 @keyframes pulse {

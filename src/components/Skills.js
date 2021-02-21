@@ -57,7 +57,7 @@ const Skills = () => {
       <Fade delay={delays[Math.floor(Math.random() * delays.length)]}>
         <div className="skill">
           <div id="skill-svg">{git}</div>
-          <p id="skill-info">GitHub, Work flow, Project deployment</p>
+          <p id="skill-info">Git, GitHub, Work flow, Project deployment</p>
         </div>
       </Fade>
 
