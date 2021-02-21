@@ -737,25 +737,26 @@ textarea {
   }
 
   .website-info-idea {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   #cogs {
     display: flex;
     flex-direction: row;
-    position: absolute;
-    top: 80%;
-    left: initial;
-    right: 0;
-    width: min-content;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 90vw;
   }
 
   #cog-l {
-    font-size: 5vw;
+    font-size: 3vw;
   }
 
   #cog-s {
-    font-size: 2.5vw;
+    font-size: 1.5vw;
   }
 
   /* PORTFOLIO */
