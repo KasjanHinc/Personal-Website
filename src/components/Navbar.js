@@ -20,9 +20,34 @@ const Navbar = () => {
 
   })
 
+  useEffect(() => {
+
+    $(document)
+      .mousemove(function (e) {
+        $('.cursor')
+          .eq(0)
+          .css({
+            left: e.clientX,
+            top: e.clientY
+          })
+        setTimeout(function () {
+          $('.cursor')
+            .eq(1)
+            .css({
+              left: e.clientX,
+              top: e.clientY
+            })
+        }, 100)
+      })
+
+  })
+
 
 
   return <nav className="navbar navbar-dark nav-background fixed-top">
+
+    <div className="cursor"></div>
+    <div className="cursor"></div>
 
     <Fade>
       <Link to="/" ><img id="logo" src='./src/img/logo.png' /></Link>
