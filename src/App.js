@@ -1,8 +1,7 @@
 import React from 'react'
 import { HashRouter, Switch, Route } from 'react-router-dom'
 
-
-import './bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './styles/style.css'
 
 import ParticlesBG from './components/ParticlesBG'

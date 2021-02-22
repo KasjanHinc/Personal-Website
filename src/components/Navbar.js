@@ -28,13 +28,9 @@ const Navbar = () => {
       <Link to="/" ><img id="logo" src='./src/img/logo.png' /></Link>
 
 
-
       <a id="social-linkedin" href="https://www.linkedin.com/in/kasjan-hinc/" rel="noreferrer" target="_blank">{linkedin}</a>
 
-
-
       <a id="social-github" href="https://github.com/KasjanHinc" rel="noreferrer" target="_blank">{github}</a>
-
 
 
       <button className="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive">
