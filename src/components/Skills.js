@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Fade from 'react-reveal/Fade'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faServer, faDatabase, faSatelliteDish } from '@fortawesome/free-solid-svg-icons'
@@ -21,6 +21,11 @@ const Skills = () => {
   const nosql = <FontAwesomeIcon icon={faDatabase} size="2x" />
   const api = <FontAwesomeIcon icon={faSatelliteDish} size="2x" />
 
+  useEffect(() => {
+
+
+
+  })
 
   return <div id="skills" >
 
@@ -28,70 +33,70 @@ const Skills = () => {
 
       <Fade delay={delays[Math.floor(Math.random() * delays.length)]}>
         <div className="skill">
-          <div id="skill-svg">{html}</div>
+          <div className="skill-svg">{html}</div>
           <p id="skill-info" >HTML5, Forms</p>
         </div>
       </Fade>
 
       <Fade delay={delays[Math.floor(Math.random() * delays.length)]}>
         <div className="skill">
-          <div id="skill-svg">{css}</div>
+          <div className="skill-svg">{css}</div>
           <p id="skill-info">CSS3, Bootstrap, Flexbox, Animations</p>
         </div>
       </Fade>
 
       <Fade delay={delays[Math.floor(Math.random() * delays.length)]}>
         <div className="skill">
-          <div id="skill-svg">{js}</div>
+          <div className="skill-svg">{js}</div>
           <p id="skill-info">JavaScript ES6, Mapbox GL, jQuery plugins</p>
         </div>
       </Fade>
 
       <Fade delay={delays[Math.floor(Math.random() * delays.length)]}>
         <div className="skill">
-          <div id="skill-svg">{react}</div>
+          <div className="skill-svg">{react}</div>
           <p id="skill-info">React, Hooks, JSX, Webpack, Router, Babel</p>
         </div>
       </Fade>
 
       <Fade delay={delays[Math.floor(Math.random() * delays.length)]}>
         <div className="skill">
-          <div id="skill-svg">{git}</div>
+          <div className="skill-svg">{git}</div>
           <p id="skill-info">Git, GitHub, Work flow, Project deployment</p>
         </div>
       </Fade>
 
       <Fade delay={delays[Math.floor(Math.random() * delays.length)]}>
         <div className="skill">
-          <div id="skill-svg">{node}</div>
+          <div className="skill-svg">{node}</div>
           <p id="skill-info">Node.js, Express, JSON web token, Axios, Bcrypt</p>
         </div>
       </Fade>
 
       <Fade delay={delays[Math.floor(Math.random() * delays.length)]}>
         <div className="skill">
-          <div id="skill-svg">{sql}</div>
+          <div className="skill-svg">{sql}</div>
           <p id="skill-info">SQL, PostgreSQL, SQLAlchemy, Marshmallow</p>
         </div>
       </Fade>
 
       <Fade delay={delays[Math.floor(Math.random() * delays.length)]}>
         <div className="skill">
-          <div id="skill-svg">{python}</div>
+          <div className="skill-svg">{python}</div>
           <p id="skill-info">Python, Vanilla, Flask, Pipenv</p>
         </div>
       </Fade>
 
       <Fade delay={delays[Math.floor(Math.random() * delays.length)]}>
         <div className="skill">
-          <div id="skill-svg" >{nosql}</div>
+          <div className="skill-svg" >{nosql}</div>
           <p id="skill-info">NoSQL, Mongoose, MongoDB</p>
         </div>
       </Fade>
 
       <Fade delay={delays[Math.floor(Math.random() * delays.length)]}>
         <div className="skill">
-          <div id="skill-svg">{api}</div>
+          <div className="skill-svg">{api}</div>
           <p id="skill-info">API&apos;s, RESTFUL, JSON</p>
         </div>
       </Fade>

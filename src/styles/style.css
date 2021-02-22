@@ -274,9 +274,8 @@ button:focus,
   color: white;
   background-color: rgba(230, 230, 230, 0.1) !important;
   outline: none !important;
-
-
 }
+
 
 .btn-lg .animated {
   transition-property: -webkit-transform;
@@ -490,8 +489,9 @@ button:focus,
   width: 12vw;
   height: 12vw;
   margin: 1rem;
-  transition: transform .2s;
+  transition: 1s ease;
 }
+
 
 div.skill:nth-of-type(4) svg {
   animation-name: spin;
@@ -500,10 +500,12 @@ div.skill:nth-of-type(4) svg {
   animation-timing-function: linear;
 }
 
-#skill-svg {
+.skill-svg {
   color: rgb(255, 255, 255, 0.8);
   font-size: 3vw;
 }
+
+
 
 #skill-info {
   font-weight: 300;
@@ -902,7 +904,7 @@ textarea {
     justify-content: center;
   }
 
-  #skill-svg {
+  .skill-svg {
     font-size: 20vw;
     margin-bottom: 1rem;
   }
