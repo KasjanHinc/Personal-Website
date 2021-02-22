@@ -29,10 +29,10 @@ const Home = () => {
         <h1 id="intro" >Kasjan Hinc</h1>
       </Fade>
       <Fade up delay={1200}>
-        <p id="intro-lower">Junior Software Developer • Frontend • Backend<br />Based in
+        <p id="intro-lower">Junior Software Developer <span>&#x276F;</span> Frontend <span>&#x276F;</span> Backend<br />Based in
           <strong> London</strong></p>
       </Fade>
-      <Fade delay={1800}>
+      <Fade delay={2000}>
         <Link to="/about" className="btn btn-outline-light btn-lg"><p className="animated" >ABOUT</p></Link>
       </Fade>
 

@@ -48,36 +48,45 @@ const Contact = () => {
 
         <div className="row form-main" >
 
-          <Fade left>
-            <div className="col form-left">
+
+          <div className="col form-left">
+
+            <Fade left>
               <div className="form-group">
                 <input type="text" name="name" placeholder="Your name (*):" className="form-control" id="name" required />
               </div>
-              <div className="form-group">
+            </Fade>
 
+            <Fade left delay={250}>
+              <div className="form-group">
                 <input type="email" name="email" placeholder="Email (*):" className="form-control" id="email" required />
               </div>
-              <div className="form-group">
+            </Fade>
 
+            <Fade left delay={500}>
+              <div className="form-group">
                 <input type="number" name="phone" placeholder="Phone:" className="form-control" id="phone" />
               </div>
-              <div className="form-group">
+            </Fade>
 
+            <Fade left delay={750}>
+              <div className="form-group">
                 <input type="text" name="company" placeholder="Company:" className="form-control" id="company" />
               </div>
+            </Fade>
 
-              <p id="contact-small">* required field
-              </p>
+            <Fade delay={1000}>
+              <p id="contact-small">* required field</p>
+            </Fade>
 
-            </div>
-          </Fade>
+          </div>
+
 
 
           <div className="col form-right">
 
             <Fade right>
               <div className="form-group">
-
                 <textarea className="form-control" name="message" placeholder="If you have enquiries regarding employment, my CV, or something else, I'm waiting for your message." id="message" rows="7" cols="50" minLength="10" required></textarea>
               </div>
             </Fade>

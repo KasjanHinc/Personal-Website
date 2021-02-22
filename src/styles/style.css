@@ -17,8 +17,7 @@ html {
 }
 
 body {
-  font-family: 'Kanit', sans-serif;
-  background: linear-gradient(71deg, rgba(0, 10, 162, 1) 0%, rgba(22, 82, 240, 1) 100%);
+  background: linear-gradient(71deg, rgb(3, 12, 146) 0%, rgba(22, 82, 240, 1) 100%);
   height: 100vh;
   width: 100vw;
 }
@@ -89,6 +88,7 @@ button:focus,
 
 #copyright {
   color: rgb(255, 255, 255, 0.8);
+  font-weight: 100;
   font-size: .75rem;
   position: absolute;
   bottom: 0;
@@ -140,6 +140,7 @@ button:focus,
 }
 
 .navbar-toggler {
+  margin-right: 1vw;
   border-color: rgb(255, 255, 255, 0.5) !important;
   -webkit-transition: .5s ease;
   -moz-transition: .5s ease;
@@ -217,7 +218,7 @@ button:focus,
 }
 
 #intro {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif !important;
   font-size: 10vw;
   font-weight: 600;
   letter-spacing: .3rem;
@@ -225,7 +226,6 @@ button:focus,
   margin: 0;
   padding: 0;
   text-transform: uppercase;
-  opacity: 0.8;
 }
 
 #intro-welcome {
@@ -239,6 +239,14 @@ button:focus,
   font-size: 1.8vw;
   margin: 0 0 35px;
   text-align: center;
+}
+
+#intro-lower span {
+  border-radius: 1rem;
+  padding-left: .7rem;
+  padding-right: .7rem;
+  margin: 0 .1rem 0 .1rem;
+  color: rgb(255, 255, 255);
 }
 
 .btn-lg {
@@ -562,7 +570,6 @@ form {
 }
 
 
-
 #message::placeholder {
   font-size: 1.5rem;
   font-weight: 100;
@@ -577,8 +584,14 @@ form {
   font-size: 2rem;
   background-color: transparent;
   border-style: none;
-  border-bottom: 1px solid white;
+  border: 1px solid white;
   border-color: #1e77eb;
+  border-radius: 0;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: transparent !important;
 }
 
 input[type='number']::-webkit-inner-spin-button,
@@ -595,6 +608,7 @@ input[type='number']::-webkit-outer-spin-button {
   background-color: rgba(0, 0, 0, 0.3);
   border-color: hsl(214, 84%, 52%);
   resize: none;
+  border-radius: 0;
 }
 
 #name:focus,
@@ -734,6 +748,10 @@ textarea {
     margin-top: 3rem;
   }
 
+  .navbar-toggler {
+    margin-right: 0;
+  }
+
 
   /* HOME */
 
@@ -757,6 +775,10 @@ textarea {
 
   #about {
     justify-content: start;
+  }
+
+  #landing-container {
+    width: 90vw;
   }
 
   #about-me {

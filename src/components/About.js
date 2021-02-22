@@ -82,7 +82,7 @@ const About = () => {
 
         </div>}
 
-        <Fade appear spy={about}>
+        <Fade appear spy={about} delay={1500}>
           <button className="btn btn-outline-light btn-lg btn-about" onClick={handleAbout}>
             <p className="animated">{buttonHTML}</p>
           </button>
@@ -93,8 +93,8 @@ const About = () => {
 
       {about === 'me' && <div id="about-right">
 
-        <Flip top duration={1000} delay={500}>
-          <img id="kasjan" src="./src/img/kasjan.png" />
+        <Flip top duration={1000} delay={750}>
+          <img id="kasjan" src="./img/kasjan.png" />
         </Flip>
 
       </div>}
