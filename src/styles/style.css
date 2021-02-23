@@ -244,6 +244,7 @@ button:focus,
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: float 6s ease-in-out infinite;
 }
 
 #intro {
@@ -351,6 +352,7 @@ button:focus,
 
 #about-right {
   width: 20vw;
+  animation: float 6s ease-in-out infinite;
 }
 
 #about-typed {
@@ -1057,5 +1059,20 @@ textarea {
 
   to {
     transform: rotate(-360deg);
+  }
+}
+
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+
+  50% {
+    transform: translatey(-20px);
+  }
+
+  100% {
+    transform: translatey(0px);
   }
 }
