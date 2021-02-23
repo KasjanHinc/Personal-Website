@@ -94,7 +94,7 @@ const About = () => {
       {about === 'me' && <div id="about-right">
 
         <Flip top duration={1000} delay={750}>
-          <img id="kasjan" src="./img/kasjan.png" />
+          <img id="kasjan" src="./src/img/kasjan.png" />
         </Flip>
 
       </div>}
