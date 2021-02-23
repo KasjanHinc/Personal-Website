@@ -49,6 +49,35 @@ button:hover {
   z-index: 1;
 }
 
+.page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.fade-appear,
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms linear 150ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 150ms linear;
+}
+
+
 
 /* UNIVERSAL */
 
@@ -202,7 +231,7 @@ button:focus,
 
 /* HOME */
 
-#landing {
+.landing {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -293,7 +322,7 @@ button:focus,
 /* ABOUT */
 
 
-#about {
+.about {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -402,7 +431,7 @@ button:focus,
 /* PORTFOLIO */
 
 
-#portfolio {
+.portfolio {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -464,7 +493,7 @@ button:focus,
 /* SKILLS */
 
 
-#skills {
+.skills {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -516,7 +545,7 @@ div.skill:nth-of-type(4) svg {
 /* CONTACT */
 
 
-#contact {
+.contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -775,7 +804,7 @@ textarea {
 
   /* ABOUT */
 
-  #about {
+  .about {
     justify-content: start;
   }
 
@@ -888,7 +917,7 @@ textarea {
 
   /* SKILLS */
 
-  #skills {
+  .skills {
     overflow-y: scroll;
   }
 
@@ -916,7 +945,7 @@ textarea {
 
   /* CONTACT */
 
-  #contact {
+  .contact {
     overflow-y: scroll;
   }
 

@@ -32,7 +32,7 @@ const About = () => {
   }
 
 
-  return <div id="about" >
+  return <div className="about page" >
 
     <div id="about-me">
 

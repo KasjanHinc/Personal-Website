@@ -7,11 +7,9 @@ import Typed from 'react-typed'
 const Home = () => {
 
 
-  return <div id="landing" >
-
+  return <div className="landing page" >
 
     <div id="landing-container">
-
 
       <Fade delay={200}>
         <p id="intro-welcome">

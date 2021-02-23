@@ -27,7 +27,7 @@ const Skills = () => {
 
   })
 
-  return <div id="skills" >
+  return <div className="skills page" >
 
     <div className="skills-container">
 

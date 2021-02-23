@@ -36,7 +36,7 @@ const Contact = () => {
   }
 
 
-  return <div id="contact" >
+  return <div className="contact page" >
 
     <div id="form-container">
 

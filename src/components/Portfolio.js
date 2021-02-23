@@ -105,7 +105,7 @@ const Portfolio = () => {
   }
 
 
-  return <div id="portfolio" >
+  return <div className="portfolio page" >
 
     <div id="portfolio-container">
 
