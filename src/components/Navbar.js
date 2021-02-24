@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link, withRouter } from 'react-router-dom'
 import Fade from 'react-reveal/Fade'
 import $ from 'jquery'
@@ -10,7 +10,7 @@ const Navbar = () => {
 
   const linkedin = <FontAwesomeIcon icon={faLinkedin} size="2x" />
   const github = <FontAwesomeIcon icon={faGithubSquare} size="2x" />
-
+  const [togglerPulse, setTogglerPulse] = useState(true)
 
   useEffect(() => {
 
@@ -42,6 +42,10 @@ const Navbar = () => {
 
   })
 
+  function stopPulse() {
+    setTogglerPulse(false)
+  }
+
 
 
   return <nav className="navbar navbar-dark nav-background fixed-top">
@@ -58,7 +62,7 @@ const Navbar = () => {
       <a id="social-github" href="https://github.com/KasjanHinc" rel="noreferrer" target="_blank">{github}</a>
 
 
-      <button className="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+      <button onClick={stopPulse} className={togglerPulse ? 'navbar-toggler ml-auto' : 'navbar-toggler ml-auto navbar-toggler-stop'} type="button" data-toggle="collapse" data-target="#navbarResponsive">
         <span className="navbar-toggler-icon"></span>
       </button>
 

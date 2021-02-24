@@ -175,6 +175,15 @@ button:focus,
   -moz-transition: .5s ease;
   -o-transition: .5s ease;
   transition: .5s ease;
+
+  animation-name: pulse !important;
+  animation-duration: 1.5s !important;
+  animation-iteration-count: infinite !important;
+  animation-timing-function: linear !important;
+}
+
+.navbar-toggler-stop {
+  animation-name: none !important;
 }
 
 .navbar-toggler:hover .navbar-toggler-icon,
