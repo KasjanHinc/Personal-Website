@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;700&family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;700&family=Raleway:wght@400;700;900&display=swap');
 
 * {
   color: white;
@@ -26,6 +26,8 @@ a:hover,
 button:hover {
   color: white;
 }
+
+
 
 .cursor {
   position: absolute;
@@ -117,7 +119,7 @@ button:focus,
 
 #copyright {
   color: rgb(255, 255, 255, 0.8);
-  font-weight: 100;
+  font-weight: 200;
   font-size: .75rem;
   position: absolute;
   bottom: 0;
@@ -133,7 +135,7 @@ button:focus,
 }
 
 #social-linkedin svg:hover path {
-  color: rgb(255, 255, 255, 0.8) !important;
+  color: #e7c496 !important;
 }
 
 #social-linkedin svg path,
@@ -149,7 +151,7 @@ button:focus,
 }
 
 #social-github svg:hover path {
-  color: rgb(255, 255, 255, 0.8) !important;
+  color: #e7c496 !important;
 }
 
 
@@ -259,12 +261,67 @@ button:focus,
 #intro {
   font-family: 'Raleway', sans-serif !important;
   font-size: 10vw;
-  font-weight: 600;
+  font-weight: 900;
   letter-spacing: .3rem;
-  text-shadow: .1rem .1rem .1rem black;
+  text-shadow: 1px 1px 1px black;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
+  color: #e7c496;
+}
+
+
+
+
+.intro-skills {
+  display: inline-block;
+  position: relative;
+  font: normal 40px/50px Montserrat, sans-serif;
+  color: #999;
+  bottom: 40px;
+}
+
+.intro-skills p {
+  height: 50px;
+  float: left;
+  margin-right: 0.3em;
+}
+
+.intro-skills b {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  height: 50px;
+  top: 40px;
+}
+
+.intro-skills .intro-inner-skills {
+  display: inline-block;
+  color: #e74c3c;
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
+
+
+  /*animation*/
+  -webkit-animation: move 15s;
+  -moz-animation: move 15s;
+  -ms-animation: move 15s;
+  -o-animation: move 15s;
+  animation: move 15s;
+  /*animation-iteration-count*/
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  /*animation-delay*/
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -ms-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  animation-delay: 3s;
 }
 
 #intro-welcome {
@@ -274,19 +331,35 @@ button:focus,
 }
 
 #intro-lower {
-  font-weight: 300;
-  font-size: 1.8vw;
-  margin: 0 0 35px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
-#intro-lower span {
-  border-radius: 1rem;
-  padding-left: .7rem;
-  padding-right: .7rem;
-  margin: 0 .1rem 0 .1rem;
-  color: rgb(255, 255, 255);
+#intro-lower-title {
+  display: inline;
+  font-weight: 300;
+  font-size: 2vw;
+  margin-bottom: 0;
 }
+
+#intro-lower span {
+  display: inline;
+  color: #e7c496;
+  padding-left: 1.2rem;
+  padding-right: .8rem;
+  margin: 0 .1rem 0 .1rem;
+}
+
+#intro-lower-location {
+  display: block;
+  font-weight: 300;
+  font-size: 2vw;
+  margin-bottom: 2rem;
+}
+
 
 .btn-lg {
   border-width: .12rem;
@@ -313,6 +386,7 @@ button:focus,
   color: white;
   background-color: rgba(230, 230, 230, 0.1) !important;
   outline: none !important;
+
 }
 
 
@@ -372,6 +446,11 @@ button:focus,
   height: 45vh;
 }
 
+#about-typed svg path {
+  color: #e7c496;
+
+}
+
 #kasjan {
   width: 20vw;
   opacity: 0.9;
@@ -396,6 +475,7 @@ button:focus,
 }
 
 #website-info-title {
+  color: #e7c496;
   text-align: center;
   font-size: 3vw;
 }
@@ -423,6 +503,10 @@ button:focus,
   animation-duration: 2.5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+}
+
+#cog-l svg path {
+  color: #e7c496 !important;
 }
 
 #cog-s {
@@ -495,6 +579,7 @@ button:focus,
 }
 
 #project-title {
+  color: #e7c496;
   margin-bottom: 1.5rem;
   font-size: 3vw;
   text-align: center;
@@ -540,11 +625,14 @@ div.skill:nth-of-type(4) svg {
   animation-timing-function: linear;
 }
 
+div.skill:nth-of-type(4) svg path {
+  color: #e7c496;
+}
+
 .skill-svg {
   color: rgb(255, 255, 255, 0.8);
   font-size: 3vw;
 }
-
 
 
 #skill-info {
@@ -805,12 +893,28 @@ textarea {
   #intro {
     font-size: 20vw;
     text-align: center;
+
   }
 
   #intro-lower {
-    font-size: 6vw;
-    margin-right: 1vw;
-    margin-left: 1vw;
+    flex-direction: column;
+  }
+
+  #intro-lower-title {
+    display: block;
+    font-size: 5vw;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+  }
+
+  #intro-skills {
+    display: block;
+  }
+
+  #intro-lower-location {
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+    font-size: 5vw;
   }
 
   /* ABOUT */
@@ -1023,65 +1127,4 @@ textarea {
   }
 
 
-
-
-
-
-}
-
-
-
-/* ANIMATIONS */
-
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.1);
-    transform: scale(1.1);
-  }
-
-  100% {
-    transform: scale(1);
-    transform: scale(1);
-  }
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes spinReverse {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(-360deg);
-  }
-}
-
-
-@keyframes float {
-  0% {
-    transform: translatey(0px);
-  }
-
-  50% {
-    transform: translatey(-20px);
-  }
-
-  100% {
-    transform: translatey(0px);
-  }
 }

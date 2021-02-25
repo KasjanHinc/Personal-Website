@@ -3,6 +3,7 @@ import { HashRouter, Switch, Route } from 'react-router-dom'
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
+import './styles/animations.css'
 import './styles/style.css'
 
 import ParticlesBG from './components/ParticlesBG'
