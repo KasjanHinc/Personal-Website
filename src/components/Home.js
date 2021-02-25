@@ -24,12 +24,9 @@ const Home = () => {
         </p>
       </Fade>
 
-      {/* <Fade up delay={700}> */}
-      <h1 id="intro" >Kasjan Hinc</h1>
-
-      {/* </Fade> */}
-
-
+      <Fade up delay={700}>
+        <h1 id="intro" >Kasjan Hinc</h1>
+      </Fade>
 
       <Fade up delay={1200}>
         <div id="intro-lower">

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import Fade from 'react-reveal/Fade'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faServer, faDatabase, faSatelliteDish } from '@fortawesome/free-solid-svg-icons'
@@ -21,11 +21,6 @@ const Skills = () => {
   const nosql = <FontAwesomeIcon icon={faDatabase} size="2x" />
   const api = <FontAwesomeIcon icon={faSatelliteDish} size="2x" />
 
-  useEffect(() => {
-
-
-
-  })
 
   return <div className="skills page" >
 

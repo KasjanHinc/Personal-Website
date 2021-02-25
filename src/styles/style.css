@@ -625,13 +625,20 @@ div.skill:nth-of-type(4) svg {
   animation-timing-function: linear;
 }
 
-div.skill:nth-of-type(4) svg path {
-  color: #e7c496;
+.skill-svg {
+  font-size: 3vw;
 }
 
-.skill-svg {
-  color: rgb(255, 255, 255, 0.8);
-  font-size: 3vw;
+.skill-svg svg path {
+  color: #e7c496;
+  -webkit-transition: .5s ease;
+  -moz-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.skill-svg:hover svg path {
+  color: #e74c3c;
 }
 
 
@@ -1123,6 +1130,10 @@ textarea {
 
 
   #message::placeholder {
+    font-weight: 300;
+  }
+
+  #contact-small {
     font-weight: 200;
   }
 
