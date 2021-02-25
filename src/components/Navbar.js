@@ -18,6 +18,8 @@ const Navbar = () => {
       $('.navbar-collapse').collapse('hide')
     })
 
+    scrollToTop()
+
   })
 
   useEffect(() => {
@@ -44,6 +46,9 @@ const Navbar = () => {
 
   function stopPulse() {
     setTogglerPulse(false)
+  }
+  function scrollToTop() {
+    window.scrollTo(0, 0)
   }
 
 
