@@ -22,7 +22,7 @@ const About = () => {
       setButtonHTML('ABOUT ME')
       setAbout('website')
     } else if (about === 'website') {
-      setButtonHTML('ABOUT WEBSITE')
+      setButtonHTML('ABOUT THIS WEBSITE')
       setAbout('me')
     }
   }
@@ -34,20 +34,23 @@ const About = () => {
 
   return <div className="about page" >
 
+
     <div id="about-me">
 
       <div className={about === 'me' ? 'about-left' : 'about-left-wide'}>
 
-        <Zoom left duration={1500} appear spy={about}>
-          {about === 'me' && <div id="about-typed" >
-            {ql} I am a creative developer and team player with great communication. I have been exposed to a wide variety of modern technologies and believe to have an understanding of full stack development and consider myself to be very adaptable. I’m looking for a role where I can expand my knowledge and work on modern technologies and languages. {qr}
-          </div>}
-        </Zoom>
+        {about === 'me' && <div id="about-typed" >
+          <Zoom left duration={1500} appear spy={about}>
+            <p>{ql} I am a creative developer and team player with great communication. I have been exposed to a wide variety of modern technologies and believe to have an understanding of full stack development and consider myself to be very adaptable. I’m looking for a role where I can expand my knowledge and work on modern technologies and languages. {qr}</p>
+          </Zoom>
+        </div>}
+
 
         {about === 'website' && <div className="about-website-container">
 
-          <Fade delay={250}>
-            <div className="col website-info-idea">
+
+          <div className="col website-info-idea">
+            <Fade delay={250}>
               <h3 id="website-info-title" >My inspiration</h3>
               <p id="website-info">
                 As I was browsing developer portfolios from around the world, some made me think &apos;this person wants
@@ -57,11 +60,13 @@ const About = () => {
                 any other project. This website is a physical copy of my creativity, with borrowed inspiration from
                 great developers.
               </p>
-            </div>
-          </Fade>
+            </Fade>
+          </div>
 
-          <Fade delay={500}>
-            <div className="col website-info-technical">
+
+
+          <div className="col website-info-technical">
+            <Fade delay={500}>
               <h3 id="website-info-title">The technical stuff</h3>
               <p id="website-info">
                 This website is fully <a href="http://en.wikipedia.org/wiki/Responsive_web_design"
@@ -76,8 +81,9 @@ const About = () => {
                   <div id="cog-s">{cog}</div>
                 </div>
               </div>
-            </div>
-          </Fade>
+            </Fade>
+          </div>
+
 
 
         </div>}

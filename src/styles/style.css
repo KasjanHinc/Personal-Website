@@ -28,7 +28,6 @@ button:hover {
 }
 
 
-
 .cursor {
   position: absolute;
   height: 20px;
@@ -444,7 +443,10 @@ button:focus,
   font-style: italic;
   font-size: 1.8vw;
   height: 45vh;
+  animation: float 6s ease-in-out infinite;
+  animation-delay: 1s;
 }
+
 
 #about-typed svg path {
   color: #e7c496;
@@ -460,6 +462,15 @@ button:focus,
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.website-info-idea {
+  animation: float 6s ease-in-out infinite;
+}
+
+.website-info-technical {
+  animation: float 6s ease-in-out infinite;
+  animation-delay: 1s;
 }
 
 #website-info {
@@ -551,6 +562,9 @@ button:focus,
   justify-content: center;
   align-items: center;
   width: 50%;
+
+  animation: float 6s ease-in-out infinite;
+  animation-delay: 1s;
 }
 
 #project-text {
@@ -625,8 +639,27 @@ div.skill:nth-of-type(4) svg {
   animation-timing-function: linear;
 }
 
+div.skill:nth-of-type(4) svg path {
+  color: #e74c3c;
+}
+
 .skill-svg {
   font-size: 3vw;
+}
+
+.skill-svg-v1 {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.skill-svg-v2 {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.skill-svg-v3 {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 3s;
 }
 
 .skill-svg svg path {
@@ -687,6 +720,7 @@ form {
 
 .btn-contact {
   font-size: 1rem;
+  animation: float 6s ease-in-out infinite !important;
 }
 
 #contact-small {
@@ -773,6 +807,7 @@ textarea {
 .carousel-wrapper {
   opacity: 1;
   width: 50%;
+  animation: float 6s ease-in-out infinite;
 }
 
 .carousel-wrapper-loading {
