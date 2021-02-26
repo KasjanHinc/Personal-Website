@@ -85,7 +85,7 @@ const Contact = () => {
 
           <div className="col form-right">
 
-            <Fade right delay={750}>
+            <Fade right delay={1500}>
               <div className="form-group">
                 <textarea className="form-control" name="message" placeholder="If you have enquiries regarding employment, my CV, or something else, I'm waiting for your message." id="message" rows="7" cols="50" minLength="10" required></textarea>
               </div>
