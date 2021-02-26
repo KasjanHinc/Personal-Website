@@ -670,10 +670,6 @@ div.skill:nth-of-type(4) svg path {
   transition: .5s ease;
 }
 
-.skill-svg:hover svg path {
-  color: #e74c3c;
-}
-
 
 #skill-info {
   font-weight: 300;
@@ -853,6 +849,10 @@ textarea {
   outline: none !important;
 
 }
+
+
+
+
 
 
 
