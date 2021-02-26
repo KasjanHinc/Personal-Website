@@ -693,6 +693,24 @@ div.skill:nth-of-type(4) svg path {
   width: 60vw;
 }
 
+.form-complete {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: float 6s ease-in-out infinite;
+}
+
+.form-complete h2 {
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.form-complete svg path {
+  color: #e7c496 !important;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -1172,6 +1190,12 @@ textarea {
 
   #contact-small {
     font-weight: 200;
+  }
+
+  .form-complete {
+    position: absolute;
+    top: 40%;
+    width: 90vw;
   }
 
 

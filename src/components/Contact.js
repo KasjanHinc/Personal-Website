@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from 'react'
+import React, { useState } from 'react'
 import Fade from 'react-reveal/Fade'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaperPlane, faCheckSquare } from '@fortawesome/free-solid-svg-icons'
@@ -10,8 +10,8 @@ import apiKeys from '../js/apikeys'
 const Contact = () => {
 
   const plane = <FontAwesomeIcon icon={faPaperPlane} size="2x" />
-  const check = <FontAwesomeIcon icon={faCheckSquare} size="2x" />
-  const [submitStatus, setSubmitStatus] = useState(false)
+  const check = <FontAwesomeIcon icon={faCheckSquare} size="3x" />
+  const [formComplete, setFormComplete] = useState(false)
 
   const resetForm = () => {
     document.getElementById('form').reset()
@@ -22,12 +22,12 @@ const Contact = () => {
 
     emailjs.sendForm('service_x15rpps', apiKeys.TEMPLATE_ID, e.target, apiKeys.USER_ID)
       .then(() => {
-        setSubmitStatus(true)
+        setFormComplete(true)
 
         setTimeout(() => {
+          setFormComplete(false)
           resetForm()
-          setSubmitStatus(false)
-        }, 4000)
+        }, 8000)
 
       },
         error => {
@@ -40,7 +40,14 @@ const Contact = () => {
 
     <div id="form-container">
 
-      <form id="form" onSubmit={handleSubmit}>
+      {formComplete && <div className="form-complete">
+        <Fade delay={300}>
+          <h2>Thank you for your message, I will be in contact soon.</h2>
+          <div>{check}</div>
+        </Fade>
+      </div>}
+
+      {!formComplete && <form id="form" onSubmit={handleSubmit}>
 
         <Fade delay={400}>
           <a href="mailto:kasjan.hinc@gmail.com" className="btn btn-outline-light btn-lg btn-contact"><p className="animated">kasjan.hinc@gmail.com</p></a>
@@ -92,7 +99,7 @@ const Contact = () => {
             </Fade>
 
             <Fade up>
-              <button type="submit" name="submit" className="btn btn-outline-light btn-lg btn-submit" id="btn-submit"><p className={submitStatus ? 'sent' : 'animated'} > {submitStatus ? <Fragment>{check} SENT</Fragment> : <Fragment>{plane} SEND</Fragment>}</p></button>
+              <button type="submit" name="submit" className="btn btn-outline-light btn-lg btn-submit" id="btn-submit"><p className="animated" >{plane} SEND</p></button>
             </Fade>
 
           </div>
@@ -100,7 +107,7 @@ const Contact = () => {
 
         </div>
 
-      </form>
+      </form>}
 
 
     </div>
