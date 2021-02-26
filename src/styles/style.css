@@ -372,8 +372,7 @@ button:focus,
   transition: .5s ease;
 }
 
-.animated,
-.sent {
+.animated {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   padding: 1rem 2rem;

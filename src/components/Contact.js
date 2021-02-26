@@ -27,12 +27,17 @@ const Contact = () => {
         setTimeout(() => {
           setFormComplete(false)
           resetForm()
+          scrollToTop()
         }, 8000)
 
       },
         error => {
           console.log(error)
         })
+  }
+
+  function scrollToTop() {
+    window.scrollTo(0, 0)
   }
 
 
