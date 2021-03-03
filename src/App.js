@@ -1,5 +1,5 @@
 import React from 'react'
-import { HashRouter, Switch, Route } from 'react-router-dom'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -15,7 +15,7 @@ import Skills from './components/Skills'
 import Contact from './components/Contact'
 
 const App = () => (
-  <HashRouter>
+  <BrowserRouter>
     <ParticlesBG />
     <Navbar />
 
@@ -38,7 +38,7 @@ const App = () => (
     )} />
 
 
-  </HashRouter>
+  </BrowserRouter>
 )
 
 export default App
