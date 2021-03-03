@@ -49,7 +49,7 @@ module.exports = () => {
         template: 'src/index.html',
         filename: 'index.html',
         inject: 'body',
-        favicon: './src/img/favicon.ico'
+        favicon: './src/img/favicon.png'
       }),
       env
     ]
