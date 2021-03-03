@@ -95,9 +95,6 @@ canvas {
   z-index: -998 !important;
 }
 
-#logo {
-  width: 4vw;
-}
 
 ::selection {
   background: rgb(255, 255, 255);
@@ -128,9 +125,13 @@ button:focus,
 
 /* NAV */
 
+#social-linkedin,
+#social-github {
+  font-size: 1.5rem;
+}
+
 #social-linkedin {
-  font-size: 1rem;
-  margin-left: 5vw;
+  margin-left: 2vw;
 }
 
 #social-linkedin svg:hover path {
@@ -147,7 +148,7 @@ button:focus,
 }
 
 #social-github {
-  margin-left: 1vw;
+  margin-left: 1.2vw;
 }
 
 #social-github svg:hover path {
@@ -276,13 +277,13 @@ button:focus,
 .intro-skills {
   display: inline-block;
   position: relative;
-  font: normal 40px/50px Montserrat, sans-serif;
+  font: normal 3.125vw/3.90625vw Montserrat, sans-serif;
   color: #999;
-  bottom: 40px;
+  bottom: 3.125vw;
 }
 
 .intro-skills p {
-  height: 50px;
+  height: 3.90625vw;
   float: left;
   margin-right: 0.3em;
 }
@@ -291,8 +292,8 @@ button:focus,
   float: left;
   overflow: hidden;
   position: relative;
-  height: 50px;
-  top: 40px;
+  height: 3.90625vw;
+  top: 3.125vw;
 }
 
 .intro-skills .intro-inner-skills {
@@ -884,10 +885,6 @@ textarea {
     display: none;
   }
 
-  #logo {
-    width: 10vw;
-  }
-
   #copyright {
     display: none;
   }
@@ -896,11 +893,11 @@ textarea {
 
 
   #social-linkedin {
-    margin-left: 10vw;
+    margin-left: 5vw;
   }
 
   #social-github {
-    margin-left: 8vw;
+    margin-left: 7vw;
   }
 
   .nav-item {

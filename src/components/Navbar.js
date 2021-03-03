@@ -59,13 +59,10 @@ const Navbar = () => {
     <div className="cursor"></div>
 
     <Fade>
-      <Link to="/" ><img id="logo" src='./src/img/logo.png' /></Link>
-
 
       <a id="social-linkedin" href="https://www.linkedin.com/in/kasjan-hinc/" rel="noreferrer" target="_blank">{linkedin}</a>
 
       <a id="social-github" href="https://github.com/KasjanHinc" rel="noreferrer" target="_blank">{github}</a>
-
 
       <button onClick={stopPulse} className={togglerPulse ? 'navbar-toggler ml-auto' : 'navbar-toggler ml-auto navbar-toggler-stop'} type="button" data-toggle="collapse" data-target="#navbarResponsive">
         <span className="navbar-toggler-icon"></span>
