@@ -9,22 +9,22 @@ const ParticlesBG = () => {
     params={{
       'particles': {
         'number': {
-          'value': 60,
+          'value': 80,
           'density': {
             'enable': true,
             'value_area': 1500
           }
         },
         'line_linked': {
-          'enable': true,
+          'enable': false,
           'opacity': 0.02
         },
         'move': {
-          'direction': 'right',
           'speed': 0.7
         },
         'size': {
-          'value': 3
+          'random': true,
+          'value': 5
         },
         'opacity': {
           'anim': {
@@ -55,7 +55,7 @@ const ParticlesBG = () => {
             'opacity': 0
           },
           'repulse': {
-            'distance': 400,
+            'distance': 300,
             'duration': 10
           }
         }

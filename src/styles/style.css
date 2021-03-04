@@ -279,13 +279,13 @@ button:focus,
 .intro-skills {
   display: inline-block;
   position: relative;
-  font: normal 3.125vw/3.90625vw Montserrat, sans-serif;
+  font: normal 40px/50px Montserrat, sans-serif;
   color: #999;
-  bottom: 3.125vw;
+  bottom: 40px;
 }
 
 .intro-skills p {
-  height: 3.90625vw;
+  height: 50px;
   float: left;
   margin-right: 0.3em;
 }
@@ -294,8 +294,8 @@ button:focus,
   float: left;
   overflow: hidden;
   position: relative;
-  height: 3.90625vw;
-  top: 3.125vw;
+  height: 50px;
+  top: 40px;
 }
 
 .intro-skills .intro-inner-skills {
@@ -305,8 +305,6 @@ button:focus,
   white-space: nowrap;
   top: 0;
   left: 0;
-
-
   /*animation*/
   -webkit-animation: move 15s;
   -moz-animation: move 15s;
@@ -387,7 +385,6 @@ button:focus,
   color: white;
   background-color: rgba(230, 230, 230, 0.1) !important;
   outline: none !important;
-
 }
 
 
@@ -965,10 +962,6 @@ textarea {
     font-size: 5vw;
     margin-top: 2vh;
     margin-bottom: 3vh;
-  }
-
-  #intro-skills {
-    display: block;
   }
 
   #intro-lower-location {
