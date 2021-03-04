@@ -838,7 +838,6 @@ textarea {
 .carousel.carousel-slider {
   background: transparent !important;
   border-radius: 1rem !important;
-  box-shadow: 15px 15px 15px rgb(0, 0, 0, 0.5) !important;
 }
 
 .carousel .slide {
@@ -867,6 +866,10 @@ textarea {
 .selected:active {
   outline: none !important;
 
+}
+
+.carousel .control-dots {
+  margin: 0 !important;
 }
 
 
