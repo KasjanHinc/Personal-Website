@@ -117,12 +117,12 @@ const Portfolio = () => {
           <Carousel showThumbs={false} useKeyboardArrows={true} swipeable={true} interval={12000} autoPlay={true} infiniteLoop={true} showStatus={false} onChange={handleSlide}>
 
             <div id="project-container" >
-              <img id="project-image" src="./img/cryptox.png" onLoad={() => setLoaded(true)} />
+              <img id="project-image" src="./src/img/cryptox.png" onLoad={() => setLoaded(true)} />
             </div>
 
 
             <div id="project-container" >
-              <img id="project-image" src="./img/horizon.png" />
+              <img id="project-image" src="./src/img/horizon.png" />
             </div>
 
 
