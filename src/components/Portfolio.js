@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Fade from 'react-reveal/Fade'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { Carousel } from 'react-responsive-carousel'
+import Tilt from 'react-tilt'
 
 
 const Portfolio = () => {
@@ -186,14 +187,16 @@ const Portfolio = () => {
       {loaded && <div id="project-desc">
 
         <Fade appear spy={project}>
-
-          <h2 id="project-title" >{project.title}</h2>
-          <h5 id="project-text" >{project.desc}</h5>
-          <div id="project-btns">
-            <a href={project.github} target="_blank" rel="noreferrer" className="btn btn-outline-light btn-lg btn-mob" ><p className="animated" >GitHub</p></a>
-            <a href={project.live} target="_blank" rel="noreferrer" className="btn btn-outline-light btn-lg" ><p className="animated" >LIVE</p></a>
-          </div>
+          <Tilt>
+            <h2 id="project-title" >{project.title}</h2>
+            <h5 id="project-text" >{project.desc}</h5>
+            <div id="project-btns">
+              <a href={project.github} target="_blank" rel="noreferrer" className="btn btn-outline-light btn-lg btn-mob" ><p className="animated" >GitHub</p></a>
+              <a href={project.live} target="_blank" rel="noreferrer" className="btn btn-outline-light btn-lg" ><p className="animated" >LIVE</p></a>
+            </div>
+          </Tilt>
         </Fade>
+
 
       </div>}
 

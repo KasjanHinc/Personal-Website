@@ -1,9 +1,9 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
+import Tilt from 'react-tilt'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faServer, faDatabase, faSatelliteDish } from '@fortawesome/free-solid-svg-icons'
 import { faHtml5, faCss3, faJsSquare, faReact, faGitSquare, faNodeJs, faPython } from '@fortawesome/free-brands-svg-icons'
-
 
 
 const Skills = () => {
@@ -25,80 +25,82 @@ const Skills = () => {
 
   return <div className="skills page" >
 
-    <div className="skills-container">
+    <Tilt>
+      <div className="skills-container">
 
-      <Fade delay={delays[Math.floor(Math.random() * delays.length)]}>
-        <div className="skill">
-          <div className={svgAnim[Math.floor(Math.random() * svgAnim.length)]}>{html}</div>
-          <p id="skill-info" >HTML5, Forms</p>
-        </div>
-      </Fade>
+        <Fade delay={delays[Math.floor(Math.random() * delays.length)]}>
+          <div className="skill">
+            <div className={svgAnim[Math.floor(Math.random() * svgAnim.length)]}>{html}</div>
+            <p id="skill-info" >HTML5, Forms</p>
+          </div>
+        </Fade>
 
-      <Fade delay={delays[Math.floor(Math.random() * delays.length)]}>
-        <div className="skill">
-          <div className={svgAnim[Math.floor(Math.random() * svgAnim.length)]}>{css}</div>
-          <p id="skill-info">CSS3, Bootstrap, Flexbox, Animations</p>
-        </div>
-      </Fade>
+        <Fade delay={delays[Math.floor(Math.random() * delays.length)]}>
+          <div className="skill">
+            <div className={svgAnim[Math.floor(Math.random() * svgAnim.length)]}>{css}</div>
+            <p id="skill-info">CSS3, Bootstrap, Flexbox, Animations</p>
+          </div>
+        </Fade>
 
-      <Fade delay={delays[Math.floor(Math.random() * delays.length)]}>
-        <div className="skill">
-          <div className={svgAnim[Math.floor(Math.random() * svgAnim.length)]}>{js}</div>
-          <p id="skill-info">JavaScript ES6, Mapbox GL, jQuery plugins</p>
-        </div>
-      </Fade>
+        <Fade delay={delays[Math.floor(Math.random() * delays.length)]}>
+          <div className="skill">
+            <div className={svgAnim[Math.floor(Math.random() * svgAnim.length)]}>{js}</div>
+            <p id="skill-info">JavaScript ES6, Mapbox GL, jQuery plugins</p>
+          </div>
+        </Fade>
 
-      <Fade delay={delays[Math.floor(Math.random() * delays.length)]}>
-        <div className="skill">
-          <div className={svgAnim[Math.floor(Math.random() * svgAnim.length)]}>{react}</div>
-          <p id="skill-info">React, Hooks, JSX, Webpack, Router, Babel</p>
-        </div>
-      </Fade>
+        <Fade delay={delays[Math.floor(Math.random() * delays.length)]}>
+          <div className="skill">
+            <div className={svgAnim[Math.floor(Math.random() * svgAnim.length)]}>{react}</div>
+            <p id="skill-info">React, Hooks, JSX, Webpack, Router, Babel</p>
+          </div>
+        </Fade>
 
-      <Fade delay={delays[Math.floor(Math.random() * delays.length)]}>
-        <div className="skill">
-          <div className={svgAnim[Math.floor(Math.random() * svgAnim.length)]}>{git}</div>
-          <p id="skill-info">Git, GitHub, Work flow, Project deployment</p>
-        </div>
-      </Fade>
+        <Fade delay={delays[Math.floor(Math.random() * delays.length)]}>
+          <div className="skill">
+            <div className={svgAnim[Math.floor(Math.random() * svgAnim.length)]}>{git}</div>
+            <p id="skill-info">Git, GitHub, Work flow, Project deployment</p>
+          </div>
+        </Fade>
 
-      <Fade delay={delays[Math.floor(Math.random() * delays.length)]}>
-        <div className="skill">
-          <div className={svgAnim[Math.floor(Math.random() * svgAnim.length)]}>{node}</div>
-          <p id="skill-info">Node.js, Express, JSON web token, Axios, Bcrypt</p>
-        </div>
-      </Fade>
+        <Fade delay={delays[Math.floor(Math.random() * delays.length)]}>
+          <div className="skill">
+            <div className={svgAnim[Math.floor(Math.random() * svgAnim.length)]}>{node}</div>
+            <p id="skill-info">Node.js, Express, JSON web token, Axios, Bcrypt</p>
+          </div>
+        </Fade>
 
-      <Fade delay={delays[Math.floor(Math.random() * delays.length)]}>
-        <div className="skill">
-          <div className={svgAnim[Math.floor(Math.random() * svgAnim.length)]}>{sql}</div>
-          <p id="skill-info">SQL, PostgreSQL, SQLAlchemy, Marshmallow</p>
-        </div>
-      </Fade>
+        <Fade delay={delays[Math.floor(Math.random() * delays.length)]}>
+          <div className="skill">
+            <div className={svgAnim[Math.floor(Math.random() * svgAnim.length)]}>{sql}</div>
+            <p id="skill-info">SQL, PostgreSQL, SQLAlchemy, Marshmallow</p>
+          </div>
+        </Fade>
 
-      <Fade delay={delays[Math.floor(Math.random() * delays.length)]}>
-        <div className="skill">
-          <div className={svgAnim[Math.floor(Math.random() * svgAnim.length)]}>{python}</div>
-          <p id="skill-info">Python, Vanilla, Flask, Pipenv</p>
-        </div>
-      </Fade>
+        <Fade delay={delays[Math.floor(Math.random() * delays.length)]}>
+          <div className="skill">
+            <div className={svgAnim[Math.floor(Math.random() * svgAnim.length)]}>{python}</div>
+            <p id="skill-info">Python, Vanilla, Flask, Pipenv</p>
+          </div>
+        </Fade>
 
-      <Fade delay={delays[Math.floor(Math.random() * delays.length)]}>
-        <div className="skill">
-          <div className={svgAnim[Math.floor(Math.random() * svgAnim.length)]} >{nosql}</div>
-          <p id="skill-info">NoSQL, Mongoose, MongoDB</p>
-        </div>
-      </Fade>
+        <Fade delay={delays[Math.floor(Math.random() * delays.length)]}>
+          <div className="skill">
+            <div className={svgAnim[Math.floor(Math.random() * svgAnim.length)]} >{nosql}</div>
+            <p id="skill-info">NoSQL, Mongoose, MongoDB</p>
+          </div>
+        </Fade>
 
-      <Fade delay={delays[Math.floor(Math.random() * delays.length)]}>
-        <div className="skill">
-          <div className={svgAnim[Math.floor(Math.random() * svgAnim.length)]}>{api}</div>
-          <p id="skill-info">API&apos;s, RESTFUL, JSON</p>
-        </div>
-      </Fade>
+        <Fade delay={delays[Math.floor(Math.random() * delays.length)]}>
+          <div className="skill">
+            <div className={svgAnim[Math.floor(Math.random() * svgAnim.length)]}>{api}</div>
+            <p id="skill-info">API&apos;s, RESTFUL, JSON</p>
+          </div>
+        </Fade>
 
 
-    </div >
+      </div >
+    </Tilt>
 
   </div >
 

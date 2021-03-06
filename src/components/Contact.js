@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Fade from 'react-reveal/Fade'
+import Tilt from 'react-tilt'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaperPlane, faCheckSquare } from '@fortawesome/free-solid-svg-icons'
 import emailjs from 'emailjs-com'
@@ -64,27 +65,35 @@ const Contact = () => {
           <div className="col form-left">
 
             <Fade left>
-              <div className="form-group">
-                <input type="text" name="name" placeholder="Your name (*):" className="form-control" id="name" required />
-              </div>
+              <Tilt>
+                <div className="form-group">
+                  <input type="text" name="name" placeholder="Your name (*):" className="form-control" id="name" required />
+                </div>
+              </Tilt>
             </Fade>
 
             <Fade left delay={250}>
-              <div className="form-group">
-                <input type="email" name="email" placeholder="Email (*):" className="form-control" id="email" required />
-              </div>
+              <Tilt>
+                <div className="form-group">
+                  <input type="email" name="email" placeholder="Email (*):" className="form-control" id="email" required />
+                </div>
+              </Tilt>
             </Fade>
 
             <Fade left delay={500}>
-              <div className="form-group">
-                <input type="number" name="phone" placeholder="Phone:" className="form-control" id="phone" />
-              </div>
+              <Tilt>
+                <div className="form-group">
+                  <input type="number" name="phone" placeholder="Phone:" className="form-control" id="phone" />
+                </div>
+              </Tilt>
             </Fade>
 
             <Fade left delay={750}>
-              <div className="form-group">
-                <input type="text" name="company" placeholder="Company:" className="form-control" id="company" />
-              </div>
+              <Tilt>
+                <div className="form-group">
+                  <input type="text" name="company" placeholder="Company:" className="form-control" id="company" />
+                </div>
+              </Tilt>
             </Fade>
 
             <Fade delay={1000}>
@@ -98,9 +107,11 @@ const Contact = () => {
           <div className="col form-right">
 
             <Fade right delay={1500}>
-              <div className="form-group">
-                <textarea className="form-control" name="message" placeholder="If you have enquiries regarding employment, my CV, or something else, I'm waiting for your message." id="message" rows="7" cols="50" minLength="10" required></textarea>
-              </div>
+              <Tilt>
+                <div className="form-group">
+                  <textarea className="form-control" name="message" placeholder="If you have enquiries regarding employment, my CV, or something else, I'm waiting for your message." id="message" rows="7" cols="50" minLength="10" required></textarea>
+                </div>
+              </Tilt>
             </Fade>
 
             <Fade up>
