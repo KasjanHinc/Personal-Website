@@ -59,7 +59,7 @@ const About = () => {
                 <p id="website-info">
                   As I was browsing developer portfolios from around the world, some made me think &apos;this person wants
                   to
-                  be remembered. A personal website should showcase your skills and be crafted with precision, just
+                  be remembered&apos;. A personal website should showcase your skills and be crafted with precision, just
                   like
                   any other project. This website is a physical copy of my creativity, with borrowed inspiration from
                   great developers.

@@ -38,7 +38,7 @@ const Skills = () => {
         <Fade delay={delays[Math.floor(Math.random() * delays.length)]}>
           <div className="skill">
             <div className={svgAnim[Math.floor(Math.random() * svgAnim.length)]}>{css}</div>
-            <p id="skill-info">CSS3, Bootstrap, Flexbox, Animations</p>
+            <p id="skill-info">CSS3, SCSS, SASS, Bootstrap, Flexbox, Animations</p>
           </div>
         </Fade>
 
