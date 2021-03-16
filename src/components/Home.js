@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Fade from 'react-reveal/Fade'
+import 'react-typed/dist/animatedCursor.css'
 import Typed from 'react-typed'
 import Tilt from 'react-tilt'
 
