@@ -17,7 +17,7 @@ const Home = () => {
         <Fade delay={200}>
           <p id="intro-welcome">
             <Typed
-              strings={['Hello,', 'नमस्ते,', 'Cześć,', 'Bonjour,', 'Olá,', '<span dir=\'rtl\'>مرحبا</span>']}
+              strings={['Hello,', 'Cześć,', 'नमस्ते,', 'Bonjour,', 'Olá,', '<span dir=\'rtl\'>مرحبا</span>']}
               typeSpeed={120}
               backSpeed={100}
               loop >
