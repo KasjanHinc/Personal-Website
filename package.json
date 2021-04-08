@@ -72,6 +72,7 @@
     "react-tilt": "^0.1.4",
     "react-transition-group": "^4.4.1",
     "react-typed": "^1.2.0",
+    "react-use-media-query-hook": "^0.0.1",
     "regenerator-runtime": "^0.13.7",
     "server": "^1.0.31"
   }
