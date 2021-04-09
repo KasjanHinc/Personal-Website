@@ -1,22 +1,26 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import Fade from 'react-reveal/Fade'
 import 'react-typed/dist/animatedCursor.css'
 import Typed from 'react-typed'
+import { MediaQuery } from '../MediaQuery'
 import Tilt from 'react-tilt'
-import useMediaQuery from 'react-use-media-query-hook'
+
+
 
 
 
 const Home = () => {
 
-  const isMobile = useMediaQuery('(max-width: 767px)')
+  const { mediaQuery, setMediaQuery } = useContext(MediaQuery)
+
+
 
   return <div className="landing page" >
 
     <div id="landing-container">
 
-      <Tilt options={{ max: isMobile ? 0 : 35 }}>
+      <Tilt options={{ max: mediaQuery ? 0 : 35 }}>
 
         <Fade delay={200}>
           <p id="intro-welcome">

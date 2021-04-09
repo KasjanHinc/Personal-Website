@@ -5,6 +5,7 @@ import Particles from 'react-particles-js'
 
 const ParticlesBG = () => {
 
+
   return <Particles
     params={{
       'particles': {

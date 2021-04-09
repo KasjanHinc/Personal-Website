@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { HashRouter, Switch, Route } from 'react-router-dom'
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
 
@@ -14,31 +14,49 @@ import Portfolio from './components/Portfolio'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
 
-const App = () => (
-  <HashRouter>
-    <ParticlesBG />
-    <Navbar />
+import useMediaQuery from 'react-use-media-query-hook'
+import { MediaQuery } from "./MediaQuery"
 
-    <Route render={({ location }) => (
+const App = () => {
 
-      <TransitionGroup>
-        <CSSTransition key={location.pathname} timeout={450} classNames="fade">
-
-          <Switch location={location}>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/portfolio" component={Portfolio} />
-            <Route exact path="/skills" component={Skills} />
-            <Route exact path="/contact" component={Contact} />
-          </Switch>
-
-        </CSSTransition>
-      </TransitionGroup>
-
-    )} />
+  const isMobile = useMediaQuery('(max-width: 767px)')
+  const [mediaQuery, setMediaQuery] = useState(isMobile)
 
 
-  </HashRouter>
-)
+  useEffect(() => {
+    if (isMobile) setMediaQuery(true)
+    else setMediaQuery(false)
+  }, [isMobile])
+
+
+  return (
+    <HashRouter>
+      <ParticlesBG />
+      <Navbar />
+
+      <Route render={({ location }) => (
+
+        <TransitionGroup>
+          <CSSTransition key={location.pathname} timeout={450} classNames="fade">
+
+            <MediaQuery.Provider value={{ mediaQuery, setMediaQuery }}>
+              <Switch location={location}>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/about" component={About} />
+                <Route exact path="/portfolio" component={Portfolio} />
+                <Route exact path="/skills" component={Skills} />
+                <Route exact path="/contact" component={Contact} />
+              </Switch>
+            </MediaQuery.Provider>
+
+          </CSSTransition>
+        </TransitionGroup>
+
+      )} />
+
+
+    </HashRouter>
+  )
+}
 
 export default App

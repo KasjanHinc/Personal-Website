@@ -1,12 +1,14 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import Fade from 'react-reveal/Fade'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { Carousel } from 'react-responsive-carousel'
+import { MediaQuery } from '../MediaQuery'
 import Tilt from 'react-tilt'
 
 
 const Portfolio = () => {
 
+  const { mediaQuery, setMediaQuery } = useContext(MediaQuery)
   const [loaded, setLoaded] = useState(false)
 
   const [project, setProject] = useState({
@@ -187,7 +189,7 @@ const Portfolio = () => {
       {loaded && <div id="project-desc">
 
         <Fade appear spy={project}>
-          <Tilt>
+          <Tilt options={{ max: mediaQuery ? 0 : 35 }}>
             <h2 id="project-title" >{project.title}</h2>
             <h5 id="project-text" >{project.desc}</h5>
             <div id="project-btns">

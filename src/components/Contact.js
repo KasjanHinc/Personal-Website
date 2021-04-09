@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import Fade from 'react-reveal/Fade'
+import { MediaQuery } from '../MediaQuery'
 import Tilt from 'react-tilt'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaperPlane, faCheckSquare } from '@fortawesome/free-solid-svg-icons'
@@ -9,7 +10,7 @@ import apiKeys from '../js/apikeys'
 
 
 const Contact = () => {
-
+  const { mediaQuery, setMediaQuery } = useContext(MediaQuery)
   const plane = <FontAwesomeIcon icon={faPaperPlane} size="2x" />
   const check = <FontAwesomeIcon icon={faCheckSquare} size="3x" />
   const [formComplete, setFormComplete] = useState(false)
@@ -65,7 +66,7 @@ const Contact = () => {
           <div className="col form-left">
 
             <Fade left>
-              <Tilt>
+              <Tilt options={{ max: mediaQuery ? 0 : 35 }}>
                 <div className="form-group">
                   <input type="text" name="name" placeholder="Your name (*):" className="form-control" id="name" required />
                 </div>
@@ -73,7 +74,7 @@ const Contact = () => {
             </Fade>
 
             <Fade left delay={250}>
-              <Tilt>
+              <Tilt options={{ max: mediaQuery ? 0 : 35 }}>
                 <div className="form-group">
                   <input type="email" name="email" placeholder="Email (*):" className="form-control" id="email" required />
                 </div>
@@ -81,7 +82,7 @@ const Contact = () => {
             </Fade>
 
             <Fade left delay={500}>
-              <Tilt>
+              <Tilt options={{ max: mediaQuery ? 0 : 35 }}>
                 <div className="form-group">
                   <input type="number" name="phone" placeholder="Phone:" className="form-control" id="phone" />
                 </div>
@@ -89,7 +90,7 @@ const Contact = () => {
             </Fade>
 
             <Fade left delay={750}>
-              <Tilt>
+              <Tilt options={{ max: mediaQuery ? 0 : 35 }}>
                 <div className="form-group">
                   <input type="text" name="company" placeholder="Company:" className="form-control" id="company" />
                 </div>
@@ -107,7 +108,7 @@ const Contact = () => {
           <div className="col form-right">
 
             <Fade right delay={1500}>
-              <Tilt>
+              <Tilt options={{ max: mediaQuery ? 0 : 35 }}>
                 <div className="form-group">
                   <textarea className="form-control" name="message" placeholder="If you have enquiries regarding employment, my CV, or something else, I'm waiting for your message." id="message" rows="7" cols="50" minLength="10" required></textarea>
                 </div>

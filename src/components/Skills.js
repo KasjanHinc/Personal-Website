@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Fade from 'react-reveal/Fade'
+import { MediaQuery } from '../MediaQuery'
 import Tilt from 'react-tilt'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faServer, faDatabase, faSatelliteDish } from '@fortawesome/free-solid-svg-icons'
@@ -7,6 +8,8 @@ import { faHtml5, faCss3, faJsSquare, faReact, faGitSquare, faNodeJs, faPython }
 
 
 const Skills = () => {
+
+  const { mediaQuery, setMediaQuery } = useContext(MediaQuery)
 
   const delays = [200, 400, 600, 800, 1000]
   const svgAnim = ['skill-svg skill-svg-v1', 'skill-svg skill-svg-v2', 'skill-svg skill-svg-v3']
@@ -25,7 +28,7 @@ const Skills = () => {
 
   return <div className="skills page" >
 
-    <Tilt>
+    <Tilt options={{ max: mediaQuery ? 0 : 35 }}>
       <div className="skills-container">
 
         <Fade delay={delays[Math.floor(Math.random() * delays.length)]}>

@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import Fade from 'react-reveal/Fade'
 import Zoom from 'react-reveal/Zoom'
 import Flip from 'react-reveal/Flip'
+import { MediaQuery } from '../MediaQuery'
 import Tilt from 'react-tilt'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuoteLeft, faQuoteRight, faCog } from '@fortawesome/free-solid-svg-icons'
@@ -9,7 +10,7 @@ import { faQuoteLeft, faQuoteRight, faCog } from '@fortawesome/free-solid-svg-ic
 
 
 const About = () => {
-
+  const { mediaQuery, setMediaQuery } = useContext(MediaQuery)
   const cog = <FontAwesomeIcon icon={faCog} size="3x" />
   const ql = <FontAwesomeIcon icon={faQuoteLeft} size="2x" />
   const qr = <FontAwesomeIcon icon={faQuoteRight} size="1x" />
@@ -42,7 +43,7 @@ const About = () => {
 
         {about === 'me' && <div id="about-typed" >
           <Zoom left duration={1500} appear spy={about}>
-            <Tilt >
+            <Tilt options={{ max: mediaQuery ? 0 : 35 }}>
               <p>{ql} I am a creative developer and team player with great communication. I have been exposed to a wide variety of modern technologies and believe to have an understanding of full stack development and consider myself to be very adaptable. I’m looking for a role where I can expand my knowledge and work on modern technologies and languages. {qr}</p>
             </Tilt>
           </Zoom>
@@ -54,7 +55,7 @@ const About = () => {
 
           <div className="col website-info-idea">
             <Fade delay={250}>
-              <Tilt>
+              <Tilt options={{ max: mediaQuery ? 0 : 35 }}>
                 <h3 id="website-info-title" >My inspiration</h3>
                 <p id="website-info">
                   As I was browsing developer portfolios from around the world, some made me think &apos;this person wants
@@ -72,7 +73,7 @@ const About = () => {
 
           <div className="col website-info-technical">
             <Fade delay={500}>
-              <Tilt>
+              <Tilt options={{ max: mediaQuery ? 0 : 35 }}>
                 <h3 id="website-info-title">The technical stuff</h3>
                 <p id="website-info">
                   This website is fully <a href="http://en.wikipedia.org/wiki/Responsive_web_design"
@@ -107,7 +108,7 @@ const About = () => {
       {about === 'me' && <div id="about-right">
 
         <Flip top duration={1000} delay={750}>
-          <Tilt>
+          <Tilt options={{ max: mediaQuery ? 0 : 35 }}>
             <img id="kasjan" src="./src/img/kasjan.png" />
           </Tilt>
         </Flip>
