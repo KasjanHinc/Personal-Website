@@ -90,6 +90,12 @@ const Portfolio = () => {
       desc: 'A dice game based on deception re-created in HTML, CSS and vanilla JavaScript ES6.',
       github: 'https://github.com/KasjanHinc/Liars-Dice',
       live: 'https://kasjanhinc.github.io/Liars-Dice/'
+    },
+    {
+      title: 'Hotel Cart',
+      desc: 'A hotel room booking checkout cart created in React and mockapi.io.',
+      github: 'https://github.com/KasjanHinc/Hotels-Cart',
+      live: 'https://kasjanhinc.github.io/Hotels-Cart/'
     }
 
 
@@ -175,6 +181,10 @@ const Portfolio = () => {
 
             <div id="project-container"  >
               <img id="project-image" src="./src/img/liarsdice.png" />
+            </div>
+
+            <div id="project-container"  >
+              <img id="project-image" src="./src/img/hotels-cart.png" />
             </div>
 
 
