@@ -48,7 +48,7 @@ const Skills = () => {
         <Fade delay={delays[Math.floor(Math.random() * delays.length)]}>
           <div className="skill">
             <div className={svgAnim[Math.floor(Math.random() * svgAnim.length)]}>{js}</div>
-            <p id="skill-info">JavaScript ES6, Mapbox GL, jQuery plugins</p>
+            <p id="skill-info">JavaScript ES6, TypeScript, Mapbox GL, jQuery plugins</p>
           </div>
         </Fade>
 
