@@ -18,7 +18,7 @@ const Navbar = () => {
 
   const [togglerPulse, setTogglerPulse] = useState(true)
 
-  const darkMode = useDarkMode(false)
+  const darkMode = useDarkMode(true)
 
   useEffect(() => {
 
@@ -59,6 +59,7 @@ const Navbar = () => {
     window.scrollTo(0, 0)
   }
 
+
   return (
 
     <nav className="navbar navbar-dark nav-background fixed-top">
@@ -68,7 +69,7 @@ const Navbar = () => {
 
       <Fade>
 
-        <button className="dark-mode-toggler" onClick={darkMode.toggle}>{darkMode.value ? sun : moon}</button>
+        <button className="dark-mode-toggler" onClick={darkMode.toggle}>{darkMode.value ? moon : sun}</button>
 
         <a id="social-linkedin" href="https://www.linkedin.com/in/kasjan-hinc/" rel="noreferrer" target="_blank">{linkedin}</a>
 

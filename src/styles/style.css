@@ -16,14 +16,13 @@ html {
   background-color: rgb(0, 0, 0);
 }
 
-body {
+body.dark-mode {
   background: linear-gradient(71deg, rgb(3, 12, 146) 0%, rgba(22, 82, 240, 1) 100%);
   height: 100vh;
   width: 100vw;
-  transition: background-color 0.3s ease;
 }
 
-body.dark-mode {
+body {
   background: linear-gradient(71deg, rgb(0, 0, 0) 0%, rgb(46, 46, 46) 100%);
   transition: .5s ease;
 }
@@ -953,6 +952,7 @@ textarea {
   .navbar-nav {
     width: initial !important;
     margin-top: 3rem;
+    background: linear-gradient(71deg, rgba(0, 10, 162, 1) 0%, rgba(22, 82, 240, 1) 100%);
   }
 
   .navbar-toggler {
