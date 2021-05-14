@@ -2,16 +2,18 @@ const path = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const Dotenv = require('dotenv-webpack')
-const env = process.env.NODE_ENV === 'production' ? (
-  new webpack.EnvironmentPlugin({ ...process.env })
-) : (
-    new Dotenv()
-  )
+
+// console.log(process.env.NODE_ENV)
+
+const env = process.env.NODE_ENV === 'production'
+  ? new webpack.EnvironmentPlugin({ ...process.env })
+  : new Dotenv()
 
 module.exports = () => {
   const publicPath = env.NODE_ENV === 'local' ? {
     publicPath: '/'
   } : {}
+
   return {
     entry: './src/index.js',
     output: {

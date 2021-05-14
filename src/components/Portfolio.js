@@ -114,108 +114,111 @@ const Portfolio = () => {
   }
 
 
-  return <div className="portfolio page" >
+  return (
 
-    <div id="portfolio-container">
+    <div className="portfolio page">
 
-      <div className={loaded ? 'carousel-wrapper' : 'carousel-wrapper-loading'}>
+      <div id="portfolio-container">
 
-        <Fade spy={loaded}>
+        <div className={loaded ? 'carousel-wrapper' : 'carousel-wrapper-loading'}>
 
-          <Carousel showThumbs={false} useKeyboardArrows={true} swipeable={true} interval={12000} autoPlay={true} infiniteLoop={true} showStatus={false} onChange={handleSlide}>
+          <Fade spy={loaded}>
 
-            <div id="project-container" >
-              <img id="project-image" src="./src/img/cryptox.png" onLoad={() => setLoaded(true)} />
-            </div>
+            <Carousel showThumbs={false} useKeyboardArrows={true} swipeable={true} interval={12000} autoPlay={true} infiniteLoop={true} showStatus={false} onChange={handleSlide}>
 
-
-            <div id="project-container" >
-              <img id="project-image" src="./src/img/horizon.png" />
-            </div>
+              <div id="project-container" >
+                <img id="project-image" src="./src/img/cryptox.png" onLoad={() => setLoaded(true)} />
+              </div>
 
 
-            <div id="project-container"  >
-              <img id="project-image" src="./src/img/442.png" />
-            </div>
+              <div id="project-container" >
+                <img id="project-image" src="./src/img/horizon.png" />
+              </div>
 
 
-            <div id="project-container"  >
-              <img id="project-image" src="./src/img/snake.png" />
-            </div>
+              <div id="project-container"  >
+                <img id="project-image" src="./src/img/442.png" />
+              </div>
 
 
-            <div id="project-container"  >
-              <img id="project-image" src="./src/img/shutter.png" />
-            </div>
+              <div id="project-container"  >
+                <img id="project-image" src="./src/img/snake.png" />
+              </div>
 
 
-            <div id="project-container"  >
-              <img id="project-image" src="./src/img/watch.png" />
-            </div>
+              <div id="project-container"  >
+                <img id="project-image" src="./src/img/shutter.png" />
+              </div>
 
 
-            <div id="project-container"  >
-              <img id="project-image" src="./src/img/skii.png" />
-            </div>
+              <div id="project-container"  >
+                <img id="project-image" src="./src/img/watch.png" />
+              </div>
 
 
-            <div id="project-container"  >
-              <img id="project-image" src="./src/img/invest.png" />
-            </div>
+              <div id="project-container"  >
+                <img id="project-image" src="./src/img/skii.png" />
+              </div>
 
 
-            <div id="project-container" >
-              <img id="project-image" src="./src/img/pacman.png" />
-            </div>
+              <div id="project-container"  >
+                <img id="project-image" src="./src/img/invest.png" />
+              </div>
 
 
-            <div id="project-container" >
-              <img id="project-image" src="./src/img/trivia.png" />
-            </div>
+              <div id="project-container" >
+                <img id="project-image" src="./src/img/pacman.png" />
+              </div>
 
 
-            <div id="project-container"  >
-              <img id="project-image" src="./src/img/calc.png" />
-            </div>
+              <div id="project-container" >
+                <img id="project-image" src="./src/img/trivia.png" />
+              </div>
 
 
-            <div id="project-container"  >
-              <img id="project-image" src="./src/img/liarsdice.png" />
-            </div>
-
-            <div id="project-container"  >
-              <img id="project-image" src="./src/img/hotels-cart.png" />
-            </div>
+              <div id="project-container"  >
+                <img id="project-image" src="./src/img/calc.png" />
+              </div>
 
 
-          </Carousel>
+              <div id="project-container"  >
+                <img id="project-image" src="./src/img/liarsdice.png" />
+              </div>
 
-        </Fade>
+              <div id="project-container"  >
+                <img id="project-image" src="./src/img/hotels-cart.png" />
+              </div>
+
+
+            </Carousel>
+
+          </Fade>
+
+        </div>
+
+
+
+        {loaded && <div id="project-desc">
+
+          <Fade appear spy={project}>
+            <Tilt options={{ max: mediaQuery ? 0 : 35 }}>
+              <h2 id="project-title" >{project.title}</h2>
+              <h5 id="project-text" >{project.desc}</h5>
+              <div id="project-btns">
+                <a href={project.github} target="_blank" rel="noreferrer" className="btn btn-outline-light btn-lg btn-mob" ><p className="animated" >GitHub</p></a>
+                <a href={project.live} target="_blank" rel="noreferrer" className="btn btn-outline-light btn-lg" ><p className="animated" >LIVE</p></a>
+              </div>
+            </Tilt>
+          </Fade>
+
+
+        </div>}
 
       </div>
 
-
-
-      {loaded && <div id="project-desc">
-
-        <Fade appear spy={project}>
-          <Tilt options={{ max: mediaQuery ? 0 : 35 }}>
-            <h2 id="project-title" >{project.title}</h2>
-            <h5 id="project-text" >{project.desc}</h5>
-            <div id="project-btns">
-              <a href={project.github} target="_blank" rel="noreferrer" className="btn btn-outline-light btn-lg btn-mob" ><p className="animated" >GitHub</p></a>
-              <a href={project.live} target="_blank" rel="noreferrer" className="btn btn-outline-light btn-lg" ><p className="animated" >LIVE</p></a>
-            </div>
-          </Tilt>
-        </Fade>
-
-
-      </div>}
-
     </div>
 
-  </div>
-
+  )
 
 }
 
