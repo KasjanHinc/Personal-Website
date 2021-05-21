@@ -8,7 +8,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuoteLeft, faQuoteRight, faCog } from '@fortawesome/free-solid-svg-icons'
 
 
-
 const About = () => {
   const { mediaQuery, setMediaQuery } = useContext(MediaQuery)
   const cog = <FontAwesomeIcon icon={faCog} size="3x" />
@@ -37,7 +36,6 @@ const About = () => {
   return (
     <div className="about page" >
 
-
       <div id="about-me">
 
         <div className={about === 'me' ? 'about-left' : 'about-left-wide'}>
@@ -52,7 +50,6 @@ const About = () => {
 
 
           {about === 'website' && <div className="about-website-container">
-
 
             <div className="col website-info-idea">
               <Fade delay={250}>
@@ -69,8 +66,6 @@ const About = () => {
                 </Tilt>
               </Fade>
             </div>
-
-
 
             <div className="col website-info-technical">
               <Fade delay={500}>
@@ -92,8 +87,6 @@ const About = () => {
                 </div>
               </Fade>
             </div>
-
-
 
           </div>}
 

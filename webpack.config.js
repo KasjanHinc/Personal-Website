@@ -3,11 +3,14 @@ const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const Dotenv = require('dotenv-webpack')
 
-// console.log(process.env.NODE_ENV)
 
-const env = process.env.NODE_ENV === 'production'
-  ? new webpack.EnvironmentPlugin({ ...process.env })
-  : new Dotenv()
+console.log(process.env)
+
+const env = process.env.NODE_ENV === 'production' ? (
+  new webpack.EnvironmentPlugin({ ...process.env })
+) : (
+  new Dotenv()
+)
 
 module.exports = () => {
   const publicPath = env.NODE_ENV === 'local' ? {
@@ -27,7 +30,8 @@ module.exports = () => {
         { test: /\.js$/, use: 'babel-loader', exclude: /node_modules/ },
         { test: /\.css$/, use: ['style-loader', 'css-loader'] },
         { test: /\.s(a|c)ss$/, use: ['style-loader', 'css-loader', 'sass-loader'] },
-        { test: /\.(png|jpe?g|gif|svg)$/i, use: 'file-loader' }
+        { test: /\.(png|jpe?g|gif|svg)$/i, use: 'file-loader' },
+        { test: /\.(woff|woff2|eot|ttf|otf)$/, use: "file-loader" }
       ]
     },
     devServer: {
