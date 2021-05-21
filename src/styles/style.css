@@ -1106,6 +1106,7 @@ textarea {
 
   .carousel-wrapper {
     width: 100%;
+    animation: none;
   }
 
   #project-desc,
