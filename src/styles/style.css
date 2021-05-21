@@ -138,7 +138,8 @@ button:focus,
   border: none;
 }
 
-.dark-mode-toggler svg {
+.dark-mode-toggler {
+  font-size: 1rem;
   transition: .5s ease;
 }
 
@@ -151,21 +152,33 @@ button:focus,
   font-size: 1.5rem;
 }
 
+#social-fiverr svg {
+  height: 1.5rem;
+}
+
 #social-linkedin {
   margin-left: 2vw;
 }
 
 #social-linkedin svg:hover path,
-#social-github svg:hover path,
-#social-fiverr svg:hover #fiverr-text {
-  fill: #e7c496 !important;
+#social-github svg:hover path {
   color: #e7c496 !important;
 }
 
+#social-fiverr svg:hover #fiverr-text {
+  fill: #e7c496 !important;
+}
+
 #social-linkedin svg path,
-#social-github svg path,
-#social-fiverr svg #fiverr-text {
+#social-github svg path {
   color: rgb(255, 255, 255, 0.7) !important;
+  -webkit-transition: .5s ease;
+  -moz-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+#social-fiverr svg #fiverr-text {
   fill: rgb(255, 255, 255, 0.7) !important;
   -webkit-transition: .5s ease;
   -moz-transition: .5s ease;
@@ -917,11 +930,16 @@ textarea {
   #social-github,
   #social-fiverr,
   #social-linkedin {
-    margin-left: 5vw;
+    margin-left: 3vw;
   }
 
-  #social-fiverr {
-    font-size: .2rem;
+  #social-linkedin,
+  #social-github {
+    font-size: 1.2rem;
+  }
+
+  #social-fiverr svg {
+    height: 1.2rem;
   }
 
   .nav-item {
