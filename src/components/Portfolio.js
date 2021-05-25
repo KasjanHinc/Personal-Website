@@ -96,7 +96,13 @@ const Portfolio = () => {
       desc: 'A hotel room booking checkout cart created in React and mockapi.io.',
       github: 'https://github.com/KasjanHinc/Hotels-Cart',
       live: 'https://kasjanhinc.github.io/Hotels-Cart/'
-    }
+    },
+    {
+      title: 'TeamSQL',
+      desc: 'An employee search tool, made with React, Flask, SQLAlchemy, PostgreSQL and Python.',
+      github: 'https://github.com/KasjanHinc/TeamSQL',
+      live: 'https://team-sql.herokuapp.com/'
+    },
 
 
   ]
@@ -187,6 +193,10 @@ const Portfolio = () => {
 
               <div id="project-container"  >
                 <img id="project-image" src="./src/img/hotels-cart.png" />
+              </div>
+
+              <div id="project-container"  >
+                <img id="project-image" src="./img/teamsql.png" />
               </div>
 
 
