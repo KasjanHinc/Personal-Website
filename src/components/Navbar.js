@@ -3,6 +3,7 @@ import { Link, withRouter } from 'react-router-dom'
 import Fade from 'react-reveal/Fade'
 import $ from 'jquery'
 
+
 import useDarkMode from 'use-dark-mode'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -10,7 +11,7 @@ import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 
 
-const Navbar = () => {
+const Navbar = (props) => {
 
   const moon = <FontAwesomeIcon icon={faMoon} size="2x" />
   const sun = <FontAwesomeIcon icon={faSun} size="2x" />
@@ -18,7 +19,6 @@ const Navbar = () => {
   const github = <FontAwesomeIcon icon={faGithubSquare} size="2x" />
 
   const [togglerPulse, setTogglerPulse] = useState(true)
-
   const darkMode = useDarkMode(true)
 
   useEffect(() => {
@@ -28,6 +28,7 @@ const Navbar = () => {
     })
 
     scrollToTop()
+
 
   })
 
@@ -96,25 +97,25 @@ const Navbar = () => {
           <ul className="navbar-nav ml-auto">
 
 
-            <li className="nav-item slide">
+            {props.location.pathname !== '/' ? <li className="nav-item slide">
               <Link to="/" className="nav-link">HOME</Link>
-            </li>
+            </li> : null}
 
-            <li className="nav-item slide">
+            {props.location.pathname !== '/about' ? <li className="nav-item slide">
               <Link to="/about" className="nav-link">ABOUT</Link>
-            </li>
+            </li> : null}
 
-            <li className="nav-item slide">
+            {props.location.pathname !== '/portfolio' ? <li className="nav-item slide">
               <Link to="/portfolio" className="nav-link">PORTFOLIO</Link>
-            </li>
+            </li> : null}
 
-            <li className="nav-item slide">
+            {props.location.pathname !== '/skills' ? <li className="nav-item slide">
               <Link to="/skills" className="nav-link">SKILLS</Link>
-            </li>
+            </li> : null}
 
-            <li className="nav-item slide">
+            {props.location.pathname !== '/contact' ? <li className="nav-item slide">
               <Link to="/contact" className="nav-link">CONTACT</Link>
-            </li>
+            </li> : null}
 
 
           </ul>
