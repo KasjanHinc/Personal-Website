@@ -5,7 +5,6 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './styles/animations.css'
 import './styles/style.css'
-
 import ParticlesBG from './components/ParticlesBG'
 import Navbar from './components/Navbar'
 import Home from './components/Home'

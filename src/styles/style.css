@@ -479,12 +479,12 @@ button:focus,
   height: 45vh;
   animation: float 6s ease-in-out infinite;
   animation-delay: 1s;
+
 }
 
 
 #about-typed svg path {
   color: #e7c496;
-
 }
 
 #kasjan {
@@ -1204,7 +1204,7 @@ textarea {
   #email,
   #phone,
   #company {
-    font-size: inherit;
+    font-size: 2rem;
     font-weight: 300;
   }
 
@@ -1212,7 +1212,7 @@ textarea {
   #email::placeholder,
   #phone::placeholder,
   #company::placeholder {
-    font-size: inherit;
+    font-size: 2rem;
     font-weight: 300;
   }
 
@@ -1227,6 +1227,7 @@ textarea {
   }
 
   #contact-small {
+    font-size: 1.3rem;
     font-weight: 200;
   }
 
