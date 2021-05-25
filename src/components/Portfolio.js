@@ -196,7 +196,7 @@ const Portfolio = () => {
               </div>
 
               <div id="project-container"  >
-                <img id="project-image" src="./img/teamsql.png" />
+                <img id="project-image" src="./src/img/teamsql.png" />
               </div>
 
 
