@@ -33,7 +33,7 @@ const App = () => {
 
   return (
     <HashRouter>
-      {/* <ParticlesBG /> */}
+      <ParticlesBG />
       <Navbar />
 
       <Route render={({ location }) => (
