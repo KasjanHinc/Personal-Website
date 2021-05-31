@@ -109,7 +109,7 @@ const About = () => {
 
           <Flip top duration={1000} delay={750}>
             <Tilt options={{ max: mediaQuery ? 0 : 35 }}>
-              <img id="photo" src="./img/kasjan.png" />
+              <img id="photo" src="./src/img/kasjan.png" />
             </Tilt>
           </Flip>
 

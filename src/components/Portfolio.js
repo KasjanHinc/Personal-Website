@@ -137,59 +137,59 @@ const Portfolio = () => {
             <Carousel showThumbs={false} useKeyboardArrows={true} swipeable={true} interval={12000} autoPlay={true} infiniteLoop={true} showStatus={false} onChange={handleSlide}>
 
               <div id="project-container" >
-                <img id="project-image" src="./img/cryptox.png" onLoad={() => setLoaded(true)} />
+                <img id="project-image" src="./src/img/cryptox.png" onLoad={() => setLoaded(true)} />
               </div>
 
               <div id="project-container" >
-                <img id="project-image" src="./img/horizon.png" />
+                <img id="project-image" src="./src/img/horizon.png" />
               </div>
 
               <div id="project-container"  >
-                <img id="project-image" src="./img/442.png" />
+                <img id="project-image" src="./src/img/442.png" />
               </div>
 
               <div id="project-container"  >
-                <img id="project-image" src="./img/snake.png" />
+                <img id="project-image" src="./src/img/snake.png" />
               </div>
 
               <div id="project-container"  >
-                <img id="project-image" src="./img/shutter.png" />
+                <img id="project-image" src="./src/img/shutter.png" />
               </div>
 
               <div id="project-container"  >
-                <img id="project-image" src="./img/watch.png" />
+                <img id="project-image" src="./src/img/watch.png" />
               </div>
 
               <div id="project-container"  >
-                <img id="project-image" src="./img/skii.png" />
+                <img id="project-image" src="./src/img/skii.png" />
               </div>
 
               <div id="project-container"  >
-                <img id="project-image" src="./img/invest.png" />
+                <img id="project-image" src="./src/img/invest.png" />
               </div>
 
               <div id="project-container" >
-                <img id="project-image" src="./img/pacman.png" />
+                <img id="project-image" src="./src/img/pacman.png" />
               </div>
 
               <div id="project-container" >
-                <img id="project-image" src="./img/trivia.png" />
+                <img id="project-image" src="./src/img/trivia.png" />
               </div>
 
               <div id="project-container"  >
-                <img id="project-image" src="./img/calc.png" />
+                <img id="project-image" src="./src/img/calc.png" />
               </div>
 
               <div id="project-container"  >
-                <img id="project-image" src="./img/liarsdice.png" />
+                <img id="project-image" src="./src/img/liarsdice.png" />
               </div>
 
               <div id="project-container"  >
-                <img id="project-image" src="./img/hotels-cart.png" />
+                <img id="project-image" src="./src/img/hotels-cart.png" />
               </div>
 
               <div id="project-container"  >
-                <img id="project-image" src="./img/teamsql.png" />
+                <img id="project-image" src="./src/img/teamsql.png" />
               </div>
 
             </Carousel>
