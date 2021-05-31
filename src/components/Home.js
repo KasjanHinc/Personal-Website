@@ -7,13 +7,10 @@ import { MediaQuery } from '../MediaQuery'
 import Tilt from 'react-tilt'
 
 
-
-
-
 const Home = () => {
 
+  // GLOBAL MEDIA QUERY FOR REMOVING TILT FEATURE ON MOBILE DEVICES
   const { mediaQuery, setMediaQuery } = useContext(MediaQuery)
-
 
   return (
     <div className="landing page" >
@@ -35,9 +32,7 @@ const Home = () => {
           </Fade>
 
           <Fade up delay={700}>
-
             <h1 id="intro" >Kasjan Hinc</h1>
-
           </Fade>
 
           <Fade up delay={1200}>
@@ -48,18 +43,18 @@ const Home = () => {
               <div className="intro-skills">
                 <b>
                   <div className="intro-inner-skills">
-                    Frontend<br />
-                Backend<br />
-                React<br />
-                JavaScript<br />
-                Bootstrap<br />
-                CSS<br />
-                HTML<br />
-                noSQL<br />
-                Python<br />
-                SQL<br />
-                API
-              </div>
+                    <div>Frontend</div>
+                    <div>Backend</div>
+                    <div>React</div>
+                    <div>JavaScript</div>
+                    <div>Bootstrap</div>
+                    <div>CSS</div>
+                    <div>HTML</div>
+                    <div>noSQL</div>
+                    <div>Python</div>
+                    <div>SQL</div>
+                    <div>API</div>
+                  </div>
                 </b>
               </div>
 
@@ -73,15 +68,15 @@ const Home = () => {
         </Tilt>
 
         <Fade delay={2000}>
-          <Link to="/about" className="btn btn-outline-light btn-lg"><p className="animated" >ABOUT</p></Link>
+          <Link to="/about" className="btn btn-lg">
+            <p className="animated" >ABOUT</p>
+          </Link>
         </Fade>
-
-
 
       </div>
 
       <Fade>
-        <p id="copyright" >Copyright &#169; 2021 Kasjan Hinc</p>
+        <footer>Copyright &#169; 2021 Kasjan Hinc</footer>
       </Fade>
 
     </div >

@@ -9,13 +9,19 @@ import { faQuoteLeft, faQuoteRight, faCog } from '@fortawesome/free-solid-svg-ic
 
 
 const About = () => {
+
+  // GLOBAL MEDIA QUERY FOR REMOVING TILT FEATURE ON MOBILE DEVICES
   const { mediaQuery, setMediaQuery } = useContext(MediaQuery)
+
   const cog = <FontAwesomeIcon icon={faCog} size="3x" />
   const ql = <FontAwesomeIcon icon={faQuoteLeft} size="2x" />
   const qr = <FontAwesomeIcon icon={faQuoteRight} size="1x" />
+
   const [about, setAbout] = useState('me')
   const [buttonHTML, setButtonHTML] = useState('ABOUT THIS WEBSITE')
 
+
+  // SHOW DIFFERENT INNER HTML ON BUTTON, DEPENDING IF ABOUT ME OR ABOUT THIS WEBSITE IS SELECTED
   const handleAbout = () => {
     scrollToTop()
 
@@ -27,6 +33,8 @@ const About = () => {
       setAbout('me')
     }
   }
+
+  // SCROLL TO TOP WHEN USER SELECTED ABOUT ME OR ABOUT THIS WEBSITE, USEFUL ON MOBILE DEVICES
 
   function scrollToTop() {
     window.scrollTo(0, 0)
@@ -47,7 +55,6 @@ const About = () => {
               </Tilt>
             </Zoom>
           </div>}
-
 
           {about === 'website' && <div className="about-website-container">
 
@@ -91,11 +98,10 @@ const About = () => {
           </div>}
 
           <Fade appear spy={about} delay={1500}>
-            <button className="btn btn-outline-light btn-lg btn-about" onClick={handleAbout}>
+            <button className="btn btn-lg btn-about" onClick={handleAbout}>
               <p className="animated">{buttonHTML}</p>
             </button>
           </Fade>
-
 
         </div>
 
@@ -103,7 +109,7 @@ const About = () => {
 
           <Flip top duration={1000} delay={750}>
             <Tilt options={{ max: mediaQuery ? 0 : 35 }}>
-              <img id="kasjan" src="./src/img/kasjan.png" />
+              <img id="photo" src="./img/kasjan.png" />
             </Tilt>
           </Flip>
 

@@ -3,8 +3,11 @@ import { HashRouter, Switch, Route } from 'react-router-dom'
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
+import './styles/normalize.css'
 import './styles/animations.css'
-import './styles/style.css'
+import './styles/style.scss'
+import './styles/mediaqueries.css'
+
 import ParticlesBG from './components/ParticlesBG'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
@@ -18,7 +21,7 @@ import { MediaQuery } from "./MediaQuery"
 
 const App = () => {
 
-  const isMobile = useMediaQuery('(max-width: 767px)')
+  const isMobile = useMediaQuery('(max-width: 1024px)')
   const [mediaQuery, setMediaQuery] = useState(isMobile)
 
 
@@ -30,7 +33,7 @@ const App = () => {
 
   return (
     <HashRouter>
-      <ParticlesBG />
+      {/* <ParticlesBG /> */}
       <Navbar />
 
       <Route render={({ location }) => (
@@ -52,7 +55,6 @@ const App = () => {
         </TransitionGroup>
 
       )} />
-
 
     </HashRouter>
   )

@@ -8,17 +8,24 @@ import emailjs from 'emailjs-com'
 import apiKeys from '../js/apikeys'
 
 
-
 const Contact = () => {
+
+  // GLOBAL MEDIA QUERY FOR REMOVING TILT FEATURE ON MOBILE DEVICES
   const { mediaQuery, setMediaQuery } = useContext(MediaQuery)
+
   const plane = <FontAwesomeIcon icon={faPaperPlane} size="2x" />
   const check = <FontAwesomeIcon icon={faCheckSquare} size="3x" />
+
+  // CHECK IF FORM HAS BEEN SUBMITTED, THEN DISPLAY THANK YOU MESSAGE
   const [formComplete, setFormComplete] = useState(false)
 
+  // RESET FORM INPUTS AFTER SUBMIT
   const resetForm = () => {
     document.getElementById('form').reset()
   }
 
+
+  // SUBMIT FORM TO THIRD PARTY EMAIL HANDLER, E.G emailjs.com
   const handleSubmit = (e) => {
     e.preventDefault()
 
@@ -38,6 +45,7 @@ const Contact = () => {
         })
   }
 
+  // SCROLL TO TOP WHEN FORM SUBMITTED
   function scrollToTop() {
     window.scrollTo(0, 0)
   }
@@ -50,7 +58,7 @@ const Contact = () => {
 
         {formComplete && <div className="form-complete">
           <Fade delay={300}>
-            <h2>Thank you for your message, I will be in contact soon.</h2>
+            <h2>Thank you for your message,<br /> I will be in contact soon.</h2>
             <div>{check}</div>
           </Fade>
         </div>}
@@ -58,11 +66,12 @@ const Contact = () => {
         {!formComplete && <form id="form" onSubmit={handleSubmit}>
 
           <Fade delay={400}>
-            <a href="mailto:kasjan.hinc@gmail.com" className="btn btn-outline-light btn-lg btn-contact"><p className="animated">kasjan.hinc@gmail.com</p></a>
+            <a href="mailto:kasjan.hinc@gmail.com" className="btn btn-lg">
+              <p className="animated">kasjan.hinc@gmail.com</p>
+            </a>
           </Fade>
 
           <div className="row form-main" >
-
 
             <div className="col form-left">
 
@@ -85,7 +94,7 @@ const Contact = () => {
               <Fade left delay={500}>
                 <Tilt options={{ max: mediaQuery ? 0 : 35 }}>
                   <div className="form-group">
-                    <input type="number" name="phone" placeholder="Phone:" className="form-control" id="phone" />
+                    <input type="number" pattern="\d*" name="phone" placeholder="Phone:" className="form-control" id="phone" />
                   </div>
                 </Tilt>
               </Fade>
@@ -104,32 +113,27 @@ const Contact = () => {
 
             </div>
 
-
-
             <div className="col form-right">
 
               <Fade right delay={1500}>
                 <Tilt options={{ max: mediaQuery ? 0 : 35 }}>
                   <div className="form-group">
-                    <textarea className="form-control" name="message" placeholder="If you have enquiries regarding employment, my CV, or something else, I'm waiting for your message." id="message" rows="7" cols="50" minLength="10" required></textarea>
+                    <textarea className="form-control" name="message" placeholder="If you have enquiries regarding employment, my CV, or something else, I'm waiting for your message." id="message" rows="5" cols="50" minLength="10" required></textarea>
                   </div>
                 </Tilt>
               </Fade>
 
               <Fade up>
-                <button type="submit" name="submit" className="btn btn-outline-light btn-lg btn-submit" id="btn-submit"><p className="animated" >{plane} SEND</p></button>
+                <button type="submit" name="submit" className="btn btn-lg btn-submit" id="btn-submit"><p className="animated" >{plane} SEND</p></button>
               </Fade>
 
             </div>
-
 
           </div>
 
         </form>}
 
-
       </div>
-
 
     </div >
 

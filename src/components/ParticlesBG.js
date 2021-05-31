@@ -2,12 +2,10 @@ import React from 'react'
 import { withRouter } from 'react-router-dom'
 import Particles from 'react-particles-js'
 
-
+// BACKGROUND PARTICLE VARIABLES
 const ParticlesBG = () => {
 
-
   return (
-
     <Particles
       params={{
         'particles': {
@@ -74,7 +72,6 @@ const ParticlesBG = () => {
       }}
 
     />
-
   )
 
 }

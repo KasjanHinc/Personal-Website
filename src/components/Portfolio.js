@@ -8,7 +8,9 @@ import Tilt from 'react-tilt'
 
 const Portfolio = () => {
 
+  // GLOBAL MEDIA QUERY FOR REMOVING TILT FEATURE ON MOBILE DEVICES
   const { mediaQuery, setMediaQuery } = useContext(MediaQuery)
+  // ONLY LOAD THE CAROUSEL IF IMAGE OF FIRST PROJECT IS LOADED
   const [loaded, setLoaded] = useState(false)
 
   const [project, setProject] = useState({
@@ -107,6 +109,7 @@ const Portfolio = () => {
 
   ]
 
+  // HANLDE THE NEXT SLIDE FROM THE EVENT VALUE OF THE CAROUSEL
   const handleSlide = (event) => {
 
     const next = {
@@ -116,6 +119,7 @@ const Portfolio = () => {
       live: descriptions[event].live
     }
 
+    // SET THE NEW PROJECT ON THE CAROUSEL
     setProject(next)
   }
 
@@ -133,80 +137,66 @@ const Portfolio = () => {
             <Carousel showThumbs={false} useKeyboardArrows={true} swipeable={true} interval={12000} autoPlay={true} infiniteLoop={true} showStatus={false} onChange={handleSlide}>
 
               <div id="project-container" >
-                <img id="project-image" src="./src/img/cryptox.png" onLoad={() => setLoaded(true)} />
+                <img id="project-image" src="./img/cryptox.png" onLoad={() => setLoaded(true)} />
               </div>
-
 
               <div id="project-container" >
-                <img id="project-image" src="./src/img/horizon.png" />
+                <img id="project-image" src="./img/horizon.png" />
               </div>
-
 
               <div id="project-container"  >
-                <img id="project-image" src="./src/img/442.png" />
+                <img id="project-image" src="./img/442.png" />
               </div>
-
 
               <div id="project-container"  >
-                <img id="project-image" src="./src/img/snake.png" />
+                <img id="project-image" src="./img/snake.png" />
               </div>
-
 
               <div id="project-container"  >
-                <img id="project-image" src="./src/img/shutter.png" />
+                <img id="project-image" src="./img/shutter.png" />
               </div>
-
 
               <div id="project-container"  >
-                <img id="project-image" src="./src/img/watch.png" />
+                <img id="project-image" src="./img/watch.png" />
               </div>
-
 
               <div id="project-container"  >
-                <img id="project-image" src="./src/img/skii.png" />
+                <img id="project-image" src="./img/skii.png" />
               </div>
-
 
               <div id="project-container"  >
-                <img id="project-image" src="./src/img/invest.png" />
+                <img id="project-image" src="./img/invest.png" />
               </div>
-
 
               <div id="project-container" >
-                <img id="project-image" src="./src/img/pacman.png" />
+                <img id="project-image" src="./img/pacman.png" />
               </div>
-
 
               <div id="project-container" >
-                <img id="project-image" src="./src/img/trivia.png" />
-              </div>
-
-
-              <div id="project-container"  >
-                <img id="project-image" src="./src/img/calc.png" />
-              </div>
-
-
-              <div id="project-container"  >
-                <img id="project-image" src="./src/img/liarsdice.png" />
+                <img id="project-image" src="./img/trivia.png" />
               </div>
 
               <div id="project-container"  >
-                <img id="project-image" src="./src/img/hotels-cart.png" />
+                <img id="project-image" src="./img/calc.png" />
               </div>
 
               <div id="project-container"  >
-                <img id="project-image" src="./src/img/teamsql.png" />
+                <img id="project-image" src="./img/liarsdice.png" />
               </div>
 
+              <div id="project-container"  >
+                <img id="project-image" src="./img/hotels-cart.png" />
+              </div>
+
+              <div id="project-container"  >
+                <img id="project-image" src="./img/teamsql.png" />
+              </div>
 
             </Carousel>
 
           </Fade>
 
         </div>
-
-
 
         {loaded && <div id="project-desc">
 
@@ -215,12 +205,11 @@ const Portfolio = () => {
               <h2 id="project-title" >{project.title}</h2>
               <h5 id="project-text" >{project.desc}</h5>
               <div id="project-btns">
-                <a href={project.github} target="_blank" rel="noreferrer" className="btn btn-outline-light btn-lg btn-mob" ><p className="animated" >GitHub</p></a>
-                <a href={project.live} target="_blank" rel="noreferrer" className="btn btn-outline-light btn-lg" ><p className="animated" >LIVE</p></a>
+                <a href={project.github} target="_blank" rel="noreferrer" className="btn btn-lg" ><p className="animated" >GitHub</p></a>
+                <a href={project.live} target="_blank" rel="noreferrer" className="btn btn-lg" ><p className="animated" >LIVE</p></a>
               </div>
             </Tilt>
           </Fade>
-
 
         </div>}
 
