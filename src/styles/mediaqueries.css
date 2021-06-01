@@ -94,7 +94,7 @@
   }
 
   #intro {
-    font-size: 20vw;
+    font-size: 15vw;
     text-align: center;
 
   }
@@ -315,7 +315,7 @@
   #email,
   #phone,
   #company {
-    font-size: 2rem;
+    font-size: 8vw;
     font-weight: 300;
   }
 
@@ -323,17 +323,17 @@
   #email::placeholder,
   #phone::placeholder,
   #company::placeholder {
-    font-size: 2rem;
+    font-size: 8vw;
     font-weight: 300;
   }
 
   #message {
-    font-size: 1.5rem;
+    font-size: 7vw;
     font-weight: 300;
   }
 
   #message::placeholder {
-    font-size: 1.5rem;
+    font-size: 7vw;
     font-weight: 300;
   }
 
@@ -370,6 +370,10 @@
 
   .animated {
     padding: 1.5vw 3vw;
+  }
+
+  .cursor {
+    display: none;
   }
 
   /* END UNIVERSAL */
@@ -446,7 +450,7 @@
   }
 
   .form-main {
-    margin-top: 3vh;
+    margin-top: 5vh;
   }
 
   .form-group {
@@ -461,12 +465,14 @@
   #email::placeholder,
   #phone::placeholder,
   #company::placeholder {
-    font-size: 1rem;
+    font-size: 2vw;
+    font-weight: 300;
   }
 
   #message,
   #message::placeholder {
-    font-size: 1rem;
+    font-size: 2vw;
+    font-weight: 300;
   }
 
   #contact-small {
@@ -501,6 +507,10 @@
 
   .animated {
     padding: 2vw 4vw;
+  }
+
+  .cursor {
+    display: none;
   }
 
   /* END UNIVERSAL */
@@ -569,7 +579,7 @@
   }
 
   #intro {
-    font-size: 11vw;
+    font-size: 9vw;
   }
 
   #intro-lower-title {
@@ -585,7 +595,7 @@
   }
 
   footer {
-    font-size: 2vw;
+    font-size: 1.5vw;
   }
 
   /* END HOME */
@@ -790,12 +800,10 @@
 
   #message {
     font-size: 5vw;
-    font-weight: 300;
   }
 
   #message::placeholder {
     font-size: 5vw;
-    font-weight: 300;
   }
 
   /* END CONTACT */
@@ -812,6 +820,10 @@
 
   .animated {
     padding: 1.5vw 3vw;
+  }
+
+  .cursor {
+    display: none;
   }
 
   /* END UNIVERSAL */
@@ -835,7 +847,7 @@
   }
 
   footer {
-    font-size: 2vw;
+    font-size: 1.5vw;
   }
 
   /* END HOME */
@@ -884,7 +896,7 @@
   }
 
   #project-text {
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
 
   /* END PORTFOLIO */
@@ -917,13 +929,25 @@
     font-weight: 200;
   }
 
-  #message {
-    font-weight: 400;
-  }
-
-  #message::placeholder {
+  #name,
+  #email,
+  #phone,
+  #company {
     font-weight: 300;
   }
+
+  #name::placeholder,
+  #email::placeholder,
+  #phone::placeholder,
+  #company::placeholder {
+    font-weight: 300;
+  }
+
+  #message,
+  #message::placeholder {
+    font-size: 4vw;
+  }
+
 
   /* END CONTACT */
 }
