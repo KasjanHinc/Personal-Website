@@ -83,7 +83,7 @@ const About = () => {
                   <h3 id="website-info-title">The technical stuff</h3>
                   <p id="website-info">
                     This website is fully <a href="http://en.wikipedia.org/wiki/Responsive_web_design"
-                      rel="noreferrer" target="_blank">responsive</a>, and built from scratch with <a href="https://en.wikipedia.org/wiki/React_(JavaScript_library)" rel="noreferrer" target="_blank">React</a> and the <a href="http://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)" rel="noreferrer" target="_blank">Boostrap
+                      rel="noreferrer" target="_blank">responsive</a>, and built from scratch with <a href="https://en.wikipedia.org/wiki/React_(JavaScript_library)" rel="noreferrer" target="_blank">React</a> and the <a href="http://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)" rel="noreferrer" target="_blank">Bootstrap
                       framework</a>. Other additions are; Google Fonts, <a href="https://fontawesome.com/" rel="noreferrer" target="_blank">Font Awesome</a>, React Reveal, React Typed and <a href="https://www.npmjs.com/package/react-particles-js" rel="noreferrer" target="_blank">Particles.js</a>.
               </p>
                 </Tilt>
