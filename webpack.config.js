@@ -17,6 +17,9 @@ module.exports = () => {
     publicPath: '/'
   } : {}
 
+  var mode = process.env.NODE_ENV || 'development';
+
+
   return {
     entry: './src/index.js',
     output: {
@@ -24,7 +27,8 @@ module.exports = () => {
       path: path.resolve('.'),
       ...publicPath
     },
-    devtool: 'source-map',
+    devtool: (mode === 'development') ? 'inline-source-map' : false,
+    mode: mode,
     module: {
       rules: [
         { test: /\.js$/, use: 'babel-loader', exclude: /node_modules/ },
