@@ -20,6 +20,9 @@ const About = () => {
   const [about, setAbout] = useState('me')
   const [buttonHTML, setButtonHTML] = useState('ABOUT THIS WEBSITE')
 
+  // Absolute file path option for images, GitHub pages needs this
+  const imagePath = process.env.NODE_ENV === 'development' ? './img/' : './src/img/'
+
 
   // SHOW DIFFERENT INNER HTML ON BUTTON, DEPENDING IF ABOUT ME OR ABOUT THIS WEBSITE IS SELECTED
   const handleAbout = () => {
@@ -109,7 +112,7 @@ const About = () => {
 
           <Flip top duration={1000} delay={750}>
             <Tilt options={{ max: mediaQuery ? 0 : 35 }}>
-              <img id="photo" src="./src/img/kasjan.png" />
+              <img id="photo" src={`${imagePath}kasjan.png`} />
             </Tilt>
           </Flip>
 

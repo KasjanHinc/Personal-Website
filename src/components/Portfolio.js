@@ -20,6 +20,9 @@ const Portfolio = () => {
     live: 'https://cryptox-project.herokuapp.com/'
   })
 
+  // Absolute file path option for images, GitHub pages needs this
+  const imagePath = process.env.NODE_ENV === 'development' ? './img/' : './src/img/'
+
   const descriptions = [
     {
       title: 'CryptoX',
@@ -52,10 +55,10 @@ const Portfolio = () => {
       live: 'https://kasjanhinc.github.io/shutter/'
     },
     {
-      title: 'Apple Watch',
-      desc: 'Custom watch screen made with React Hooks and pure CSS. Time, date, location and weather included. Mobile responsive.',
-      github: 'https://github.com/KasjanHinc/Apple-Watch',
-      live: 'https://kasjanhinc.github.io/Apple-Watch/'
+      title: 'Giphy',
+      desc: 'Landing page of Giphy.com recreated in React and TypeScript, consumes the Giphy API',
+      github: 'https://github.com/KasjanHinc/Giphy',
+      live: 'https://kasjanhinc.github.io/Giphy/'
     },
     {
       title: 'Skii',
@@ -105,6 +108,12 @@ const Portfolio = () => {
       github: 'https://github.com/KasjanHinc/TeamSQL',
       live: 'https://team-sql.herokuapp.com/'
     },
+    {
+      title: 'Apple Watch',
+      desc: 'Custom watch screen made with React Hooks and pure CSS. Time, date, location and weather included. Mobile responsive.',
+      github: 'https://github.com/KasjanHinc/Apple-Watch',
+      live: 'https://kasjanhinc.github.io/Apple-Watch/'
+    }
 
 
   ]
@@ -137,59 +146,63 @@ const Portfolio = () => {
             <Carousel showThumbs={false} useKeyboardArrows={true} swipeable={true} interval={12000} autoPlay={true} infiniteLoop={true} showStatus={false} onChange={handleSlide}>
 
               <div id="project-container" >
-                <img id="project-image" src="./src/img/cryptox.png" onLoad={() => setLoaded(true)} />
+                <img id="project-image" src={`${imagePath}cryptox.png`} onLoad={() => setLoaded(true)} />
               </div>
 
               <div id="project-container" >
-                <img id="project-image" src="./src/img/horizon.png" />
+                <img id="project-image" src={`${imagePath}horizon.png`} />
               </div>
 
               <div id="project-container"  >
-                <img id="project-image" src="./src/img/442.png" />
+                <img id="project-image" src={`${imagePath}442.png`} />
               </div>
 
               <div id="project-container"  >
-                <img id="project-image" src="./src/img/snake.png" />
+                <img id="project-image" src={`${imagePath}snake.png`} />
               </div>
 
               <div id="project-container"  >
-                <img id="project-image" src="./src/img/shutter.png" />
+                <img id="project-image" src={`${imagePath}shutter.png`} />
               </div>
 
               <div id="project-container"  >
-                <img id="project-image" src="./src/img/watch.png" />
+                <img id="project-image" src={`${imagePath}giphy.png`} />
               </div>
 
               <div id="project-container"  >
-                <img id="project-image" src="./src/img/skii.png" />
+                <img id="project-image" src={`${imagePath}skii.png`} />
               </div>
 
               <div id="project-container"  >
-                <img id="project-image" src="./src/img/invest.png" />
+                <img id="project-image" src={`${imagePath}invest.png`} />
               </div>
 
               <div id="project-container" >
-                <img id="project-image" src="./src/img/pacman.png" />
+                <img id="project-image" src={`${imagePath}pacman.png`} />
               </div>
 
               <div id="project-container" >
-                <img id="project-image" src="./src/img/trivia.png" />
+                <img id="project-image" src={`${imagePath}trivia.png`} />
               </div>
 
               <div id="project-container"  >
-                <img id="project-image" src="./src/img/calc.png" />
+                <img id="project-image" src={`${imagePath}calc.png`} />
               </div>
 
               <div id="project-container"  >
-                <img id="project-image" src="./src/img/liarsdice.png" />
+                <img id="project-image" src={`${imagePath}liarsdice.png`} />
               </div>
 
               <div id="project-container"  >
-                <img id="project-image" src="./src/img/hotels-cart.png" />
+                <img id="project-image" src={`${imagePath}hotels-cart.png`} />
               </div>
 
               <div id="project-container"  >
-                <img id="project-image" src="./src/img/teamsql.png" />
+                <img id="project-image" src={`${imagePath}teamsql.png`} />
+              </div>
+
+              <div id="project-container"  >
+                <img id="project-image" src={`${imagePath}watch.png`} />
               </div>
 
             </Carousel>
