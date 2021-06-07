@@ -1,2 +1,3 @@
 dist
 /src/js/apikeys.js
+.DS_Store

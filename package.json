@@ -6,7 +6,7 @@
     "app": "webpack serve --mode=development --node-env local",
     "build": "webpack --mode=production --node-env production"
   },
-  "author": "Alex Bergling",
+  "author": "Kasjan Hinc",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.14.3",

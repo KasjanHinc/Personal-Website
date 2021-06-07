@@ -17,8 +17,7 @@ module.exports = () => {
     publicPath: '/'
   } : {}
 
-  var mode = process.env.NODE_ENV || 'development';
-
+  const mode = process.env.NODE_ENV || 'development';
 
   return {
     entry: './src/index.js',
