@@ -38,7 +38,7 @@ const Home = () => {
           <Fade up delay={1200}>
             <div id="intro-lower">
 
-              <p id="intro-lower-title" >Junior Software Developer <span>&#x276F;</span></p>
+              <p id="intro-lower-title" >Software Developer <span>&#x276F;</span></p>
 
               <div className="intro-skills">
                 <b>
